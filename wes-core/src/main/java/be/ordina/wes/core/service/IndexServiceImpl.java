@@ -31,20 +31,20 @@ public class IndexServiceImpl implements IndexService {
     private ElasticsearchConfig esConfig;
     
     // JSON mapper
-    ObjectMapper mapper = new ObjectMapper();
+    private ObjectMapper mapper = new ObjectMapper();
     
     @Override
 	public void createIndex(String indexName) {
 		client.admin().indices().prepareCreate(indexName).get();
 		
-		LOG.info("Creating index [" + indexName + "]");
+		LOG.info("Creating index [{}]", indexName);
 	}
 
 	@Override
 	public void deleteIndex(String indexName) {
 		client.admin().indices().prepareDelete(indexName).get();
 		
-		LOG.info("Deleting index [" + indexName + "]");
+		LOG.info("Deleting index [{}]", indexName);
 	}
 
 	@Override
@@ -63,7 +63,7 @@ public class IndexServiceImpl implements IndexService {
     		String indexName = esConfig.getIndexName();
 			client.prepareIndex(indexName, documentType).setSource(mapper.writeValueAsString(object)).get();
 
-			LOG.debug("indexing object into [" + indexName + "]");
+			LOG.debug("indexing [{}] document into [{}]", documentType, indexName);
 		} catch (ElasticsearchException | JsonProcessingException e) {
 			LOG.error("Exception", e);
 		}
@@ -82,7 +82,7 @@ public class IndexServiceImpl implements IndexService {
 	        
 			bulkRequest.get();
 			
-			LOG.debug("bulk indexing into [" + indexName + "]");
+			LOG.debug("bulk indexing [{}] documents into [{}]", documentType, indexName);
 		} catch (JsonProcessingException e) {
 			LOG.error("Exception", e);
 		}

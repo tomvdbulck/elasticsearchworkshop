@@ -10,7 +10,7 @@
     </encoder>
   </appender>
  
-  <logger name="be.ordina.wes" level="DEBUG" additivity="false">
+  <logger name="be.ordina.wes" level="TRACE" additivity="false">
    <appender-ref ref="STDOUT" />
   </logger>
  

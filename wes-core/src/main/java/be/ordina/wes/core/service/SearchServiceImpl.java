@@ -38,10 +38,10 @@ public class SearchServiceImpl<T> implements SearchService<T> {
 
         try {
 	        SearchRequestBuilder requestBuilder = buildSearchRequest(searchTerm, documentType);
-	        LOG.trace(requestBuilder.toString());
+	        LOG.trace("Search request: \n{}", requestBuilder.toString());
 	        
 	        SearchResponse response = client.search(requestBuilder.request()).get();
-			LOG.trace(response.toString());
+			LOG.trace("Search response: \n{}", response.toString());
         
 			resultList = MappingUtil.getObjects(response, objectType);
 

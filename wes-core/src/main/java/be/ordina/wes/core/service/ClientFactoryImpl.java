@@ -34,7 +34,7 @@ public class ClientFactoryImpl implements ClientFactory {
 			String nodeName = node.settings().get("name");
 			String clusterName = node.settings().get("cluster.name");
 
-			LOG.info("Node [" + nodeName + "] on [" + clusterName + "] cluster started...");
+			LOG.info("Node [{}] on cluster [{}] started...", nodeName, clusterName);
 		}
 		return node.client();
 	}
@@ -43,7 +43,7 @@ public class ClientFactoryImpl implements ClientFactory {
 	public void destroyInstance() {
         try {
         	String nodeName = node.settings().get("name");
-            LOG.info("Closing ElasticSearch node [" + nodeName + "]");
+            LOG.info("Closing ElasticSearch node [{}]", nodeName);
             
             node.close();
 	    } catch (final Exception e) {
