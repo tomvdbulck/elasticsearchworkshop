@@ -19,6 +19,7 @@ import be.ordina.wes.core.model.Beer;
 public class SearchServiceTest {
 
 	private static final String INDEX_NAME = "inventory";
+	private static final String DOCUMENT_TYPE_BEER = "beer";
 	
     @Autowired
     private IndexService indexService;
@@ -42,27 +43,27 @@ public class SearchServiceTest {
         
         Assert.assertTrue(indexService.indexExists(INDEX_NAME));
         
-        indexService.indexBulk(beers, "beer");
+        indexService.indexBulk(beers, DOCUMENT_TYPE_BEER);
         
         // refresh index before performing any searches, otherwise we'll get no results
         indexService.refreshIndices();
         
-        List<Beer> searchResults = beerSearchService.find("Duvel", Beer.class);
+        List<Beer> searchResults = beerSearchService.find("Duvel", DOCUMENT_TYPE_BEER, Beer.class);
 		Assert.assertEquals(1, searchResults.size());
 
-        searchResults = beerSearchService.find("grimberg", Beer.class);
+        searchResults = beerSearchService.find("grimberg", DOCUMENT_TYPE_BEER, Beer.class);
         Assert.assertEquals(0, searchResults.size());
 
-        searchResults = beerSearchService.find("grimbergen", Beer.class);
+        searchResults = beerSearchService.find("grimbergen", DOCUMENT_TYPE_BEER, Beer.class);
         Assert.assertEquals(1, searchResults.size());
 
-        searchResults = beerSearchService.find("blond", Beer.class);
+        searchResults = beerSearchService.find("blond", DOCUMENT_TYPE_BEER, Beer.class);
         Assert.assertEquals(2, searchResults.size());
 
-        searchResults = beerSearchService.find("abdijbier", Beer.class);
+        searchResults = beerSearchService.find("abdijbier", DOCUMENT_TYPE_BEER, Beer.class);
         Assert.assertEquals(1, searchResults.size());
 
-        searchResults = beerSearchService.find("belgisch", Beer.class);
+        searchResults = beerSearchService.find("belgisch", DOCUMENT_TYPE_BEER, Beer.class);
         Assert.assertEquals(2, searchResults.size());
 
 	}

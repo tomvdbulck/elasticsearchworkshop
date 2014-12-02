@@ -33,14 +33,14 @@ public class SearchServiceImpl<T> implements SearchService<T> {
     private ElasticsearchConfig esConfig;
 
 	@Override
-	public List<T> find(String searchTerm, Class<T> objectType) {
+	public List<T> find(String searchTerm, String documentType, Class<T> objectType) {
         List<T> resultList = new ArrayList<>();
 
         try {
 	        SearchRequestBuilder request;
 	        SearchResponse response;
 	
-	        request = buildSearchRequest(searchTerm);
+	        request = buildSearchRequest(searchTerm, documentType);
 
 			response = client.search(request.request()).get();
         
@@ -53,17 +53,20 @@ public class SearchServiceImpl<T> implements SearchService<T> {
         return resultList;
     }
 
-    private SearchRequestBuilder buildSearchRequest (String searchTerm) {
+    private SearchRequestBuilder buildSearchRequest (String searchTerm, String documentType) {
         QueryBuilder query = buildQuery(searchTerm);
-        SearchRequestBuilder searchRequest = client.prepareSearch().setQuery(query);
+        String indexName = esConfig.getIndexName();
+        SearchRequestBuilder searchRequest = client.prepareSearch().setIndices(indexName).setTypes(documentType).setQuery(query);
 
 		return searchRequest;
 	}
 
 	private QueryBuilder buildQuery (String searchTerm) {
 		if (searchTerm.isEmpty()) {
+			// return all results if search term is empty
 			return QueryBuilders.matchAllQuery();
 		} else {
+			// _all indicates that search should be performed on all fields
             return QueryBuilders.matchQuery("_all", searchTerm);
 		}
 	}
