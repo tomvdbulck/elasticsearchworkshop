@@ -1,11 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>be.ordina.wes</groupId>
   <artifactId>workshop-elasticsearch</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Elasticsearch Workshop</name>
   
+    <!-- Inherit defaults from Spring Boot -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.1.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
 	<modules>
 		<module>wes-core</module>
 	</modules>
@@ -13,132 +22,28 @@
     <properties>
 		<!-- Generic properties -->
 		<java.version>1.7</java.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.parent.version>0.0.1-SNAPSHOT</project.parent.version>
 		
-		<!-- Web -->
-		<jsp.version>2.2</jsp.version>
-		<jstl.version>1.2</jstl.version>
-		<servlet.version>2.5</servlet.version>
-
-		<!-- Spring -->
-		<spring-framework.version>3.2.12.RELEASE</spring-framework.version>
-		<spring-boot.version>1.1.9.RELEASE</spring-boot.version>
-
-		<!-- Elasticsearch -->
-		<elasticsearch.version>1.4.0</elasticsearch.version>
-
-		<!-- Jackson -->
-		<jackson.version>2.4.3</jackson.version>
+		<!-- Spring Boot -->
+		<start-class>be.ordina.wes.Application</start-class>
 		
-		<!-- Logging -->
-		<logback.version>1.1.2</logback.version>
-		<slf4j.version>1.7.7</slf4j.version>
-
-		<!-- Test -->
-		<junit.version>4.11</junit.version>
 	</properties>
-	
+
 	<dependencyManagement>
 		<dependencies>
-		
-			<!-- Spring MVC -->
 			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${spring-framework.version}</version>
+				<groupId>be.ordina.wes.core</groupId>
+				<artifactId>wes-core</artifactId>
+				<version>${project.parent.version}</version>
 			</dependency>
-			
-			<!-- Other Web dependencies -->
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>jstl</artifactId>
-				<version>${jstl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>servlet-api</artifactId>
-				<version>${servlet.version}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>javax.servlet.jsp</groupId>
-				<artifactId>jsp-api</artifactId>
-				<version>${jsp.version}</version>
-				<scope>provided</scope>
-			</dependency>
-		
-			<!-- Spring -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>${spring-framework.version}</version>
-			</dependency>
-	
-			<!-- Elasticsearch -->
-			<dependency>
-				<groupId>org.elasticsearch</groupId>
-				<artifactId>elasticsearch</artifactId>
-				<version>${elasticsearch.version}</version>
-			</dependency>
-	
-			<!-- Jackson -->
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-
-			<!-- Logging with SLF4J & LogBack -->
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>${slf4j.version}</version>
-				<scope>compile</scope>
-			</dependency>
-			<dependency>
-				<groupId>ch.qos.logback</groupId>
-				<artifactId>logback-classic</artifactId>
-				<version>${logback.version}</version>
-				<scope>runtime</scope>
-			</dependency>
-	
-			<!-- Test Artifacts -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-test</artifactId>
-				<version>${spring-framework.version}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>${junit.version}</version>
-				<scope>test</scope>
-			</dependency>
-	
-		</dependencies>	
+		</dependencies>
 	</dependencyManagement>
 	
 	<build>
-		<pluginManagement>
-			<plugins>
-                <plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<inherited>true</inherited>
-					<version>3.2</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-
 		<plugins>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-				</configuration>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
