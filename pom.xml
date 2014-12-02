@@ -17,6 +17,7 @@
 	
 	<modules>
 		<module>wes-core</module>
+		<module>wes-web</module>
 	</modules>
 
     <properties>
@@ -34,6 +35,11 @@
 			<dependency>
 				<groupId>be.ordina.wes.core</groupId>
 				<artifactId>wes-core</artifactId>
+				<version>${project.parent.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>be.ordina.wes.web</groupId>
+				<artifactId>wes-web</artifactId>
 				<version>${project.parent.version}</version>
 			</dependency>
 		</dependencies>
