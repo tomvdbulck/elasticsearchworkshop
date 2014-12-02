@@ -3,6 +3,9 @@
 ### Java ###
 *.class
 
+# Spring
+.springBeans
+
 ### Eclipse ###
 .metadata
 bin/
