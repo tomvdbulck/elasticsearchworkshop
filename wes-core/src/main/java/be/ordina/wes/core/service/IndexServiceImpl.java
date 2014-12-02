@@ -60,9 +60,10 @@ public class IndexServiceImpl implements IndexService {
 	@Override
 	public void index(Object object, String documentType) {
     	try {
-			client.prepareIndex(esConfig.getIndexName(), documentType).setSource(mapper.writeValueAsString(object)).get();
+    		String indexName = esConfig.getIndexName();
+			client.prepareIndex(indexName, documentType).setSource(mapper.writeValueAsString(object)).get();
 
-			LOG.debug("indexing object into [" + esConfig.getIndexName() + "]");
+			LOG.debug("indexing object into [" + indexName + "]");
 		} catch (ElasticsearchException | JsonProcessingException e) {
 			LOG.error("Exception", e);
 		}
@@ -72,15 +73,16 @@ public class IndexServiceImpl implements IndexService {
     public void indexBulk(List<?> objectList, String documentType) {
         try {
 			BulkRequestBuilder bulkRequest = client.prepareBulk();
+			String indexName = esConfig.getIndexName();
 	        for (Object object : objectList) {
-				IndexRequest indexRequest = new IndexRequest(esConfig.getIndexName(), documentType);
-					indexRequest.source(mapper.writeValueAsString(object));
+				IndexRequest indexRequest = new IndexRequest(indexName, documentType);
+				indexRequest.source(mapper.writeValueAsString(object));
 				bulkRequest.add(indexRequest);
 			}
 	        
 			bulkRequest.get();
 			
-			LOG.debug("bulk indexing into [" + esConfig.getIndexName() + "]");
+			LOG.debug("bulk indexing into [" + indexName + "]");
 		} catch (JsonProcessingException e) {
 			LOG.error("Exception", e);
 		}

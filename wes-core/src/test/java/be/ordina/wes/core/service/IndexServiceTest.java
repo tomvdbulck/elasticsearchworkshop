@@ -2,6 +2,7 @@ package be.ordina.wes.core.service;
 
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -56,7 +57,7 @@ public class IndexServiceTest {
 		// refresh index before performing search operations
 		indexService.refreshIndices();
 		
-		List<Beer> resultList = beerSearchService.find("", DOCUMENT_TYPE, Beer.class);
+		List<Beer> resultList = beerSearchService.find(StringUtils.EMPTY, DOCUMENT_TYPE, Beer.class);
 		
 		Assert.assertEquals(1, resultList.size());
 	}
