@@ -37,12 +37,11 @@ public class SearchServiceImpl<T> implements SearchService<T> {
         List<T> resultList = new ArrayList<>();
 
         try {
-	        SearchRequestBuilder request;
-	        SearchResponse response;
-	
-	        request = buildSearchRequest(searchTerm, documentType);
-
-			response = client.search(request.request()).get();
+	        SearchRequestBuilder requestBuilder = buildSearchRequest(searchTerm, documentType);
+	        LOG.trace(requestBuilder.toString());
+	        
+	        SearchResponse response = client.search(requestBuilder.request()).get();
+			LOG.trace(response.toString());
         
 			resultList = MappingUtil.getObjects(response, objectType);
 
@@ -53,15 +52,15 @@ public class SearchServiceImpl<T> implements SearchService<T> {
         return resultList;
     }
 
-    private SearchRequestBuilder buildSearchRequest (String searchTerm, String documentType) {
+    private SearchRequestBuilder buildSearchRequest(String searchTerm, String documentType) {
         QueryBuilder query = buildQuery(searchTerm);
         String indexName = esConfig.getIndexName();
         SearchRequestBuilder searchRequest = client.prepareSearch().setIndices(indexName).setTypes(documentType).setQuery(query);
-
+        
 		return searchRequest;
 	}
 
-	private QueryBuilder buildQuery (String searchTerm) {
+	private QueryBuilder buildQuery(String searchTerm) {
 		if (searchTerm.isEmpty()) {
 			// return all results if search term is empty
 			return QueryBuilders.matchAllQuery();
