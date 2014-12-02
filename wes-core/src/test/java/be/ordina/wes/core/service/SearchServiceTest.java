@@ -3,6 +3,7 @@ package be.ordina.wes.core.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -29,7 +30,9 @@ public class SearchServiceTest {
     
     @After
     public void tearDown() {
-        indexService.deleteIndex(INDEX_NAME);
+    	if (indexService.indexExists(INDEX_NAME)) {
+            indexService.deleteIndex(INDEX_NAME);
+    	}
     }
 
 	@Test
@@ -66,6 +69,8 @@ public class SearchServiceTest {
         searchResults = beerSearchService.find("belgisch", DOCUMENT_TYPE_BEER, Beer.class);
         Assert.assertEquals(2, searchResults.size());
 
+        searchResults = beerSearchService.find(StringUtils.EMPTY, DOCUMENT_TYPE_BEER, Beer.class);
+        Assert.assertEquals(2, searchResults.size());
 	}
 
 }
