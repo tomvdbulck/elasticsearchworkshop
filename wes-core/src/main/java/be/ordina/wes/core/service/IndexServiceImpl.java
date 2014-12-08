@@ -61,9 +61,11 @@ public class IndexServiceImpl implements IndexService {
 	public void index(Object object, String documentType) {
     	try {
     		String indexName = esConfig.getIndexName();
-			client.prepareIndex(indexName, documentType).setSource(mapper.writeValueAsString(object)).get();
-
+    		String jsonDoc = mapper.writeValueAsString(object);
+			client.prepareIndex(indexName, documentType).setSource(jsonDoc).get();
+			
 			LOG.debug("indexing [{}] document into [{}]", documentType, indexName);
+			LOG.trace("Indexed document: \n{}", jsonDoc);
 		} catch (ElasticsearchException | JsonProcessingException e) {
 			LOG.error("Exception", e);
 		}
