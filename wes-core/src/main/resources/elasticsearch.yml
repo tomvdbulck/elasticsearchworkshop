@@ -17,11 +17,15 @@ node.name: ordiNode
 #
 # Allow this node to be eligible as a master node (enabled by default):
 #
-node.master: true
+node.master: false
 
 # Allow this node to store data (enabled by default):
 #
-node.data: true
+node.data: false
+
+#   We want this node to be neither master nor data node, but
+#   to act as a "search load balancer" (fetching data from nodes,
+#   aggregating results, etc.), hence we set both values to false.
 
 #################################### Index ####################################
 # Set the number of shards (splits) of an index (5 by default):
@@ -32,5 +36,5 @@ index.number_of_shards: 1
 #
 index.number_of_replicas: 0
 
-# Note, that for development on a local machine, with small indices, it usually
-# makes sense to "disable" the distributed features.
+# Note, that for development on a local machine, with small indices, 
+# it usually makes sense to "disable" the distributed features.
