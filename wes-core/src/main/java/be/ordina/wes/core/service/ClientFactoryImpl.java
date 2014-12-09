@@ -8,6 +8,8 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.node.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,15 +20,28 @@ public class ClientFactoryImpl implements ClientFactory {
 
 	private static final Logger LOG = LoggerFactory.getLogger(ClientFactoryImpl.class);
 
-	private static final String SETTINGS_PATH = "elasticsearch.yml";
-	
+	private static final String CLUSTER_NAME = "elasticsearch.cluster.name";
+	private static final String NODE_NAME = "elasticsearch.node.name";
+	private static final String NODE_MASTER = "elasticsearch.node.master";
+
 	private Node node;
+	
+	@Autowired
+	private Environment env;
 	
 	@Override
 	public Client getInstance() {
 		if (node == null) {
-			Settings settings = ImmutableSettings.settingsBuilder().loadFromClasspath(SETTINGS_PATH).build();
-			node = nodeBuilder().settings(settings).node();
+			final Settings settings = ImmutableSettings.settingsBuilder()
+	                .put("node.name", env.getProperty(NODE_NAME))
+	                .put("node.master", env.getProperty(NODE_MASTER))
+	                .build();
+
+			node = nodeBuilder()
+					.clusterName(CLUSTER_NAME)
+					.client(true)
+					.settings(settings)
+					.node();
 			
 			// wait until the node starts up
 			node.client().admin().cluster().prepareHealth().setWaitForYellowStatus().get();
