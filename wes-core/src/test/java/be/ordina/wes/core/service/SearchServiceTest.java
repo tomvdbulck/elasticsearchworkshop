@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.commons.lang.StringUtils;
 import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +25,15 @@ public class SearchServiceTest {
 	
     @Autowired
     private IndexService indexService;
-    
     @Autowired
     private SearchService<Beer> beerSearchService;
+
+    @Before
+    public void setUp() {
+    	if (indexService.indexExists(INDEX_NAME)) {
+    		indexService.deleteIndex(INDEX_NAME);
+    	}
+    }
     
     @After
     public void tearDown() {
