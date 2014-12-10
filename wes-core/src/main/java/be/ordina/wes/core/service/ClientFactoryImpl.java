@@ -23,6 +23,7 @@ public class ClientFactoryImpl implements ClientFactory {
 	private static final String CLUSTER_NAME = "elasticsearch.cluster.name";
 	private static final String NODE_NAME = "elasticsearch.node.name";
 	private static final String NODE_MASTER = "elasticsearch.node.master";
+	private static final String NODE_LOCAL = "elasticsearch.node.local";
 
 	private Node node;
 	
@@ -37,9 +38,11 @@ public class ClientFactoryImpl implements ClientFactory {
 	                .put("node.master", env.getProperty(NODE_MASTER))
 	                .build();
 
+			boolean clientNode = Boolean.getBoolean(env.getProperty(NODE_LOCAL));
+			
 			node = nodeBuilder()
 					.clusterName(CLUSTER_NAME)
-					.client(true)
+					.client(clientNode)
 					.settings(settings)
 					.node();
 			
