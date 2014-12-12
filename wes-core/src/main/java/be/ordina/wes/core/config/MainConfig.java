@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 import be.ordina.wes.core.service.ClientFactory;
-import be.ordina.wes.core.service.ClientFactoryImpl;
+import be.ordina.wes.core.service.NodeClientFactory;
 
 @Configuration
 @PropertySource("application.properties")
@@ -19,7 +19,7 @@ public class MainConfig {
     
     @Bean(initMethod = "getInstance", destroyMethod = "destroyInstance")
     public ClientFactory elasticsearchClientFactory() {
-    	return new ClientFactoryImpl();
+    	return new NodeClientFactory();
     }
     
 }

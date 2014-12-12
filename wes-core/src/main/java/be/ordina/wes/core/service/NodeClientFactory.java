@@ -12,12 +12,15 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 /**
- * Factory for constructing an embedded Elasticsearch node. Used primarily for unit testing.
+ * Factory for constructing an Elasticsearch node. 
+ * The NodeClient is a node within the cluster (but does not hold data, and cannot become master). 
+ * Because it is a node, it knows the entire cluster state — where all the nodes reside, which 
+ * shards live in which nodes, etc.
  */
 @Service
-public class ClientFactoryImpl implements ClientFactory {
+public class NodeClientFactory implements ClientFactory {
 
-	private static final Logger LOG = LoggerFactory.getLogger(ClientFactoryImpl.class);
+	private static final Logger LOG = LoggerFactory.getLogger(NodeClientFactory.class);
 
 	private static final String CLUSTER_NAME = "elasticsearch.cluster.name";
 	private static final String NODE_NAME = "elasticsearch.node.name";
@@ -64,7 +67,7 @@ public class ClientFactoryImpl implements ClientFactory {
             
             node.close();
 	    } catch (final Exception e) {
-	    	LOG.error("Error closing Elasticsearch node: ", e);
+	    	LOG.error("Error closing Elasticsearch node", e);
 	    }
 	}
 

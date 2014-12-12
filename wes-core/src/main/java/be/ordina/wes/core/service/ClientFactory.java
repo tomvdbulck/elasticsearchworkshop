@@ -3,7 +3,8 @@ package be.ordina.wes.core.service;
 import org.elasticsearch.client.Client;
 
 /**
- * A client factory is used to construct an Elasticsearch Client instance. A client provides a one stop interface for performing actions/operations against the cluster.
+ * A client factory is used to construct an Elasticsearch Client instance. A client provides 
+ * a one stop interface for performing actions/operations against the cluster.
  */
 public interface ClientFactory {
 
