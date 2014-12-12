@@ -1,11 +1,10 @@
 package be.ordina.wes.core.service;
 
-import static org.elasticsearch.node.NodeBuilder.nodeBuilder;
-
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.ImmutableSettings;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.node.Node;
+import org.elasticsearch.node.NodeBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,7 @@ public class ClientFactoryImpl implements ClientFactory {
 	private static final String NODE_NAME = "elasticsearch.node.name";
 	private static final String NODE_MASTER = "elasticsearch.node.master";
 	private static final String NODE_LOCAL = "elasticsearch.node.local";
-
+	
 	private Node node;
 	
 	@Autowired
@@ -40,8 +39,8 @@ public class ClientFactoryImpl implements ClientFactory {
 
 			boolean clientNode = Boolean.getBoolean(env.getProperty(NODE_LOCAL));
 			
-			node = nodeBuilder()
-					.clusterName(CLUSTER_NAME)
+			node = NodeBuilder.nodeBuilder()
+					.clusterName(env.getProperty(CLUSTER_NAME))
 					.client(clientNode)
 					.settings(settings)
 					.node();
