@@ -26,6 +26,8 @@ public class SearchServiceImpl<T> implements SearchService<T> {
 
 	private static final Logger LOG = LoggerFactory.getLogger(SearchServiceImpl.class);
 	
+	private static final int MAX_RESULTS = 100;
+	
     @Autowired
 	private Client client;
     
@@ -55,7 +57,7 @@ public class SearchServiceImpl<T> implements SearchService<T> {
     private SearchRequestBuilder buildSearchRequest(String searchTerm, String documentType) {
         QueryBuilder query = buildQuery(searchTerm);
         String indexName = esConfig.getIndexName();
-        SearchRequestBuilder searchRequest = client.prepareSearch().setIndices(indexName).setTypes(documentType).setQuery(query);
+        SearchRequestBuilder searchRequest = client.prepareSearch().setIndices(indexName).setTypes(documentType).setQuery(query).setSize(MAX_RESULTS);
         
 		return searchRequest;
 	}
