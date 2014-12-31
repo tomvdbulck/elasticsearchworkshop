@@ -1,0 +1,2434 @@
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1,"brand":"Duvel","category":"67","alcohol":8.5,"price":4.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":2,"brand":"Duvel Tripel Hop","category":"66","alcohol":9.5,"price":2.76}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":4,"brand":"A.C.O.","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":5,"brand":"Aalbeeks St. Corneliusbier  (=Kapittel pater (Het))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":7,"brand":"Aardbeien witbier","category":"53","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":8,"brand":"Aarschots kruikenbier (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":10,"brand":"Abt Bijbier (Nen)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":11,"brand":"Adler","category":"42","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":12,"brand":"Aerts 1900","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":13,"brand":"Affligem blond (Abdij)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":14,"brand":"Affligem christmas ale (Abdij)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":15,"brand":"Affligem dubbel (Abdij)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":16,"brand":"Affligem patersvat","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":17,"brand":"Affligem tripel (Abdij)","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":18,"brand":"Akila pilsener","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":20,"brand":"Aldegonde brune","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":21,"brand":"Aldegonde cuvee","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":22,"brand":"Aldegonde speciale","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":23,"brand":"Ale brau (=Vega pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":24,"brand":"Alexander Rodenbach","category":"62","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":25,"brand":"Alfa (=Huyghe blond)","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":26,"brand":"Alfri","category":"2","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":27,"brand":"Alken faro","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":28,"brand":"Alken faro","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":29,"brand":"Alken special blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":30,"brand":"Alken special blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":31,"brand":"Alken-Maes export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":32,"brand":"All Black","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":34,"brand":"Ambiorix dubbel","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":38,"brand":"Amelie","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":39,"brand":"Amelie cerise","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":40,"brand":"Amuzantje (=Lamoral Degmont)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":41,"brand":"Anglo pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":42,"brand":"Ankerpils (=Wieze pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":43,"brand":"Anpavi (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":48,"brand":"Anvinoise  (=Beloeil (La biere de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":49,"brand":"Arabier","category":"11","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":51,"brand":"Ardenne blonde (Biere d')","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":52,"brand":"Argus pils (=Premium pilsener)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":53,"brand":"Argus witte (=Limburgse witte)","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":54,"brand":"Arjaun (=Lamoral Degmont)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":55,"brand":"Aro pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":58,"brand":"Arsouye blonde  (=St. Benoit blonde)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":59,"brand":"Arsouye brune  (=St. Benoit brune (brassin special))","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":60,"brand":"Artevelde","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":61,"brand":"Artevelde grand cru","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":62,"brand":"Artevelde grand cru op gist","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":63,"brand":"Artevelde op gist","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":64,"brand":"Artisan reuzebier","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":65,"brand":"Astor","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":66,"brand":"Atlas (=Vega pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":68,"brand":"Augustijn","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":69,"brand":"Augustijn grand cru","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":70,"brand":"Aulne 6 sur lie (Abbaye d')","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":71,"brand":"Aulne 8 selection (Abbaye d')","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":72,"brand":"Aulne 10 superbe (Abbaye d')","category":"36","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":73,"brand":"Aulne blonde des peres (Abbaye d')","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":74,"brand":"Aulne super noel (Abbaye d')","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":75,"brand":"Aulne triple (Abbaye d')","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":77,"brand":"Autreppe (Special)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":78,"brand":"Auveloise (=Bonne Esperance (Abbaye de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":79,"brand":"Bacchus","category":"62","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":80,"brand":"Bakelandt (=Poperings hommelbier)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":81,"brand":"Balens kruierke","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":82,"brand":"Ballotil  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":84,"brand":"Baptiste (=Riva triple abdij)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":85,"brand":"Barbar","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":86,"brand":"Bass pale ale","category":"4","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":87,"brand":"Bastions cuvee speciale (Les)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":89,"brand":"Bavaro","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":90,"brand":"Bavik dinner beer blond","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":91,"brand":"Bavik dinner beer faro","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":92,"brand":"Bavik export","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":93,"brand":"Bavik premium pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":94,"brand":"Bavik triple bock","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":95,"brand":"Bavik witbier","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":97,"brand":"Becasse framboise lambic  (=Belle Vue frambozen)","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":98,"brand":"Becasse gueuze lambic  (=Belle Vue gueuze)","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":99,"brand":"Becasse kriek  (=Belle Vue kriek)","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":100,"brand":"Becasse kriek primeur '96","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":101,"brand":"Becasse lambik  (=De Neve lambik)","category":"31","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":102,"brand":"Bel pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":103,"brand":"Belgian ale traditional gueuze","category":"22","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":105,"brand":"Belgo (=Dupont biologique (Saison))","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":106,"brand":"Bell christmas","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":108,"brand":"Belle Vue framboise","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":109,"brand":"Belle Vue frambozenlambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":110,"brand":"Belle Vue gueuze","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":111,"brand":"Belle Vue kriek","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":112,"brand":"Belle Vue kriek L.A.","category":"22","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":113,"brand":"Belle Vue kriekenlambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":114,"brand":"Belle Vue lambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":115,"brand":"Belle Vue Selection Lambic gueuze","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":117,"brand":"Bellegems witbier","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":118,"brand":"Beloeil (La biere de)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":119,"brand":"Belseels kerstbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":120,"brand":"Berenbier/Biere des Ours","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":121,"brand":"Bergenbrau","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":122,"brand":"Bergeotte normale  (=Regal (Saison))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":123,"brand":"Bergeotte speciale  (=St. Benoit brune (brassin special))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":124,"brand":"Beselaars Heksenbier (=Poperings hommelbier)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":125,"brand":"Bieken","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":127,"brand":"Bier voor Vader \"A\"","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":128,"brand":"Bier voor Vader \"D\"","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":129,"brand":"Bier voor Vader \"E\"","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":130,"brand":"Bier voor Vader \"R\"","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":131,"brand":"Bier voor Vader \"V\"","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":132,"brand":"Biertoren blond","category":"51","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":133,"brand":"Biertoren bruno","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":134,"brand":"Biertoren special","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":135,"brand":"Big Chouffe (=Chouffe )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":136,"brand":"Billekarreke (=Riva triple abdij)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":137,"brand":"Bilzers bruin","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":138,"brand":"Binchoise blonde  (=St. Benoit blonde)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":139,"brand":"Binchoise brune  (=St. Benoit brune (brassin special))","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":140,"brand":"Binchoise special noel","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":143,"brand":"Bios blond","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":144,"brand":"Bios bruin","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":145,"brand":"Bios Vlaamse bourgogne","category":"62","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":146,"brand":"Bisounette  (=St. Benoit brune)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":147,"brand":"Black Gosh","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":150,"brand":"Bleeken Moriaen (=Kapittel abt (Het))","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":155,"brand":"Blok-bok (Nen)","category":"12","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":156,"brand":"Blondine","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":157,"brand":"Boals kruikenbier triple (=St. Sebastiaan grand cru)","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":159,"brand":"Bock premium pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":160,"brand":"Bockhauser pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":166,"brand":"Boeg pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":167,"brand":"Bois Bouquet (Trappiste du)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":168,"brand":"Bokkereyer","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":169,"brand":"Bokrijk hoevebier 6","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":170,"brand":"Bokrijk hoevebier 8","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":171,"brand":"Bokrijks kruikenbier","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":172,"brand":"Bol d'or","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":173,"brand":"Bonde (Biere de la) (=Kapittel abt (Het))","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":174,"brand":"Bonne Esperance (Abbaye de)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":175,"brand":"Bons voeux (Avec les -- de la brasserie)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":176,"brand":"Boon frambozenbier","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":177,"brand":"Boon frambozenbier 1986","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":178,"brand":"Boon geuze","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":179,"brand":"Boon geuze mariage parfait","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":180,"brand":"Boon kriek","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":181,"brand":"Boon kriek mariage parfait","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":182,"brand":"Boon lambik","category":"56","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":184,"brand":"Bornem dubbel","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":185,"brand":"Bornem tripel","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":186,"brand":"Bosbier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":187,"brand":"Boskeun","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":188,"brand":"Bosquetia","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":189,"brand":"Boucanier (Biere du) (=Piraat)","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":190,"brand":"Bourgogne des Flandres","category":"60","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":191,"brand":"Bousval blonde speciale (=Floreffe blonde)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":192,"brand":"Bousval brune speciale (=Floreffe double)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":193,"brand":"Boxer christmas beer (=Affligem christmas ale)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":196,"brand":"Brave Broeder (=Super 64)","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":197,"brand":"Brigand","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":198,"brand":"Brigand christmas","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":199,"brand":"Brogne donker (Abbaye de) (=Affligem dubbel (Abdij))","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":200,"brand":"Brogne triple (Abbaye de) (=Affligem tripel (Abdij))","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":201,"brand":"Broqueroise de l'abbaye de St. Denis  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":202,"brand":"Brewers van de Dijle (De) (=Lamot pilsor)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":204,"brand":"Brouwmeester alcohol vrij bier","category":"2","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":205,"brand":"Brouwmeester pilsener","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":207,"brand":"Brug ale Belge","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":209,"brand":"Brugs tarwebier","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":210,"brand":"Brugse straffe Hendrik","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":211,"brand":"Brugse tripel","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":213,"brand":"Brunehaut tradition amber","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":214,"brand":"Brunehaut villages blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":215,"brand":"Brunette","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":216,"brand":"Bruocsella 1900 grand cru","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":217,"brand":"Brussels gold (=Pax pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":218,"brand":"Brussels gold (=Pax pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":219,"brand":"Brussels white (=Limburgse witte)","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":220,"brand":"Brusselse witte (=Student)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":221,"brand":"Bruyere blonde  (=Fakir)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":222,"brand":"Bruyere brune  (=Reserve Marie de Hongrie)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":223,"brand":"Bruynen Moriaen (=Kapittel prior (Het))","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":224,"brand":"Buffalo","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":225,"brand":"Bumke (=Pater Lieven)","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":227,"brand":"Bush beer","category":"21","alcohol":12.0,"price":3.26}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":228,"brand":"Bush beer 7","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":229,"brand":"Bush de Noel","category":"21","alcohol":12.0,"price":3.26}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":230,"brand":"Buxus blonde  (=Fakir)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":231,"brand":"Buxus brune  (=Reserve Marie de Hongrie)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":232,"brand":"C.T.S. Scotch","category":"46","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":233,"brand":"Cambrinus","category":"6","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":234,"brand":"Campagnarde  brune","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":235,"brand":"Campbell's christmas","category":"46","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":236,"brand":"Campbell's scotch","category":"46","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":238,"brand":"Campus","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":239,"brand":"Campus gold","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":240,"brand":"Canebiere","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":241,"brand":"Cantillon faro","category":"54","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":242,"brand":"Cantillon kriek","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":243,"brand":"Cantillon kriek lambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":244,"brand":"Cantillon lambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":245,"brand":"Cantillon super gueuze","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":246,"brand":"Cara pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":247,"brand":"Caracole ambree","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":249,"brand":"Caracole brune","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":250,"brand":"Caramel biere de table","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":252,"brand":"Carioca classic","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":253,"brand":"Carnav-ale (kruik) (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":254,"brand":"Caves","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":255,"brand":"Caza cuvee speciale (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":256,"brand":"Celis pale bock","category":"25","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":258,"brand":"Celis white","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":260,"brand":"Cervesia","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":261,"brand":"Cervoise de l'Avouerie d'Anthisnes (=Silly (Saison))","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":262,"brand":"Cervoise de l'Ecluse blonde  (=Fakir)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":263,"brand":"Cervoise de l'Ecluse brune  (=Reserve Marie de Hongrie)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":264,"brand":"Cervoise de Leptines (=Beloeil (La biere de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":265,"brand":"Cervoise de St. Gery  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":266,"brand":"Cervoise des Ancetres grand cru (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":267,"brand":"Cervoise des Francs-Gaulois  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":268,"brand":"Cezarken","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":269,"brand":"Chapeau abricot lambic","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":270,"brand":"Chapeau exotic","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":271,"brand":"Chapeau faro","category":"19","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":272,"brand":"Chapeau fraises lambic","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":273,"brand":"Chapeau framboise","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":274,"brand":"Chapeau gueuze","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":275,"brand":"Chapeau kriek","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":276,"brand":"Chapeau mirabelle","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":277,"brand":"Chapeau peche","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":278,"brand":"Chapeau tropical","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":281,"brand":"Charlemagne (=Delirium Tremens)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":282,"brand":"Charleroi (Blanche de)","category":"53","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":283,"brand":"Charles Quint","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":284,"brand":"Chateau Saint-Henri Cuvee speciale","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":285,"brand":"Chimay blauw","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":286,"brand":"Chimay cinq cents (=Chimay wit)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":287,"brand":"Chimay grande reserve (=Chimay blauw)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":288,"brand":"Chimay premiere (=Chimay rood)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":289,"brand":"Chimay rood","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":290,"brand":"Chimay wit","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":291,"brand":"Chouffe","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":292,"brand":"Chouffe-bok 6666","category":"12","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":293,"brand":"Christmas-Beer","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":294,"brand":"Ciney blonde","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":295,"brand":"Ciney brune","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":296,"brand":"Ciney speciale","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":301,"brand":"Clermontoise  (=Ploquette )","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":302,"brand":"Club de Stella Artois","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":303,"brand":"Cnudde kriek","category":"61","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":304,"brand":"Cnudde Oudenaards bruin","category":"61","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":305,"brand":"Cochonette","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":306,"brand":"Con Domus (Nen)","category":"11","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":307,"brand":"Contra-pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":308,"brand":"Contreras martzen bier","category":"35","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":309,"brand":"Coq Hardi biere blonde de luxe","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":310,"brand":"Coq Hardi biere bock","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":311,"brand":"Coq Hardi pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":312,"brand":"Coq Hardi speciale","category":"42","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":314,"brand":"Corsaire biere rouge (Biere du)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":316,"brand":"Corsendonk Agnus (=Moine (triple))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":317,"brand":"Corsendonk Pater (=Bornem dubbel)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":318,"brand":"Couckelaerschen Doedel","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":320,"brand":"Coy'Heimsen (=Kapittel pater (Het))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":321,"brand":"Crack pils (=Sas pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":322,"brand":"Cristal Alken","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":323,"brand":"Crupetoise  (=St. Benoit brune)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":324,"brand":"Cubana '59","category":"18","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":327,"brand":"Cuvee 100 ans Domaine du Bois d'Anchin","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":328,"brand":"Cuvee Chateau des Flandres","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":329,"brand":"Cuvee d'Aristee - biere au miel","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":330,"brand":"Cuvee d'Aristee speciale noel","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":332,"brand":"Cuvee de Briqville (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":333,"brand":"Cuvee de Francorchamps (=Bonne Esperance (Abbaye de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":334,"brand":"Cuvee De Koninck","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":335,"brand":"Cuvee de l'An Neuf","category":"49","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":336,"brand":"Cuvee de l'Ascension blonde (=Floreffe blonde)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":337,"brand":"Cuvee de l'Ermitage","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":338,"brand":"Cuvee de l'Ermitage christmas","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":340,"brand":"Cuvee de la Gate","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":341,"brand":"Cuvee de la Pucelette (=Floreffe blonde)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":343,"brand":"Cuvee de la Vieille Auberge (=Fagnes (Blonde des))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":344,"brand":"Cuvee de Namur blonde","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":345,"brand":"Cuvee de Namur brune","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":349,"brand":"Cuvee de Winamplanche (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":350,"brand":"Cuvee de'l Sin Djosef","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":351,"brand":"Cuvee des Flandres triple","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":352,"brand":"Cuvee des moissons blonde (=Vapeur en folie )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":353,"brand":"Cuvee des tietes de pipes blonde (=Fakir)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":354,"brand":"Cuvee des tietes de pipes brune (=Reserve Marie de Hongrie)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":356,"brand":"Cuvee du P'tit Lu (=Regal (Saison))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":359,"brand":"Cuvee du Spartacus blonde (=Floreffe blonde)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":360,"brand":"Cuvee du Spartacus brune (=Floreffe double)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":361,"brand":"Cuvee du Tcheste (=Mc Chouffe)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":362,"brand":"Cuvee du Tronquoy (=Pipaix (Saison de))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":364,"brand":"Cuvee Jean d'Avesnes ambree","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":365,"brand":"Cuvee Jean d'Avesnes blanche","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":366,"brand":"Cuvee Li Crochon (=St. Benoit brune (brassin special))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":367,"brand":"Cuvee Melletoise (=Floreffe blonde)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":369,"brand":"Cuvee Rene grand cru (=Lindemans gueuze gefilterd)","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":370,"brand":"Cuvee Saint. Roch (=Soleilmont double)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":371,"brand":"Cuvee speciale blanche des Bastions","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":373,"brand":"Cuvee speciale du 80e (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":376,"brand":"Cuvee speciale Patro Salette (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":377,"brand":"Cuvee St-Francois Xavier","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":379,"brand":"Cuvee St. Berthuin (=Floreffe blonde)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":380,"brand":"Cuvee St. Hadelin blonde (=St. Benoit blonde)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":381,"brand":"Cuvee St. Hadelin brune (=St. Benoit brune)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":387,"brand":"Daens","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":388,"brand":"Daiselnaere (=Steenbrugge (Abdij))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":389,"brand":"Darbyste (Biere)","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":390,"brand":"De Koninck","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":392,"brand":"De Koninck gueuze (=De Neve gueuze ongefilterd)","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":393,"brand":"De Koninck kriek (=De Neve kriek)","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":395,"brand":"De Neve frambozen","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":396,"brand":"De Neve gueuze gefilterd","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":397,"brand":"De Neve gueuze ongefilterd","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":398,"brand":"De Neve kriek","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":399,"brand":"De Neve lambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":400,"brand":"De Ryck (Special)","category":"33","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":401,"brand":"De Ryck christmas pale ale","category":"6","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":402,"brand":"De Ryck kriek","category":"18","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":403,"brand":"De Troch gueuze ongefilterd","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":404,"brand":"Deca Lux pils","category":"42","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":405,"brand":"Deins paasbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":406,"brand":"Delhaize blond tafelbier (=Piedboeuf blonde)","category":"51","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":407,"brand":"Delhaize bruin tafelbier (=Piedboeuf dubbel - foncee)","category":"51","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":408,"brand":"Delhaize christmas (=Affligem christmas ale (Abdij))","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":409,"brand":"Delhaize wit bier","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":410,"brand":"Delirium Tremens","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":411,"brand":"Dentergems witbier - Riva blanche","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":412,"brand":"Derby blond (=Piedboeuf blonde)","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":413,"brand":"Derby bruin (=Piedboeuf dubbel - foncee)","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":414,"brand":"Derby pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":415,"brand":"Deugniet (=Moine (triple))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":416,"brand":"Dieleghem ambree (Abbaye de)","category":"6","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":417,"brand":"Dieleghem blonde (Abbaye de) (=Floreffe blonde)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":418,"brand":"Dieleghem foncee (Abbaye de) (=Floreffe double)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":419,"brand":"Dikke Mathile","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":420,"brand":"Dikkenek","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":421,"brand":"Dirk Martensbier (=Bornem tripel)","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":422,"brand":"Divine","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":423,"brand":"Dobbelken (=Ichtegem's oud bruin)","category":"62","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":424,"brand":"Dolmenius (=St. Benoit blonde)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":425,"brand":"Domaine du bois d'Anchin","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":426,"brand":"Domein bleek (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":427,"brand":"Domein donker (=Bornem dubbel)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":428,"brand":"Dommelsch malt","category":"3","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":431,"brand":"Double Enghien blonde","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":432,"brand":"Double Enghien brune","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":433,"brand":"Doux chemin de l'amour (Le) (=Fagnes (Blonde des))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":434,"brand":"Drie Fonteinen faro","category":"54","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":435,"brand":"Drie Fonteinen frambozenlambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":436,"brand":"Drie Fonteinen gueuze","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":437,"brand":"Drie Fonteinen kriek","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":438,"brand":"Drie Fonteinen kriek van het vat","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":439,"brand":"Drie Fonteinen kriekenlambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":442,"brand":"Drongens plezierke (=Ambiorix dubbel)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":443,"brand":"Drossaard blond","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":444,"brand":"Drossaard donker","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":445,"brand":"Duchesse de Bourgogne","category":"62","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":446,"brand":"Duivels bier","category":"60","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":447,"brand":"Dulle Teve","category":"11","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":448,"brand":"Dupont biologique (Saison)","category":"45","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":449,"brand":"Dupont vieille provision (Saison)","category":"45","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":450,"brand":"Durboyse ambree","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":451,"brand":"Durboyse blonde","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":452,"brand":"Durboyse blonde  (=Floreffe blonde)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":453,"brand":"Durboyse brune  (=Floreffe double)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":454,"brand":"Duvel groen","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":455,"brand":"Duvel rood","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":456,"brand":"Eautex de Brunehaut","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":457,"brand":"Ecume des jours","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":458,"brand":"Edel-Brau","category":"3","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":461,"brand":"El Vert Doudou (=Pipaix (Saison de))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":462,"brand":"El' Simpelourd","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":465,"brand":"Ename dubbel","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":466,"brand":"Ename tripel","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":467,"brand":"Engel (Nen)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":468,"brand":"Engeltjes bier","category":"36","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":469,"brand":"Ensor","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":472,"brand":"Epeautre (Saison d')","category":"45","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":473,"brand":"Erezee (Saison d') - Automne","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":474,"brand":"Erezee (Saison d') - Ete","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":475,"brand":"Erezee (Saison d') - Hiver","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":476,"brand":"Erezee (Saison d') - Printemps","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":478,"brand":"Essen Bakkersmolen Wildert blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":479,"brand":"Essen Bakkersmolen Wildert bruin","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":480,"brand":"Etoile (La speciale) (=Vapeur rousse )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":481,"brand":"Eupener caramel","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":482,"brand":"Eupener export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":483,"brand":"Eupener extra light","category":"34","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":484,"brand":"Eupener klosterbier special bock","category":"12","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":485,"brand":"Eupener pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":487,"brand":"Eurotica","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":488,"brand":"Ever","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":489,"brand":"Eylenbosch framboise lambic","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":490,"brand":"Eylenbosch gueuze lambic","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":491,"brand":"Eylenbosch kriek lambic","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":492,"brand":"Ezel (=Gapers bier)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":494,"brand":"Facon export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":495,"brand":"Facon extra stout","category":"49","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":496,"brand":"Facon oud bruin","category":"62","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":497,"brand":"Facon pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":498,"brand":"Facon scotch-christmas","category":"46","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":499,"brand":"Facon tafelbier blond","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":500,"brand":"Facon tafelbier bruin","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":503,"brand":"Fagnes (Blonde des)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":504,"brand":"Fagnes (Rousse des)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":505,"brand":"Fakir","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":508,"brand":"Fancy","category":"8","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":510,"brand":"Fantome","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":511,"brand":"Fantome brewery (The best of)","category":"36","alcohol":12.0,"price":3.26}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":512,"brand":"Fantome de noel","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":513,"brand":"Fantomette","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":516,"brand":"Felix kriekbier","category":"61","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":517,"brand":"Felix Oudenaards kriekbier","category":"61","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":518,"brand":"Felix Oudenaards oud bruin","category":"61","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":519,"brand":"Felix pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":520,"brand":"Felix speciaal Oudenaards","category":"61","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":522,"brand":"Feuilles Mortes (Les) (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":523,"brand":"Fiertelbier (=Kapittel abt (Het))","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":525,"brand":"Filee  (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":526,"brand":"Fink brau (=Premium pilsener)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":527,"brand":"Fink brau (=Wieze pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":528,"brand":"Fire fox","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":529,"brand":"Fitt","category":"2","alcohol":0.0,"price":3.57}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":530,"brand":"Flanders triple grand cru (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":532,"brand":"Flandrien","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":533,"brand":"Fleurie de Wanze","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":534,"brand":"Flierefluiter (Ne) (=Affligem blond (Abdij))","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":537,"brand":"Floreffe (Blanche de)","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":538,"brand":"Floreffe blonde","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":539,"brand":"Floreffe double","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":540,"brand":"Floreffe la meilleure","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":541,"brand":"Floreffe triple (=Bonne Esperance (Abbaye de))","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":542,"brand":"Florisgaarden chocolat","category":"53","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":543,"brand":"Florisgaarden fraises","category":"53","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":544,"brand":"Florisgaarden griotte","category":"53","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":545,"brand":"Florisgaarden ninkeberry","category":"53","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":546,"brand":"Florisgaarden passion","category":"53","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":547,"brand":"Florisgaarden witbier","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":548,"brand":"Florival blond (Abdij) (=Affligem blond (Abdij))","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":549,"brand":"Florival bruin (Abdij) (=Affligem dubbel (Abdij))","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":550,"brand":"Foire verte de l'eau d'heure cuvee speciale","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":552,"brand":"Follie  (=Vapeur legere)","category":"34","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":553,"brand":"Foret (=Dupont biologique (Saison))","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":554,"brand":"Foudroyante de Bruxelles (Blanche) (=Student)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":555,"brand":"Foudroyante framboise (=Lindemans framboise)","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":556,"brand":"Foudroyante gueuze (=Lindemans gueuze gefilterd)","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":557,"brand":"Foudroyante kriek (=Lindemans kriek)","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":558,"brand":"Foudroyante myrtille","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":559,"brand":"Foudroyante peche (=Pecheresse)","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":560,"brand":"Four chapitre  (=Floreffe blonde)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":565,"brand":"Francorchamps (Blanche de) (=Student)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":566,"brand":"Frenette","category":"8","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":567,"brand":"Freutche (=1900 (Saison))","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":568,"brand":"Frontaliere  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":569,"brand":"Fumee d'Anvers","category":"44","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":570,"brand":"Gaillarde de \"la Posterie\" cuvee spec. (=Bons voeux (Avec les -- de la brasserie))","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":571,"brand":"Gala pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":572,"brand":"Galmaarden dubbel Meesters bier","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":574,"brand":"Galmaarden tripel Meesters bier","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":575,"brand":"Gambrinus bock (=Sernia bock)","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":576,"brand":"Gambrinus pils (=Sernia pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":577,"brand":"Gapers bier","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":578,"brand":"Gauloise ambree","category":"6","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":579,"brand":"Gauloise blonde","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":580,"brand":"Gauloise brune","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":581,"brand":"Gaumaise blonde","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":582,"brand":"Gaumaise brune","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":583,"brand":"Gaverhopke ('t) blond","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":584,"brand":"Gaverhopke ('t) bruin 12","category":"36","alcohol":12.0,"price":3.26}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":585,"brand":"Gaverhopke ('t) bruin 8","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":586,"brand":"Gayette  (=St. Benoit brune)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":587,"brand":"GB special amber (=Op-ale)","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":588,"brand":"GB tafelbier tripel (=Bavaro)","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":591,"brand":"Geants (Speciale des) (=Bonne Esperance (Abbaye de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":592,"brand":"Geldonia blonde  (=St. Benoit blonde)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":593,"brand":"Geldonia brune  (=St. Benoit brune)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":594,"brand":"Gembloux (Biere de l'abbaye de) (=Bonne Esperance (Abbaye de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":595,"brand":"Gentse tripel","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":597,"brand":"Gigi double blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":598,"brand":"Gigi speciale","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":599,"brand":"Gildenbier","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":600,"brand":"Ginder ale","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":601,"brand":"Girardin framboise","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":602,"brand":"Girardin gueuze 1882","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":603,"brand":"Girardin kriek 1882","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":604,"brand":"Girardin kriekenlambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":605,"brand":"Girardin lambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":607,"brand":"Godefroy","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":608,"brand":"Godefroy premium pils (=Bel pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":609,"brand":"Goen (Ne) (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":610,"brand":"Goldburg","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":612,"brand":"Golden dragon beer (=Gulden Draak)","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":613,"brand":"Golden Kenia","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":614,"brand":"Golding Campina","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":617,"brand":"Gouden Carolus","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":620,"brand":"Gougnies  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":621,"brand":"Grand bi-ere de blondine","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":623,"brand":"Grande Axhoise","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":626,"brand":"Green's beer","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":628,"brand":"Grenadiere speciale ambree","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":629,"brand":"Grimbergen blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":630,"brand":"Grimbergen dubbel","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":631,"brand":"Grimbergen optimo bruno","category":"36","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":632,"brand":"Grimbergen tripel","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":633,"brand":"Grisette","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":634,"brand":"Grisette biere du cayoteu (=Super 64)","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":635,"brand":"Gueule noire  - Koempelbier (=Villers Saint-Ghislain brune (Speciale))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":636,"brand":"Gueuze framboisee des Ardennes (=Timmermans framboise lambic)","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":637,"brand":"Guillotine","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":638,"brand":"Gulden Draak","category":"36","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":639,"brand":"Guldenberg","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":641,"brand":"Haacht blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":642,"brand":"Haacht export (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":643,"brand":"Haacht pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":644,"brand":"Haecht witbier","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":645,"brand":"Halloween pumpkin ale (=Pumpkin ale)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":647,"brand":"Hanssens gueuze","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":648,"brand":"Hanssens kriek","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":649,"brand":"Hapkin","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":651,"brand":"Harelbekenaar van de abdijhoeve - pater (=Kapittel pater (Het))","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":652,"brand":"Harelbekenaar van de abdijhoeve - wit (=Watou's wit bier)","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":655,"brand":"Heerenbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":656,"brand":"Hei-kneuter","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":658,"brand":"Heliante","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":659,"brand":"Helios","category":"42","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":660,"brand":"Hellekapelle","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":661,"brand":"Helleketelbier","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":662,"brand":"Helles export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":664,"brand":"Hercule","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":665,"brand":"Hercule a Vapeur  (=Vapeur rousse )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":666,"brand":"Heren van Bets (De) (=Silly (Saison))","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":667,"brand":"Hertog Jan pilsener","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":668,"brand":"Hesbaye  ambree","category":"6","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":669,"brand":"Hesbaye  blanche","category":"53","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":670,"brand":"Hesbaye  blonde","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":671,"brand":"Hesbaye  brune","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":672,"brand":"Hesbaye  cuvee speciale","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":673,"brand":"Hesbaye  noire","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":675,"brand":"Hesbaye  saison","category":"45","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":677,"brand":"Heymissen dubbel (Abdijbier van)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":678,"brand":"Heymissen tripel (Abdijbier van)","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":682,"brand":"Hoekse witte","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":683,"brand":"Hoeve bier","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":684,"brand":"Hoge Bi-er","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":686,"brand":"Honnelles (Blanche des)","category":"53","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":687,"brand":"Hoofse gaffel (=Lamoral Degmont)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":688,"brand":"Hoppe ambachtelijke pils (=Sparta pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":689,"brand":"Horse ale","category":"6","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":690,"brand":"Hotteuse 5","category":"62","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":691,"brand":"Hotteuse grand cru","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":693,"brand":"Houlette  (=Regal (Saison))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":694,"brand":"Hure  (=Saxo)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":695,"brand":"Huyghe blond","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":696,"brand":"Huyghe bruin","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":697,"brand":"Huyghe export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":698,"brand":"Huyghe faro","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":699,"brand":"Ichtegem's oud bruin","category":"62","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":700,"brand":"Iguanodon (=Fakir)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":701,"brand":"Incartade  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":702,"brand":"Interpils (=Wieze pils)","category":"42","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":705,"brand":"Jack-Op","category":"60","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":709,"brand":"Jamelovienne  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":710,"brand":"Jan Buuc (=Katje special)","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":711,"brand":"Jan van Gent","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":716,"brand":"Jobarde (=Vapeur en folie )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":717,"brand":"John Martin's special","category":"6","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":720,"brand":"Joyeuse blonde  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":721,"brand":"Joyeuse brune  (=Moinette brune)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":723,"brand":"Judas","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":724,"brand":"Julius","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":725,"brand":"Jumeaux ambree (Biere des)","category":"6","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":726,"brand":"Jumeaux blonde (Biere des)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":727,"brand":"Jumelage (La biere du)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":729,"brand":"Jupiler","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":730,"brand":"Jupiler NA","category":"3","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":731,"brand":"K.I.H.O. X-mas blond","category":"33","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":732,"brand":"K.I.H.O. X-mas bruin","category":"14","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":737,"brand":"Kamilleken (=Lamoral Degmont)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":739,"brand":"Kapel van Schoor (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":740,"brand":"Kapittel abt (Het)","category":"36","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":741,"brand":"Kapittel dubbel (Het)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":742,"brand":"Kapittel pater (Het)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":743,"brand":"Kapittel prior (Het)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":744,"brand":"Karibik pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":745,"brand":"Karlsquell pils (=Kwik pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":746,"brand":"Karmeliet tripel","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":748,"brand":"Kasteel van Ramegnies-Chin (Bier v/h)","category":"36","alcohol":12.0,"price":3.26}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":749,"brand":"Kasteelbier gouden triple","category":"59","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":750,"brand":"Kasteelbier Ingelmunster","category":"36","alcohol":11.0,"price":3.16}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":751,"brand":"Kasteelbier Ooidonk (=Kasteelbier Ingelmunster)","category":"36","alcohol":11.0,"price":3.16}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":752,"brand":"Katje special","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":753,"brand":"Keerse tripel (=St. Sebastiaan grand cru)","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":754,"brand":"Keizersberg abdijbier (=Bornem tripel)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":755,"brand":"Kelmeser (Der blonde) (=Fakir)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":756,"brand":"Kelottes 75cl","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":757,"brand":"Kempenaar (Ne)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":758,"brand":"Kerelsbier donker (=Katje special)","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":759,"brand":"Kerelsbier licht (=Sasbrau)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":761,"brand":"Kerstbie(r)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":762,"brand":"Kerstbol","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":763,"brand":"Kerstklok","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":764,"brand":"Kerstpater","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":765,"brand":"Keyport beer (=Safir)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":766,"brand":"Keyser (=Pax pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":767,"brand":"Kilo (de)","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":768,"brand":"King's pils (=Facon pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":769,"brand":"Kirally (=Pipaix (Saison de))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":771,"brand":"Klinkaert","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":772,"brand":"Klooster Zusters Annonciaden (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":773,"brand":"Kluyserbier (=Poorter)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":774,"brand":"Kortessems blondje","category":"53","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":778,"brand":"Kronenbourg","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":779,"brand":"Kruger export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":780,"brand":"Kurstenbrau (=Vega pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":781,"brand":"Kuurnse bruine","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":782,"brand":"Kuurnse witte","category":"53","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":786,"brand":"Lamoral Degmont","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":787,"brand":"Lamoral tripel","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":788,"brand":"Lamot pilsor","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":789,"brand":"Laplaignoise  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":792,"brand":"Lazarus bier","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":793,"brand":"Lefebvre blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":794,"brand":"Lefebvre brune","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":795,"brand":"Lefebvre triple blonde","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":796,"brand":"Leffe birra rossa","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":797,"brand":"Leffe blonde","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":798,"brand":"Leffe brune","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":799,"brand":"Leffe radieuse","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":801,"brand":"Leffe vieille cuvee 8","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":802,"brand":"Lembeek's","category":"8","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":803,"brand":"Lentebier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":804,"brand":"Leroy blond","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":805,"brand":"Leroy bruin","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":806,"brand":"Leroy christmas","category":"46","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":807,"brand":"Leroy stout","category":"49","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":808,"brand":"Leuvendige witte (Nen)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":811,"brand":"Lichtervelds blond","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":812,"brand":"Liefmans frambozenbier","category":"61","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":813,"brand":"Liefmans gluhkriek","category":"61","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":814,"brand":"Liefmans goudenband","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":815,"brand":"Liefmans kriek","category":"61","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":816,"brand":"Liefmans odnar","category":"61","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":817,"brand":"Liefmans oud bruin","category":"61","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":818,"brand":"Limburgse witte","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":819,"brand":"Lindemans cassis","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":820,"brand":"Lindemans faro lambic","category":"54","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":821,"brand":"Lindemans framboise","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":822,"brand":"Lindemans gueuze gefilterd","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":823,"brand":"Lindemans gueuze ongefilterd","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":824,"brand":"Lindemans kriek","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":825,"brand":"Lindemans kriekenlambik","category":"56","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":826,"brand":"Lindemans lambik","category":"56","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":827,"brand":"Lion (Biere du)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":829,"brand":"Livinus blonde (=Kapittel abt (Het))","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":830,"brand":"Livinus brune (=Kapittel prior (Het))","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":831,"brand":"Loburg","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":833,"brand":"Lokernaere (E) (=Yperman)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":835,"brand":"Loteling blond","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":836,"brand":"Loteling bruin","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":837,"brand":"Loterbol","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":839,"brand":"Louvoise  (=St. Benoit blonde)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":840,"brand":"Louwaege dubbel blond","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":841,"brand":"Louwaege export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":842,"brand":"Louwaege faro","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":843,"brand":"Louwaege stout","category":"49","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":844,"brand":"Louwaege's pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":845,"brand":"Louwke Poep","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":846,"brand":"Lowiden","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":847,"brand":"Lowie Kators","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":848,"brand":"Lowie V (=Cnudde Oudenaards bruin)","category":"62","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":849,"brand":"Lucifer","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":854,"brand":"Maerlant (=Bornem tripel)","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":855,"brand":"Maes cool beer","category":"26","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":856,"brand":"Maes export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":857,"brand":"Maes pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":858,"brand":"Magonette","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":859,"brand":"Malmedy blonde (Biere speciale de) (=Floreffe blonde)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":860,"brand":"Malmedy brune (Biere speciale de) (=Floreffe double)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":861,"brand":"Malognarde blonde","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":862,"brand":"Malognarde brune  (=Reserve Marie de Hongrie)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":863,"brand":"Malonne (Abbaye de - Abdij van) bruin bier","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":864,"brand":"Maltosa","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":865,"brand":"Manneken Pis (=Oud Zottegems bier)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":866,"brand":"Manou des Sources (=Floreffe blonde)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":869,"brand":"Marchande tripel","category":"59","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":870,"brand":"Marckloff","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":871,"brand":"Marckloff Valentin","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":872,"brand":"Maredsous 10","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":873,"brand":"Maredsous 6 blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":874,"brand":"Maredsous 6 donker","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":875,"brand":"Maredsous 8","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":876,"brand":"Marlagne blanche","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":877,"brand":"Marlagne blonde","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":878,"brand":"Marquise","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":879,"brand":"Mars (Biere de)","category":"35","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":882,"brand":"Martens pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":883,"brand":"Martens tafelstout","category":"51","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":885,"brand":"Match blond tafelbier","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":886,"brand":"Match bruin tafelbier","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":887,"brand":"Match tripel tafelbier","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":888,"brand":"Mateen Belgian ale triple","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":889,"brand":"Mater wit bier","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":891,"brand":"Mc Chouffe","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":892,"brand":"Mc Ewans christmas","category":"46","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":893,"brand":"Mc Ewans scotch ale","category":"46","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":894,"brand":"Mc Gregor","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":895,"brand":"Mechelschen bruynen","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":897,"brand":"Meneer","category":"11","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":898,"brand":"Mengbier","category":"60","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":899,"brand":"Mengsel La Folie/Saison de Pipaix","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":900,"brand":"Menhir (Blonde du)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":901,"brand":"Mercator","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":903,"brand":"Minty","category":"33","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":904,"brand":"Miroir christmas","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":905,"brand":"Miroir paasbier","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":906,"brand":"Miroir speciale","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":907,"brand":"Miroir speciale dark","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":908,"brand":"Moeder Overste (=Bonne Esperance (Abbaye de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":909,"brand":"Moine (triple)","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":910,"brand":"Moinette biolegere/zacht","category":"8","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":911,"brand":"Moinette biologique","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":912,"brand":"Moinette blonde","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":913,"brand":"Moinette brune","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":914,"brand":"Moinette des iguanodons de Bernissart (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":915,"brand":"Moinette des Sorcieres de Warquignies  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":916,"brand":"Molenbier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":917,"brand":"Molenbier (=Bokkereyer)","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":918,"brand":"Molenbier (Tessenderlo) (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":922,"brand":"Moneuse","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":923,"brand":"Moneuse speciale noel","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":925,"brand":"Mont Saint-Aubert","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":926,"brand":"Montagnarde","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":927,"brand":"Mort Subite cassis","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":928,"brand":"Mort Subite framboise","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":929,"brand":"Mort Subite gueuze fond","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":930,"brand":"Mort Subite gueuze gefilterd","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":931,"brand":"Mort Subite kriek","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":932,"brand":"Mort Subite peche","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":934,"brand":"Munck pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":940,"brand":"N'Ice Chouffe","category":"36","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":941,"brand":"Namur (Blanche de)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":942,"brand":"Napoleon","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":943,"brand":"Nationale  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":944,"brand":"Neiges (Blanche des)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":945,"brand":"Neuvilloise","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":946,"brand":"Ninoviet (=Noel-christmas-Weihnacht)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":951,"brand":"Noel (Blanche de)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":952,"brand":"Noel (Speciale blanche)","category":"53","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":953,"brand":"Noel (Speciale)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":954,"brand":"Noel de Silenrieux","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":955,"brand":"Noel-christmas-Weihnacht","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":956,"brand":"Nonettes (Biere des)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":957,"brand":"Nostra Domus (Nen)","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":959,"brand":"Nounou (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":960,"brand":"O Mac Kot (Biere de Blaton) (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":961,"brand":"O'Connell's Dublin ale","category":"4","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":962,"brand":"Obigeoise","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":963,"brand":"Ochtend kriek (Nen)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":965,"brand":"Oelegems kruikenbier (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":966,"brand":"Oelegems Titsenbier (=Moinette biologique)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":967,"brand":"Oeral","category":"11","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":968,"brand":"Oerbier","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":971,"brand":"Old Musketeer","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":972,"brand":"Oliver Twist (Nen) (=Toison d'or (triple))","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":973,"brand":"Op-ale","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":974,"brand":"Ops-ale","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":975,"brand":"Oregon rodeo beer","category":"8","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":976,"brand":"Orval","category":"11","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":977,"brand":"Oud Beersel gueuze","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":978,"brand":"Oud Beersel lambik","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":979,"brand":"Oud Kriekenbier","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":980,"brand":"Oud Zottegems bier","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":981,"brand":"Oud Zottegems bier hergist","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":983,"brand":"Oudenaards wit tarwebier","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":984,"brand":"Oudenburgs abdijbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":985,"brand":"Oudenburgs bruin","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":986,"brand":"Oudenburgse tripel","category":"59","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":988,"brand":"Paasbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":990,"brand":"Pacques (Brassin de)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":993,"brand":"Palm (Dobbel)","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":994,"brand":"Palm (Speciale)","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":995,"brand":"Palm green","category":"3","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":997,"brand":"Paques (Biere de)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":998,"brand":"Paranoia groen","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":999,"brand":"nieuwe naam","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1001,"brand":"Parbo bier (=Pax pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1002,"brand":"Park (Abdij van 't) bruin","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1003,"brand":"Pastorijpoort Balen/Olmen (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1004,"brand":"Pater brune (=Maltosa)","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1008,"brand":"Pater Van Damme","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1009,"brand":"Paulus","category":"62","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1010,"brand":"Pauwel Kwak","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1011,"brand":"Pave de l'Ours (Le)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1012,"brand":"Pax pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1013,"brand":"Pecheresse","category":"31","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1014,"brand":"Pecheresse (Petite) (=Pecheresse)","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1015,"brand":"Pee Klak grand cru (=Zottegemse grand cru)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1016,"brand":"Pee Klak Moorsels bier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1017,"brand":"Pee Klak special","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1019,"brand":"Pellainoise","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1024,"brand":"Perle d'Hastiere  (=Bonne Esperance (Abbaye de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1025,"brand":"Pertotale faro","category":"19","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1026,"brand":"Peter Benoit","category":"14","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1029,"brand":"Petouille  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1030,"brand":"Petrus (Triple)","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1031,"brand":"Petrus oud bruin","category":"62","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1032,"brand":"Petrus speciale","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1034,"brand":"Pick-up pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1035,"brand":"Piedboeuf blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1036,"brand":"Piedboeuf blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1037,"brand":"Piedboeuf dubbel - foncee","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1038,"brand":"Piedboeuf dubbel - foncee","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1039,"brand":"Piedboeuf tripel - triple","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1041,"brand":"Pierreuse","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1043,"brand":"Pint pilsener (=Premium pilsener)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1044,"brand":"Pipaix (Saison de)","category":"45","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1046,"brand":"Pir'eye di Licint 6.5 (Li) (=Fakir)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1047,"brand":"Pir'eye di Licint 9 (Li) (=Reserve Marie de Hongrie)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1048,"brand":"Piraat","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1050,"brand":"Pissenlit","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1051,"brand":"Platzen pils (=Sernia pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1053,"brand":"Ploquette","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1054,"brand":"Poiluchette blanche de Thy  (=Neiges (Blanche des))","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1055,"brand":"Poiluchette blonde","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1056,"brand":"Poiluchette brune","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1057,"brand":"Polderbier bitter","category":"11","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1058,"brand":"Polderbier fruitig","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1060,"brand":"Pompeschitter (De)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1062,"brand":"Pontonnierke","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1063,"brand":"Pony stout","category":"49","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1064,"brand":"Poorter","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1065,"brand":"Poperings hommelbier","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1066,"brand":"Postel dobbel","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1067,"brand":"Postel kerstbier","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1068,"brand":"Postel tripel","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1069,"brand":"Praile (Blonde de la)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1071,"brand":"Praile (Saison de la)","category":"45","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1073,"brand":"Premium pilsener","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1074,"brand":"Prik pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1075,"brand":"Prima","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1076,"brand":"Primeur kriek","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1077,"brand":"Primus","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1078,"brand":"Prisma pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1079,"brand":"Prosit pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1081,"brand":"Pumpkin ale","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1082,"brand":"Punch blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1083,"brand":"Punch donker","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1084,"brand":"Quenast","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1085,"brand":"Queue de charrue","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1086,"brand":"Queue de charrue blonde (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1087,"brand":"Queue de chat","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1088,"brand":"Quintine","category":"11","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1090,"brand":"Quintine de noel","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1091,"brand":"Rabat  (=Mc Chouffe)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1092,"brand":"Rabenhaubt witbier (=Watou's wit bier)","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1093,"brand":"Rafexport","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1094,"brand":"Raisinoise","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1096,"brand":"Ras super pils (=Pax pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1101,"brand":"Redor pils","category":"42","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1102,"brand":"Regain (blanche)","category":"53","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1103,"brand":"Regal (Saison)","category":"45","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1104,"brand":"Regal christmas","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1105,"brand":"Reinaert amber","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1107,"brand":"Reinaert tripel","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1109,"brand":"Rendux ambree","category":"6","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1110,"brand":"Rendux brune","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1111,"brand":"Reserve Marie de Hongrie","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1112,"brand":"Reserve Marie de Hongrie speciale Noel","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1113,"brand":"Retro oude methode","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1114,"brand":"Ridder","category":"8","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1115,"brand":"Rijsel triple beer ambree (=Piraat)","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1116,"brand":"Riva baviere","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1117,"brand":"Riva bruine speciale","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1118,"brand":"Riva pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1119,"brand":"Riva triple abdij","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1120,"brand":"Roberg classic","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1121,"brand":"Roberg dark","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1122,"brand":"Roberg junior","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1123,"brand":"Rochefort 6","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1124,"brand":"Rochefort 8","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1125,"brand":"Rochefort 10","category":"36","alcohol":11.0,"price":3.16}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1126,"brand":"Rochefortoise ambree","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1127,"brand":"Rochefortoise blonde","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1129,"brand":"Rochelle","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1130,"brand":"Rochus","category":"14","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1131,"brand":"Rocs (Abbaye des)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1133,"brand":"Rocs speciale noel (Abbaye des)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1134,"brand":"Rodenbach","category":"62","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1135,"brand":"Rodenbach grand cru","category":"62","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1136,"brand":"Roman (Special)","category":"61","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1137,"brand":"Roman bleek","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1138,"brand":"Roman bruin","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1139,"brand":"Roman dobbelen bruinen","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1140,"brand":"Roman export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1141,"brand":"Roman Oudenaards","category":"61","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1142,"brand":"Romy luxe","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1143,"brand":"Romy pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1144,"brand":"Ronsies Bommelsbier (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1145,"brand":"Roosenberg (Abdij) (=Bornem tripel)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1146,"brand":"Rose de Gambrinus","category":"56","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1147,"brand":"Royal pils (=Riva pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1148,"brand":"Royal type ale","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1149,"brand":"Royale blonde","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1150,"brand":"Rubbel sexy lager","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1151,"brand":"Rubens gold","category":"33","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1152,"brand":"Rubens rood","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1153,"brand":"S-pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1154,"brand":"Safir","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1156,"brand":"Samson (L'ambree du)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1157,"brand":"Samwell pils (=Haacht pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1158,"brand":"San Michael triple","category":"59","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1159,"brand":"Sanctus","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1162,"brand":"Sas export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1163,"brand":"Sas pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1164,"brand":"Sasbrau","category":"13","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1168,"brand":"Saxo","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1169,"brand":"Scaldienne","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1170,"brand":"Schaerbeekoise","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1171,"brand":"Schavuit dubbel (=Bornem dubbel)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1172,"brand":"Schavuit tripel (=Bornem tripel)","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1174,"brand":"Schrans pater (De)","category":"51","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1175,"brand":"Schulten Brau","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1177,"brand":"Seigneurie  (=Floreffe blonde)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1179,"brand":"Serclaes (t')","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1180,"brand":"Sernia bock","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1181,"brand":"Sernia brune (=C.T.S. Scotch)","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1182,"brand":"Sernia pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1183,"brand":"Setz brau","category":"42","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1185,"brand":"Sexy dubbel lager","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1186,"brand":"Sezoens blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1187,"brand":"Sezoens Europe","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1188,"brand":"Sezoens quattro","category":"5","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1189,"brand":"Sherry Poesy old Beersel","category":"55","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1191,"brand":"Shopping (Blanche du) (=Charleroi (Blanche de))","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1192,"brand":"SI Boune blonde (=Moine (triple))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1193,"brand":"Si Boune brune (=St. Benoit brune)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1194,"brand":"Silbrau dort urtyp","category":"13","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1196,"brand":"Silly (Bock)","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1197,"brand":"Silly (Saison)","category":"45","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1198,"brand":"Silly (Scotch)","category":"46","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1199,"brand":"Silly pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1200,"brand":"Silly triple bock","category":"51","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1201,"brand":"Sinaaise bok (=Bornem tripel)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1202,"brand":"Sinpalsken","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1203,"brand":"Sioen Maeseycker kloosterbier","category":"36","alcohol":11.0,"price":3.16}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1206,"brand":"Ski-rodt biermuseum blonde (=St. Benoit blonde)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1207,"brand":"Ski-rodt biermuseum brune (=St. Benoit brune)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1208,"brand":"Slag lager pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1209,"brand":"Slaghmuylder's kerstbier","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1210,"brand":"Slaghmuylder's oud bier","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1211,"brand":"Slaghmuylder's paasbier","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1212,"brand":"Slaghmuylder's tafel hell","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1213,"brand":"Slijtersbier","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1214,"brand":"Sloeber","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1216,"brand":"Slypke  (=Kapittel pater (Het))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1217,"brand":"Smisje banaan ('t)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1218,"brand":"Smisje dubbel ('t)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1219,"brand":"Smisje honingbier blond ('t)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1220,"brand":"Smisje honingbier donker ('t)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1221,"brand":"Smokkelaar (De) (=St. Paul triple)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1222,"brand":"Snoek (=Vlotbier)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1223,"brand":"Soleilmont double","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1225,"brand":"Soy (Blanche de)","category":"53","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1226,"brand":"Spar pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1227,"brand":"Sparta pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1228,"brand":"Spijtighen spelduvel (Den)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1229,"brand":"St. Adriaan kruikenbier dark (=St. Sebastiaan dark)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1230,"brand":"St. Adriaan kruikenbier grand cru (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1231,"brand":"St. Adriaans kerstbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1232,"brand":"St. Adriaansbier","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1234,"brand":"St. Amandus blond Kortenbergs abdijbier","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1235,"brand":"St. Amandus bruin Kortenbergs abdijbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1236,"brand":"St. Arnoldus triple (=Riva triple abdij)","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1237,"brand":"St. Benoit blonde","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1238,"brand":"St. Benoit brune","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1239,"brand":"St. Benoit brune (brassin special)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1240,"brand":"St. Benoit triple","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1241,"brand":"St. Bernardus abt 12","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1242,"brand":"St. Bernardus blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1243,"brand":"St. Bernardus pater 6","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1244,"brand":"St. Bernardus prior 8","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1245,"brand":"St. Bernardus triple","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1246,"brand":"St. Berthuin brune","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1247,"brand":"St. Christophe blonde (=Villers-St. Ghislain blonde (Speciale))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1248,"brand":"St. Christophe brune (=Villers Saint-Ghislain brune (Speciale))","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1249,"brand":"St. Denise dark (=St. Sebastiaan dark)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1250,"brand":"St. Denise grand cru (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1252,"brand":"St. Feuillien blonde 1,5 l","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1254,"brand":"St. Feuillien brune 1,5 l","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1256,"brand":"St. Feuillien cuvee de noel (=Affligem christmas ale)","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1257,"brand":"St. Ghislain (Abbaye de) (=Beloeil (La biere de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1259,"brand":"St. Hermes abdijbier","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1261,"brand":"St. Hubert","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1264,"brand":"St. Idesbald blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1265,"brand":"St. Idesbald bruin","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1266,"brand":"St. Idesbald triple","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1267,"brand":"St. Jozef kriekenbier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1268,"brand":"St. Lamvinus","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1269,"brand":"St. Laurent double (=St. Paul double)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1270,"brand":"St. Laurent triple (=St. Paul triple)","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1271,"brand":"St. Leger (=Floreffe blonde)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1272,"brand":"St. Lenderik","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1273,"brand":"St. Louis cassis kir royal","category":"64","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1274,"brand":"St. Louis framboise","category":"64","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1275,"brand":"St. Louis gueuze fond tradition lambic","category":"65","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1276,"brand":"St. Louis gueuze lambic","category":"64","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1277,"brand":"St. Louis kriek lambic","category":"64","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1278,"brand":"St. Louis peche lambic","category":"64","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1279,"brand":"St. Monon ambree","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1281,"brand":"St. Paul blond","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1282,"brand":"St. Paul double","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1283,"brand":"St. Paul special","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1284,"brand":"St. Paul triple","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1285,"brand":"St. Quentin (Blanche de)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1286,"brand":"St. Quentin (Brune de)","category":"14","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1287,"brand":"St. Quentin (Brune de) (=St. Benoit brune (brassin special))","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1288,"brand":"St. Quirin blonde  (=Fakir)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1289,"brand":"St. Quirin brune  (=Reserve Marie de Hongrie)","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1290,"brand":"St. Sebastiaan dark","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1292,"brand":"St. Sebastiaan grand cru","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1294,"brand":"St.-Gabriel","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1295,"brand":"Stadhuis Lommel (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1296,"brand":"Star blond","category":"2","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1297,"brand":"Star bruin","category":"2","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1298,"brand":"Steedje kerstbier","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1299,"brand":"Steedje special","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1300,"brand":"Steedje tripel","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1302,"brand":"Steenbrugge blonde (Abdij)","category":"33","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1303,"brand":"Steenbrugge dubbel (Abdij)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1304,"brand":"Steenbrugge tripel (Abdij)","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1305,"brand":"Steendonk Brabants witbier","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1306,"brand":"Steenezel (=Piraat)","category":"21","alcohol":10.0,"price":3.06}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1309,"brand":"Steinbrau pils","category":"42","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1310,"brand":"Stella Artois","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1311,"brand":"Stella Artois dry","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1312,"brand":"Stella Artois light","category":"34","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1313,"brand":"Stella Artois NA","category":"3","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1314,"brand":"Ster ale","category":"6","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1316,"brand":"Stille Nacht","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1317,"brand":"Stoeren Bonk blond (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1318,"brand":"Stoeren Bonk donker (=Bornem dubbel)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1320,"brand":"Stropken","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1321,"brand":"Strubbe export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1322,"brand":"Strubbe faro","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1324,"brand":"Strubbe oud bier","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1325,"brand":"Strubbe pilsen","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1326,"brand":"Strubbe stout","category":"49","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1327,"brand":"Student","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1328,"brand":"Suma pils (=Sas pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1329,"brand":"Super 64","category":"33","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1330,"brand":"Super brune","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1331,"brand":"Super des Fagnes (=Moine (triple))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1333,"brand":"Super Houblo (=Bonne Esperance (Abbaye de))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1334,"brand":"Super pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1335,"brand":"Supra pils (=Safir)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1336,"brand":"Taupe (Biere de la) (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1337,"brand":"Taverne 't Brughuis - Muizen (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1338,"brand":"Taverne Old Time - Veltem (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1339,"brand":"Tea beer","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1340,"brand":"Ter Dolen","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1341,"brand":"Ter Dolen winterbier","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1343,"brand":"Teugelbier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1345,"brand":"Thimougienne","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1346,"brand":"Thouroutenaere (=Hapkin)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1348,"brand":"Tielts Tanneke (=Brunehaut villages blond)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1349,"brand":"Tilffoise","category":"6","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1350,"brand":"Timmermans blanche-wit lambic","category":"31","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1351,"brand":"Timmermans cassis lambic","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1352,"brand":"Timmermans faro lambic","category":"19","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1353,"brand":"Timmermans framboise lambic","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1354,"brand":"Timmermans gueuze caveau","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1355,"brand":"Timmermans gueuze lambic","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1356,"brand":"Timmermans kriek lambic","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1357,"brand":"Timmermans lambic","category":"56","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1358,"brand":"Timmermans Lambicus","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1359,"brand":"Timmermans peche lambic","category":"31","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1365,"brand":"Toine  (=St. Benoit blonde)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1366,"brand":"Toison d'or (triple)","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1367,"brand":"Tongerlo christmas","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1369,"brand":"Tongerlo dubbel","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1370,"brand":"Tongerlo dubbel blond","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1371,"brand":"Tongerlo tripel","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1372,"brand":"Tonneke","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1373,"brand":"Topmolen - Balen (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1374,"brand":"Torque de Frasnes","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1377,"brand":"Tourtel malt","category":"3","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1379,"brand":"Tradition des Moines blonde (=St. Benoit blonde)","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1380,"brand":"Tradition des Moines brune (=St. Benoit brune)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1381,"brand":"Trammelantbier","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1383,"brand":"Tremeloos Damiaanbier","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1384,"brand":"Trial","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1385,"brand":"Tricentenaire  (=St. Benoit blonde)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1388,"brand":"Triplor (family's beer)","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1389,"brand":"Troetsel-Niel pils (De)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1390,"brand":"Troublette","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1391,"brand":"Tuborg","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1392,"brand":"Tull bier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1393,"brand":"Turf (Nen) (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1394,"brand":"TV bier","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1396,"brand":"Ulricher lager","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1397,"brand":"Unic-bier","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1400,"brand":"Upper 19","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1401,"brand":"Vaartlander 25cl & vat","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1402,"brand":"Vaartlander 75cl","category":"21","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1403,"brand":"Vache (Biere) (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1404,"brand":"Val d'Heure blonde 25 cl (=Regal (Saison))","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1405,"brand":"Val d'Heure blonde 75cl (=Moine (triple))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1406,"brand":"Val d'Heure brune 25cl (=St. Benoit brune)","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1407,"brand":"Val d'Heure brune 75cl (=St. Benoit brune (brassin special))","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1409,"brand":"Val St. Lambert (Abbaye de) (=Moine (triple))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1410,"brand":"Val-Dieu (Triple de) (=Brigand)","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1413,"brand":"Vander Linden faro","category":"54","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1414,"brand":"Vander Linden frambozenbier","category":"55","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1415,"brand":"Vander Linden lambik","category":"56","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1419,"brand":"Vapeur legere","category":"8","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1420,"brand":"Vapeur rousse","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1421,"brand":"Vedett (=Bel pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1422,"brand":"Vega pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1423,"brand":"Veltems kruikje ('t) grand cru (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1425,"brand":"Vera dubbel blond","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1426,"brand":"Vera export","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1427,"brand":"Vera ouden bruinen","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1428,"brand":"Vera pils","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1429,"brand":"Vera special","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1430,"brand":"Verabrau urtyp","category":"13","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1432,"brand":"Verhaeghe echte kriek","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1433,"brand":"Verhaeghe triple blond","category":"51","alcohol":3.0,"price":2.35}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1434,"brand":"Verlinden extra bruin","category":"51","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1435,"brand":"Verlinden special blond","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1436,"brand":"Verne en folie  (=Vapeur en folie )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1437,"brand":"Verne rousse  (=Vapeur rousse )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1438,"brand":"Verrebroekse Flip (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1439,"brand":"Verte (tripel)","category":"59","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1440,"brand":"Very Diest","category":"51","alcohol":1.0,"price":2.14}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1441,"brand":"Vezonnoise  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1442,"brand":"Vi Keute di Nameur blonde (=Floreffe blonde)","category":"33","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1443,"brand":"Vi Keute di Nameur brune (=St. Benoit brune (brassin special))","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1444,"brand":"Vichtenaar","category":"62","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1446,"brand":"Vieille Bon-Secours blonde","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1448,"brand":"Vieille des Estinnes","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1449,"brand":"Vieille Salme","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1450,"brand":"Vieillotte du Hurlevent  (=Moinette blonde)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1451,"brand":"Vieux Bruges blanche (=Vlaamsch wit)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1452,"brand":"Vieux Bruges framboise (=St. Louis framboisee)","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1453,"brand":"Vieux Bruges gueuze lambic (=St. Louis gueuze lambic)","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1454,"brand":"Vieux Bruges kriek lambic (=St. Louis kriek lambic)","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1455,"brand":"Vieux Bruxelles gueuze lambic (=St. Louis gueuze lambic)","category":"22","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1456,"brand":"Vieux Bruxelles kriek lambic (=Wieze kriek lambic)","category":"22","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1457,"brand":"Vieux Foudre faro","category":"54","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1458,"brand":"Vieux Foudre gueuze","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1459,"brand":"Vieux Foudre kriek","category":"55","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1460,"brand":"Vieux Temps","category":"6","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1462,"brand":"Viking (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1463,"brand":"Vile Cinse (=St. Benoit brune)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1467,"brand":"Villers dubbel amber","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1468,"brand":"Villers Saint-Ghislain blonde (Speciale)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1469,"brand":"Villers Saint-Ghislain brune (Speciale)","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1470,"brand":"Villers triple","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1472,"brand":"Vitus spezialbier (=Villers Saint-Ghislain brune (Speciale))","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1473,"brand":"Vive vie  (=Mengsel La Folie/Saison de Pipaix)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1474,"brand":"Vlaamsch wit","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1475,"brand":"Vleteren alt","category":"5","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1476,"brand":"Vleteren super 8","category":"14","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1478,"brand":"Vondel","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1480,"brand":"Waas klokbier tripel","category":"59","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1482,"brand":"Waase witte","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1484,"brand":"Walrave export (=Pick-up pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1485,"brand":"Walrave extra tafelbier","category":"51","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1488,"brand":"Wastobbeke (=Couckelaerschen Doedel)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1489,"brand":"Watermolen (Balen) (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1490,"brand":"Watneys red barrel","category":"4","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1491,"brand":"Watneys scotch","category":"46","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1492,"brand":"Watou's wit bier","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1493,"brand":"Wellington red lion (=Watneys red barrel)","category":"4","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1494,"brand":"Wellington scotch ale (=Watneys scotch)","category":"46","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1495,"brand":"Wentelkriek (=Boon kriek)","category":"55","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1497,"brand":"West pils (=Sas pils)","category":"42","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1499,"brand":"Westmalle dubbel","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1500,"brand":"Westmalle tripel","category":"59","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1501,"brand":"Westvleteren 12","category":"36","alcohol":11.0,"price":3.16}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1502,"brand":"Westvleteren 4","category":"8","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1503,"brand":"Westvleteren 6","category":"14","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1504,"brand":"Westvleteren 8","category":"36","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1505,"brand":"Wevelgemse tripel","category":"59","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1507,"brand":"Whitbread extra stout","category":"49","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1508,"brand":"Whitbread pale ale","category":"4","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1509,"brand":"Wiel's (=Safir)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1510,"brand":"Wieze christmas","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1511,"brand":"Wieze export (=Wieze pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1512,"brand":"Wieze kriek lambic","category":"60","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1513,"brand":"Wieze pils","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1514,"brand":"Wieze scotch 1866","category":"46","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1516,"brand":"Wilson mild stout","category":"49","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1517,"brand":"Witkap pater dubbele pater","category":"14","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1518,"brand":"Witkap pater stimulo","category":"33","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1519,"brand":"Witkap pater tripel","category":"59","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1521,"brand":"Wittekop (=Dentergems witbier - Riva blanche)","category":"53","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1522,"brand":"Woise  (=Vapeur en folie )","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1524,"brand":"Wonder premium light beer","category":"34","alcohol":2.0,"price":2.24}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1525,"brand":"XX Bitter","category":"11","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1526,"brand":"Yersekes mosselbier","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1527,"brand":"Yperman","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1528,"brand":"Yves pils (=Super pils)","category":"42","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1529,"brand":"Zaal Kapelhof - Rillaar (=St. Sebastiaan grand cru)","category":"15","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1530,"brand":"Zafke (Blanche du) (=Student)","category":"53","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1531,"brand":"Zandberg brau","category":"13","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1532,"brand":"Zatte Bie (De)","category":"36","alcohol":9.0,"price":2.96}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1533,"brand":"Zedelgemse Martelaar (=Dikke Mathile)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1534,"brand":"Zelfde ('t)","category":"18","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1535,"brand":"Zerewever (=Gapers bier)","category":"18","alcohol":7.0,"price":2.75}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1537,"brand":"Zotskap (=Pater Lieven)","category":"18","alcohol":5.0,"price":2.55}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1538,"brand":"Zottegemse grand cru","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1539,"brand":"Zulte","category":"62","alcohol":4.0,"price":2.45}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1540,"brand":"Zwarte Flesch (=Lamoral Degmont)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1541,"brand":"Zwijntje (=Augustijn)","category":"15","alcohol":8.0,"price":2.86}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1542,"brand":"Zwintje","category":"6","alcohol":6.0,"price":2.65}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1543,"brand":"Zwoele Berten (=Bornem dubbel)","category":"14","alcohol":0.0,"price":2.04}
