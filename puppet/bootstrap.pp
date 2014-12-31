@@ -28,7 +28,14 @@ elasticsearch::instance { 'ord-02':
   config => { 'node.name' => 'dataNode-02' }
 }
 
-elasticsearch::plugin{'elasticsearch/marvel/latest':
+elasticsearch::plugin { 'elasticsearch/marvel/latest':
   module_dir => 'marvel',
   instances  => 'ord-01'
+}
+
+# import sample data into elasticsearch
+exec { 'import_sample_data':
+    command => "sleep 10s && curl -XPUT localhost:9200/_bulk --data-binary @beer.json",
+    cwd     => "/vagrant/sample_data",
+    require => Elasticsearch::Instance['ord-01']
 }
