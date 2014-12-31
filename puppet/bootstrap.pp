@@ -33,9 +33,14 @@ elasticsearch::plugin { 'elasticsearch/marvel/latest':
   instances  => 'ord-01'
 }
 
+# delete index before import
+exec { 'delete_index':
+    command => "sleep 10s && curl -XDELETE 'localhost:9200/inventory'",
+    require => Elasticsearch::Instance['ord-01']
+}
 # import sample data into elasticsearch
 exec { 'import_sample_data':
-    command => "sleep 10s && curl -XPUT localhost:9200/_bulk --data-binary @beer.json",
+    command => "curl -XPUT localhost:9200/_bulk --data-binary @beer.json",
     cwd     => "/vagrant/sample_data",
-    require => Elasticsearch::Instance['ord-01']
+    require => Exec['delete_index']
 }
