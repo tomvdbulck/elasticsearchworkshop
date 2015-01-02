@@ -32,6 +32,10 @@ elasticsearch::plugin { 'elasticsearch/marvel/latest':
   module_dir => 'marvel',
   instances  => 'ord-01'
 }
+elasticsearch::plugin { 'royrusso/elasticsearch-HQ':
+  module_dir  => 'HQ',
+  instances   => 'ord-01'
+}
 
 # delete index before import
 exec { 'delete_index':
