@@ -34,19 +34,20 @@ public class TransportClientFactory implements ClientFactory {
 
 	@Override
 	public Client getInstance() {
-		final Settings settings = ImmutableSettings.settingsBuilder()
-				.put("cluster.name", env.getProperty(CLUSTER_NAME))
-                .put("node.name", env.getProperty(NODE_NAME))
-				.build();
-		
-		String serverHost = env.getProperty(SERVER_HOST);
-		int serverPort = Integer.parseInt(env.getProperty(SERVER_PORT));
-		
-		client = new TransportClient(settings)
-				.addTransportAddress(new InetSocketTransportAddress(serverHost, serverPort));
-		
-		LOG.debug("Starting up Elasticsearch transport client...");
-		
+		if (client == null) {
+			final Settings settings = ImmutableSettings.settingsBuilder()
+					.put("cluster.name", env.getProperty(CLUSTER_NAME))
+	                .put("node.name", env.getProperty(NODE_NAME))
+					.build();
+			
+			String serverHost = env.getProperty(SERVER_HOST);
+			int serverPort = Integer.parseInt(env.getProperty(SERVER_PORT));
+			
+			client = new TransportClient(settings)
+					.addTransportAddress(new InetSocketTransportAddress(serverHost, serverPort));
+			
+			LOG.debug("Starting up Elasticsearch transport client...");
+		}
 		return client;
 	}
 
