@@ -9,10 +9,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import be.ordina.wes.core.config.ElasticsearchConfig;
 import be.ordina.wes.core.config.TestConfig;
 import be.ordina.wes.core.model.Beer;
 
@@ -25,7 +25,7 @@ public class IndexServiceTest {
 	private String indexName;
 	
 	@Autowired
-	private Environment env;
+	private ElasticsearchConfig esConfig;
     @Autowired
     private IndexService indexService;
     @Autowired
@@ -33,7 +33,7 @@ public class IndexServiceTest {
 
     @Before
     public void setUp() {
-    	indexName = env.getProperty("elasticsearch.index.name");
+    	indexName = esConfig.getIndexName();
     	
     	if (indexService.indexExists(indexName)) {
     		indexService.deleteIndex(indexName);

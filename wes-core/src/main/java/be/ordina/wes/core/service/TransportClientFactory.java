@@ -8,8 +8,9 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
+
+import be.ordina.wes.core.config.ElasticsearchConfig;
 
 /**
  * Factory for constructing an Elasticsearch transport client. 
@@ -22,26 +23,21 @@ public class TransportClientFactory implements ClientFactory {
 
 	private static final Logger LOG = LoggerFactory.getLogger(TransportClientFactory.class);
 
-	private static final String CLUSTER_NAME = "elasticsearch.cluster.name";
-	private static final String NODE_NAME = "elasticsearch.node.name";
-	private static final String SERVER_HOST = "elasticsearch.host";
-	private static final String SERVER_PORT = "elasticsearch.port";
-	
 	private Client client;
 	
 	@Autowired
-	private Environment env;
+	private ElasticsearchConfig esConfig;
 
 	@Override
 	public Client getInstance() {
 		if (client == null) {
 			final Settings settings = ImmutableSettings.settingsBuilder()
-					.put("cluster.name", env.getProperty(CLUSTER_NAME))
-	                .put("node.name", env.getProperty(NODE_NAME))
+					.put("cluster.name", esConfig.getClusterName())
+	                .put("node.name", esConfig.getNodeName())
 					.build();
 			
-			String serverHost = env.getProperty(SERVER_HOST);
-			int serverPort = Integer.parseInt(env.getProperty(SERVER_PORT));
+			String serverHost = esConfig.getServerHost();
+			int serverPort = esConfig.getServerPort();
 			
 			client = new TransportClient(settings)
 					.addTransportAddress(new InetSocketTransportAddress(serverHost, serverPort));

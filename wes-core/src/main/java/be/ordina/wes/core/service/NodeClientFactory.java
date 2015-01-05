@@ -8,8 +8,9 @@ import org.elasticsearch.node.NodeBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
+
+import be.ordina.wes.core.config.ElasticsearchConfig;
 
 /**
  * Factory for constructing an Elasticsearch node. 
@@ -22,29 +23,22 @@ public class NodeClientFactory implements ClientFactory {
 
 	private static final Logger LOG = LoggerFactory.getLogger(NodeClientFactory.class);
 
-	private static final String CLUSTER_NAME = "elasticsearch.cluster.name";
-	private static final String NODE_NAME = "elasticsearch.node.name";
-	private static final String NODE_MASTER = "elasticsearch.node.master";
-	private static final String NODE_LOCAL = "elasticsearch.node.local";
-	
 	private Node node;
 	
 	@Autowired
-	private Environment env;
+	private ElasticsearchConfig esConfig;
 	
 	@Override
 	public Client getInstance() {
 		if (node == null) {
 			final Settings settings = ImmutableSettings.settingsBuilder()
-	                .put("node.name", env.getProperty(NODE_NAME))
-	                .put("node.master", env.getProperty(NODE_MASTER))
+	                .put("node.name", esConfig.getNodeName())
+	                .put("node.master", esConfig.getNodeMaster())
 	                .build();
 
-			boolean clientNode = Boolean.getBoolean(env.getProperty(NODE_LOCAL));
-			
 			node = NodeBuilder.nodeBuilder()
-					.clusterName(env.getProperty(CLUSTER_NAME))
-					.client(clientNode)
+					.clusterName(esConfig.getClusterName())
+					.client(esConfig.isNodeLocal())
 					.settings(settings)
 					.node();
 			
