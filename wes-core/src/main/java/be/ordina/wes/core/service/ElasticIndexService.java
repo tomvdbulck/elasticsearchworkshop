@@ -20,9 +20,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Performs various operations on the indices
  */
 @Service
-public class IndexServiceImpl implements IndexService {
+public class ElasticIndexService implements IndexService {
 
-	private static final Logger LOG = LoggerFactory.getLogger(IndexServiceImpl.class);
+	private static final Logger LOG = LoggerFactory.getLogger(ElasticIndexService.class);
 	
     @Autowired
 	private Client client;

@@ -22,9 +22,9 @@ import be.ordina.wes.core.util.MappingUtil;
  * Performs search operations on the indices
  */
 @Service
-public class SearchServiceImpl<T> implements SearchService<T> {
+public class ElasticSearchService<T> implements SearchService<T> {
 
-	private static final Logger LOG = LoggerFactory.getLogger(SearchServiceImpl.class);
+	private static final Logger LOG = LoggerFactory.getLogger(ElasticSearchService.class);
 	
 	private static final int MAX_RESULTS = 100;
 	
