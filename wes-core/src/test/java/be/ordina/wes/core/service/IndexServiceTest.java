@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -19,9 +20,12 @@ import be.ordina.wes.core.model.Beer;
 @ContextConfiguration(classes = { TestConfig.class })
 public class IndexServiceTest {
 
-	private static final String INDEX_NAME = "inventory";
 	private static final String DOCUMENT_TYPE = "beer";
 	
+	private String indexName;
+	
+	@Autowired
+	private Environment env;
     @Autowired
     private IndexService indexService;
     @Autowired
@@ -29,34 +33,36 @@ public class IndexServiceTest {
 
     @Before
     public void setUp() {
-    	if (indexService.indexExists(INDEX_NAME)) {
-    		indexService.deleteIndex(INDEX_NAME);
+    	indexName = env.getProperty("elasticsearch.index.name");
+    	
+    	if (indexService.indexExists(indexName)) {
+    		indexService.deleteIndex(indexName);
     	}
     }
     
     @After
     public void tearDown() {
-    	if (indexService.indexExists(INDEX_NAME)) {
-            indexService.deleteIndex(INDEX_NAME);
+    	if (indexService.indexExists(indexName)) {
+            indexService.deleteIndex(indexName);
     	}
     }
 
 	@Test
 	public void testCreateDeleteIndex() {
-		Assert.assertFalse(indexService.indexExists(INDEX_NAME));
+		Assert.assertFalse(indexService.indexExists(indexName));
 		
-		indexService.createIndex(INDEX_NAME);
-		Assert.assertTrue(indexService.indexExists(INDEX_NAME));
+		indexService.createIndex(indexName);
+		Assert.assertTrue(indexService.indexExists(indexName));
 		
-		indexService.deleteIndex(INDEX_NAME);
-		Assert.assertFalse(indexService.indexExists(INDEX_NAME));
+		indexService.deleteIndex(indexName);
+		Assert.assertFalse(indexService.indexExists(indexName));
 	}
 	
 	@Test
 	public void testIndex() {
-		Assert.assertFalse(indexService.indexExists(INDEX_NAME));
+		Assert.assertFalse(indexService.indexExists(indexName));
 		
-		indexService.createIndex(INDEX_NAME);
+		indexService.createIndex(indexName);
 		
 		Beer beer = new Beer(2, "Duvel", "Amaï", "", 8.5, 4.55);
 		

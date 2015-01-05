@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -20,9 +21,12 @@ import be.ordina.wes.core.model.Beer;
 @ContextConfiguration(classes = { TestConfig.class })
 public class SearchServiceTest {
 
-	private static final String INDEX_NAME = "inventory";
 	private static final String DOCUMENT_TYPE_BEER = "beer";
 	
+	private String indexName;
+	
+	@Autowired
+	private Environment env;
     @Autowired
     private IndexService indexService;
     @Autowired
@@ -30,15 +34,17 @@ public class SearchServiceTest {
 
     @Before
     public void setUp() {
-    	if (indexService.indexExists(INDEX_NAME)) {
-    		indexService.deleteIndex(INDEX_NAME);
+    	indexName = env.getProperty("elasticsearch.index.name");
+    	
+    	if (indexService.indexExists(indexName)) {
+    		indexService.deleteIndex(indexName);
     	}
     }
     
     @After
     public void tearDown() {
-    	if (indexService.indexExists(INDEX_NAME)) {
-            indexService.deleteIndex(INDEX_NAME);
+    	if (indexService.indexExists(indexName)) {
+            indexService.deleteIndex(indexName);
     	}
     }
 
@@ -49,9 +55,9 @@ public class SearchServiceTest {
         beers.add(new Beer(1, "Grimbergen blond", "Alken", "Grimbergen is een Belgisch abdijbier. Het wordt gebrouwen door Alken-Maes te Alken.", 6, 2.65));
         beers.add(new Beer(2, "Duvel", "Amaï", "Duvel is een Belgisch blond speciaalbier van Brouwerij Duvel Moortgat uit Breendonk.", 8.5, 4.55));
         
-        indexService.createIndex(INDEX_NAME);
+        indexService.createIndex(indexName);
         
-        Assert.assertTrue(indexService.indexExists(INDEX_NAME));
+        Assert.assertTrue(indexService.indexExists(indexName));
         
         indexService.indexBulk(beers, DOCUMENT_TYPE_BEER);
         
