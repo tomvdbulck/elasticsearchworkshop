@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.elasticsearch.ElasticsearchException;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
+import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.Client;
 import org.slf4j.Logger;
@@ -89,5 +90,11 @@ public class ElasticIndexService implements IndexService {
 			LOG.error("Exception", e);
 		}
     }
+
+	@Override
+	public boolean remove(String docType, String id) {
+		DeleteResponse response = client.prepareDelete(esConfig.getIndexName(), docType, id).get();
+		return response.isFound();
+	}
     
 }

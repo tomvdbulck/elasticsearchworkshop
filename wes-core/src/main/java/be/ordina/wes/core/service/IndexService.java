@@ -15,6 +15,14 @@ public interface IndexService {
 	void index(Object object, String documentType);
 	
 	/**
+	 * Remove an object from the index
+	 * @param documentType Document type
+	 * @param id Document ID
+	 * @return true if a document was found to delete.
+	 */
+	boolean remove(String documentType, String id);
+	
+	/**
 	 * Do a bulk index
 	 * @param objectList A list of objects
 	 * @param documentType Document type
