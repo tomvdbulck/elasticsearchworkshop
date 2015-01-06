@@ -2,7 +2,6 @@ package be.ordina.wes.core.service;
 
 import java.util.List;
 
-import org.apache.commons.lang.StringUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -20,12 +19,13 @@ import be.ordina.wes.core.model.Beer;
 @ContextConfiguration(classes = { TestConfig.class })
 public class IndexServiceTest {
 
-	private static final String DOCUMENT_TYPE = "beer";
+	private static final String BEER_TYPE = "beer";
 	
 	private String indexName;
 	
 	@Autowired
 	private ElasticsearchConfig esConfig;
+	
     @Autowired
     private IndexService indexService;
     @Autowired
@@ -66,12 +66,12 @@ public class IndexServiceTest {
 		
 		Beer beer = new Beer(2, "Duvel", "Amaï", "", 8.5, 4.55);
 		
-		indexService.index(beer, DOCUMENT_TYPE);
+		indexService.index(beer, BEER_TYPE);
 		
 		// refresh index before performing search operations
 		indexService.refreshIndices();
 		
-		List<Beer> resultList = beerSearchService.find(StringUtils.EMPTY, DOCUMENT_TYPE, Beer.class);
+		List<Beer> resultList = beerSearchService.find("duvel", BEER_TYPE, Beer.class);
 		
 		Assert.assertEquals(1, resultList.size());
 	}

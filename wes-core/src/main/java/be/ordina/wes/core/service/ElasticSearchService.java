@@ -57,7 +57,11 @@ public class ElasticSearchService<T> implements SearchService<T> {
     private SearchRequestBuilder buildSearchRequest(String searchTerm, String documentType) {
         QueryBuilder query = buildQuery(searchTerm);
         String indexName = esConfig.getIndexName();
-        SearchRequestBuilder searchRequest = client.prepareSearch().setIndices(indexName).setTypes(documentType).setQuery(query).setSize(MAX_RESULTS);
+        SearchRequestBuilder searchRequest = client.prepareSearch()
+        		.setIndices(indexName)
+        		.setTypes(documentType)
+        		.setQuery(query)
+        		.setSize(MAX_RESULTS); // defaults to 10 search results
         
 		return searchRequest;
 	}

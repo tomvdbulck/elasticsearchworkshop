@@ -21,12 +21,13 @@ import be.ordina.wes.core.model.Beer;
 @ContextConfiguration(classes = { TestConfig.class })
 public class SearchServiceTest {
 
-	private static final String DOCUMENT_TYPE_BEER = "beer";
+	private static final String BEER_TYPE = "beer";
 	
 	private String indexName;
 	
 	@Autowired
 	private ElasticsearchConfig esConfig;
+	
     @Autowired
     private IndexService indexService;
     @Autowired
@@ -59,30 +60,32 @@ public class SearchServiceTest {
         
         Assert.assertTrue(indexService.indexExists(indexName));
         
-        indexService.indexBulk(beers, DOCUMENT_TYPE_BEER);
+        indexService.indexBulk(beers, BEER_TYPE);
         
         // refresh index before performing any searches, otherwise we'll get no results
         indexService.refreshIndices();
         
-        List<Beer> searchResults = beerSearchService.find("Duvel", DOCUMENT_TYPE_BEER, Beer.class);
+        List<Beer> searchResults = beerSearchService.find("Duvel", BEER_TYPE, Beer.class);
 		Assert.assertEquals(1, searchResults.size());
 
-        searchResults = beerSearchService.find("grimberg", DOCUMENT_TYPE_BEER, Beer.class);
+		// partial string shouldn't return any results
+        searchResults = beerSearchService.find("grimberg", BEER_TYPE, Beer.class);
         Assert.assertEquals(0, searchResults.size());
 
-        searchResults = beerSearchService.find("grimbergen", DOCUMENT_TYPE_BEER, Beer.class);
+        searchResults = beerSearchService.find("grimbergen", BEER_TYPE, Beer.class);
         Assert.assertEquals(1, searchResults.size());
 
-        searchResults = beerSearchService.find("blond", DOCUMENT_TYPE_BEER, Beer.class);
+        searchResults = beerSearchService.find("grimbergen duvel", BEER_TYPE, Beer.class);
         Assert.assertEquals(2, searchResults.size());
 
-        searchResults = beerSearchService.find("abdijbier", DOCUMENT_TYPE_BEER, Beer.class);
+        searchResults = beerSearchService.find("4.55", BEER_TYPE, Beer.class);
         Assert.assertEquals(1, searchResults.size());
 
-        searchResults = beerSearchService.find("belgisch", DOCUMENT_TYPE_BEER, Beer.class);
+        searchResults = beerSearchService.find("BELGISCH", BEER_TYPE, Beer.class);
         Assert.assertEquals(2, searchResults.size());
 
-        searchResults = beerSearchService.find(StringUtils.EMPTY, DOCUMENT_TYPE_BEER, Beer.class);
+        // check if empty string returns all results
+        searchResults = beerSearchService.find(StringUtils.EMPTY, BEER_TYPE, Beer.class);
         Assert.assertEquals(2, searchResults.size());
 	}
 
