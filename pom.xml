@@ -18,6 +18,7 @@
 	<modules>
 		<module>wes-core</module>
 		<module>wes-web</module>
+		<module>wes-exercises</module>
 	</modules>
 
     <properties>
