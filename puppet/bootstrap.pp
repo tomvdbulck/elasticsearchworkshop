@@ -39,7 +39,7 @@ elasticsearch::plugin { 'royrusso/elasticsearch-HQ':
 
 # delete index before import
 exec { 'delete_index':
-    command => "sleep 10s && curl -XDELETE 'localhost:9200/inventory'",
+    command => "sleep 10s && curl -XDELETE 'localhost:9200/inventory' && curl -XDELETE 'localhost:9200/person' && curl -XDELETE 'localhost:9200/twitter'",
     require => Elasticsearch::Instance['ord-01']
 }
 # import sample data into elasticsearch
