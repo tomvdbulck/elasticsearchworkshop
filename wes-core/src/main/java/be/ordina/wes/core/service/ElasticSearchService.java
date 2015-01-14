@@ -15,8 +15,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import be.ordina.wes.common.util.MappingUtil;
 import be.ordina.wes.core.config.ElasticsearchConfig;
-import be.ordina.wes.core.util.MappingUtil;
 
 /**
  * Performs search operations on the indices

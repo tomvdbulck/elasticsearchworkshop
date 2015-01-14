@@ -1,4 +1,4 @@
-package be.ordina.wes.core.util;
+package be.ordina.wes.common.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -34,13 +34,13 @@ public final class MappingUtil {
 		
         if (response != null) {
             for (SearchHit hit : response.getHits()) {
-			    results.add(getObject(hit, objectType));
+			    results.add(mapObject(hit, objectType));
 		    }
         }
 		return results;
 	}
 
-    private static <T> T getObject(SearchHit hit, Class<T> objectType) throws JsonParseException, JsonMappingException, IOException {
+    private static <T> T mapObject(SearchHit hit, Class<T> objectType) throws JsonParseException, JsonMappingException, IOException {
 		return MAPPER.readValue(hit.getSourceAsString(), objectType);
 	}
 

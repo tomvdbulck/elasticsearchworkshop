@@ -10,6 +10,12 @@
 	</parent>
 
 	<dependencies>
+		<!-- Project modules -->
+		<dependency>
+			<groupId>be.ordina.wes</groupId>
+			<artifactId>wes-common</artifactId>
+		</dependency>
+	
 		<!-- Elasticsearch -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

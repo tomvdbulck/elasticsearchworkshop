@@ -36,6 +36,11 @@
 		<dependencies>
 			<dependency>
 				<groupId>be.ordina.wes</groupId>
+				<artifactId>wes-common</artifactId>
+				<version>${project.parent.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>be.ordina.wes</groupId>
 				<artifactId>wes-core</artifactId>
 				<version>${project.parent.version}</version>
 			</dependency>
