@@ -16,6 +16,7 @@
 	</parent>
 	
 	<modules>
+		<module>wes-common</module>
 		<module>wes-core</module>
 		<module>wes-web</module>
 		<module>wes-exercises</module>
