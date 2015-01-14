@@ -16,7 +16,7 @@ public class Exercise2Test {
 
 	private static Client client;
 	
-	private int expectedPersonDocuments = 5000;
+	private final int expectedPersonDocuments = 5000;
 	
 	@BeforeClass
 	public static void setUp() {
@@ -27,10 +27,11 @@ public class Exercise2Test {
 	public static void tearDown() {
 		// delete all indices when we're done with tests
 		client.admin().indices().prepareDelete(PERSON_INDEX, TWITTER_INDEX).get();
-		
-		Exercise1.destroyInstance();
 	}
 	
+	/**
+	 * Test index creation
+	 */
 	@Test
 	public void testCreateIndex() {
 		Exercise2.createIndex();
@@ -39,6 +40,9 @@ public class Exercise2Test {
 		Assert.assertTrue(indexExists);
 	}
 	
+	/**
+	 * Test indexing one document
+	 */
 	@Test
 	public void testIndexOneDocument() throws IOException {
 		Exercise2.indexOneDocument();
@@ -52,6 +56,9 @@ public class Exercise2Test {
 		Assert.assertEquals(1, resultCount);
 	}
 	
+	/**
+	 * Test bulk indexing
+	 */
 	@Test
 	public void testIndexMultipleDocuments() throws Exception {
 		Exercise2.indexMultipleDocuments();
