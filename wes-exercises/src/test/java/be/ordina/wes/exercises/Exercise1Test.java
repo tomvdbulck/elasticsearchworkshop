@@ -5,7 +5,6 @@ import java.util.concurrent.ExecutionException;
 import org.elasticsearch.action.admin.cluster.health.ClusterHealthResponse;
 import org.elasticsearch.action.admin.cluster.health.ClusterHealthStatus;
 import org.elasticsearch.client.Client;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -17,11 +16,6 @@ public class Exercise1Test {
 	@BeforeClass
 	public static void setUp() {
 		client = Exercise1.getInstance();
-	}
-	
-	@AfterClass
-	public static void tearDown() {
-		Exercise1.destroyInstance();
 	}
 	
 	/**
