@@ -39,7 +39,8 @@ public class ElasticSearchService<T> implements SearchService<T> {
         List<T> resultList = new ArrayList<>();
 
         try {
-	        SearchRequestBuilder requestBuilder = buildSearchRequest(searchTerm, documentType);
+        	String indexName = esConfig.getIndexName();
+	        SearchRequestBuilder requestBuilder = buildSearchRequest(indexName, searchTerm, documentType);
 	        LOG.trace("Search request: \n{}", requestBuilder.toString());
 	        
 	        SearchResponse response = client.search(requestBuilder.request()).get();
@@ -53,10 +54,9 @@ public class ElasticSearchService<T> implements SearchService<T> {
 		
         return resultList;
     }
-
-    private SearchRequestBuilder buildSearchRequest(String searchTerm, String documentType) {
+	
+    private SearchRequestBuilder buildSearchRequest(String indexName, String searchTerm, String documentType) {
         QueryBuilder query = buildQuery(searchTerm);
-        String indexName = esConfig.getIndexName();
         SearchRequestBuilder searchRequest = client.prepareSearch()
         		.setIndices(indexName)
         		.setTypes(documentType)
