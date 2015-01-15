@@ -38,7 +38,7 @@ public class Exercise3 {
 		
 		SearchResponse response = client.search(request).get();
 		
-		List<Person> personList = MappingUtil.getObjects(response, Person.class);
+		List<Person> personList = MappingUtil.mapSearchResults(response, Person.class);
 		
 		return personList;
 	}

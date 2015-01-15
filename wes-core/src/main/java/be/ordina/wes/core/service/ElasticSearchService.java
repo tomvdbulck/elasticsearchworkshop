@@ -45,7 +45,7 @@ public class ElasticSearchService<T> implements SearchService<T> {
 	        SearchResponse response = client.search(requestBuilder.request()).get();
 			LOG.trace("Search response: \n{}", response.toString());
         
-			resultList = MappingUtil.getObjects(response, objectType);
+			resultList = MappingUtil.mapSearchResults(response, objectType);
 
 		} catch (InterruptedException | ExecutionException | IOException e) {
 			LOG.error("Exception", e);
