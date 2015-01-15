@@ -48,7 +48,7 @@ public class Exercise2Test {
 		Exercise2.indexOneDocument();
 		
 		// refresh the index prior to performing search operations
-		client.admin().indices().prepareRefresh().get();
+		Exercise2.refreshIndex();
 		
 		SearchResponse response = client.prepareSearch(TWITTER_INDEX).get();
 		long resultCount = response.getHits().getTotalHits();
@@ -67,7 +67,7 @@ public class Exercise2Test {
 		Assert.assertTrue(indexExists);
 		
 		// refresh the index prior to performing search operations
-		client.admin().indices().prepareRefresh().get();
+		Exercise2.refreshIndex();
 		
 		long docCount = client.prepareCount(PERSON_INDEX).get().getCount();
 		

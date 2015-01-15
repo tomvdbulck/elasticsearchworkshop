@@ -26,7 +26,7 @@ public class Exercise3 {
 		Exercise2.indexMultipleDocuments();
 		
 		// refresh the index prior to performing search operations
-		client.admin().indices().prepareRefresh().get();
+		Exercise2.refreshIndex();
 		
 		QueryBuilder query = QueryBuilders.matchQuery("name", "Scarlett");
 		

@@ -50,4 +50,11 @@ public class Exercise2 {
 		bulkRequest.get();
 	}
 	
+	/**
+	 * Explicitly refresh all indices (making the content 
+	 * indexed since the last refresh searchable).
+	 */
+	public static void refreshIndex() {
+		client.admin().indices().prepareRefresh().get();
+	}
 }
