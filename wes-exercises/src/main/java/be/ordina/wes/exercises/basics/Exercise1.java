@@ -40,6 +40,8 @@ public class Exercise1 {
 	
 	public static void destroyInstance() {
 		client.close();
+		
+		LOG.debug("Closing Elasticsearch transport client instance");
 	}
 
 }

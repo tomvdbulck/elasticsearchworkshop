@@ -7,6 +7,8 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import be.ordina.wes.common.util.MappingUtil;
 import be.ordina.wes.exercises.model.Person;
@@ -16,6 +18,8 @@ import be.ordina.wes.exercises.model.Person;
  * Searching data
  */
 public class Exercise3 {
+
+	private static final Logger LOG = LoggerFactory.getLogger(Exercise3.class);
 	
 	private static final String PERSON_INDEX = "person";
 	private static final int MAX_RESULTS = 50;
@@ -37,6 +41,8 @@ public class Exercise3 {
 				.request();
 		
 		SearchResponse response = client.search(request).get();
+		
+		LOG.trace("Search response: \n{}", response);
 		
 		List<Person> personList = MappingUtil.mapSearchResults(response, Person.class);
 		

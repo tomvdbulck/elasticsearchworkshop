@@ -11,12 +11,16 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import be.ordina.wes.common.util.MappingUtil;
 import be.ordina.wes.exercises.model.Person;
 
 public class Exercise4Test {
 
+	private static final Logger LOG = LoggerFactory.getLogger(Exercise4Test.class);
+	
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
 	private static final String PERSON_ID = "-QnBKlbHRPOO9pbebQMDjw";
@@ -52,6 +56,8 @@ public class Exercise4Test {
 				.request();
 		
 		SearchResponse searchResponse = client.search(searchRequest).get();
+		
+		LOG.trace("Search response: \n{}", searchResponse);
 		
 		List<Person> list = MappingUtil.mapSearchResults(searchResponse, Person.class);
 		Assert.assertTrue(list.size() == 1);

@@ -26,6 +26,8 @@ public class Exercise2 {
 	
 	public static void createIndex() {
 		client.admin().indices().prepareCreate(TWITTER_INDEX).get();
+		
+		LOG.info("Index with name '{}' successfully created", indexName);
 	}
 	
 	public static void indexOneDocument() throws IOException {
@@ -36,7 +38,7 @@ public class Exercise2 {
 				.setSource(jsonDocument)
 				.get();
 
-		LOG.info("indexing '{}' type object into '{}' index", TWEET_TYPE, TWITTER_INDEX);
+		LOG.info("indexing '{}' type document into '{}' index", TWEET_TYPE, TWITTER_INDEX);
 	}
 	
 	public static void indexMultipleDocuments() throws Exception {

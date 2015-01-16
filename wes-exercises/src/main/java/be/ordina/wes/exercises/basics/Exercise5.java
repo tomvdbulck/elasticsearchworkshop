@@ -3,6 +3,8 @@ package be.ordina.wes.exercises.basics;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.client.Client;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Exercise #5:
@@ -10,6 +12,8 @@ import org.elasticsearch.client.Client;
  */
 public class Exercise5 {
 
+	private static final Logger LOG = LoggerFactory.getLogger(Exercise5.class);
+	
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
 	
@@ -27,7 +31,15 @@ public class Exercise5 {
 				.setId(documentId)
 				.get();
 		
-		return response.isFound();
+		boolean documentDeleted = response.isFound();
+		
+		if (documentDeleted) {
+			LOG.info("Document with ID '{}' successfully deleted", documentId);
+		} else {
+			LOG.error("Document with ID '{}' not found", documentId);
+		}
+		
+		return documentDeleted;
 	}
 	
 	/**
@@ -38,7 +50,15 @@ public class Exercise5 {
 	public static boolean deleteIndex(String indexName) {
 		DeleteIndexResponse response = client.admin().indices().prepareDelete(indexName).get();
 		
-		return response.isAcknowledged();
+		boolean indexDeleted = response.isAcknowledged();
+		
+		if (indexDeleted) {
+			LOG.info("Index with name '{}' successfully deleted", indexName);
+		} else {
+			LOG.error("Failed to deleted index with name '{}'", indexName);
+		}
+		
+		return indexDeleted;
 	}
 	
 }

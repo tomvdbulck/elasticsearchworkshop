@@ -6,12 +6,16 @@ import java.util.concurrent.ExecutionException;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.xcontent.XContentFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Exercise #4:
  * Updating data
  */
 public class Exercise4 {
+
+	private static final Logger LOG = LoggerFactory.getLogger(Exercise4.class);
 	
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
