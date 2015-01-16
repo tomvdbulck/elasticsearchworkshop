@@ -31,7 +31,7 @@ public class Exercise5Test {
 	
 	@AfterClass
 	public static void tearDown() {
-		client.admin().indices().prepareDelete(PERSON_INDEX).get();
+		Exercise2.deleteIndex(PERSON_INDEX);
 	}
 	
 	/**
@@ -59,23 +59,5 @@ public class Exercise5Test {
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
 		Assert.assertTrue(list.isEmpty());
-	}
-	
-	/**
-	 * Test index deletion
-	 */
-	@Test
-	public void testDeleteIndex() {
-		Exercise2.createIndex(TWITTER_INDEX);
-		
-		boolean indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
-		Assert.assertTrue(indexExists);
-		
-		boolean indexDeleted = Exercise5.deleteIndex(TWITTER_INDEX);
-		Assert.assertTrue(indexDeleted);
-		
-		indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
-		
-		Assert.assertFalse(indexExists);
 	}
 }

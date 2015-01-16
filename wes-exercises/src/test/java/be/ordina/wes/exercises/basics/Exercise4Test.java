@@ -36,7 +36,7 @@ public class Exercise4Test {
 	
 	@AfterClass
 	public static void tearDown() {
-		client.admin().indices().prepareDelete(PERSON_INDEX).get();
+		Exercise2.deleteIndex(PERSON_INDEX);
 	}
 	
 	/**

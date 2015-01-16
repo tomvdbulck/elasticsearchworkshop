@@ -26,7 +26,7 @@ public class Exercise3Test {
 	@AfterClass
 	public static void tearDown() {
 		// delete the index when we're done with tests
-		client.admin().indices().prepareDelete(PERSON_INDEX).get();
+		Exercise2.deleteIndex(PERSON_INDEX);
 	}
 	
 	/**

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.client.Client;
 import org.slf4j.Logger;
@@ -23,12 +24,6 @@ public class Exercise2 {
 	private static final String TWEET_TYPE = "tweet";
 	
 	private static Client client = Exercise1.getInstance();
-	
-	public static void createIndex(String indexName) {
-		client.admin().indices().prepareCreate(indexName).get();
-		
-		LOG.info("Index with name '{}' successfully created", indexName);
-	}
 	
 	public static void indexOneDocument() throws IOException {
 		// read data from JSON file
@@ -50,6 +45,34 @@ public class Exercise2 {
         
 		// perform the bulk operation
 		bulkRequest.get();
+	}
+
+	/**
+	 * Create an index
+	 * @param indexName Index to create
+	 */
+	public static void createIndex(String indexName) {
+		client.admin().indices().prepareCreate(indexName).get();
+		
+		LOG.info("Index with name '{}' successfully created", indexName);
+	}
+	
+	/**
+	 * Delete an index
+	 * @param indexName Index to delete
+	 * @return true if the response is acknowledged
+	 */
+	public static boolean deleteIndex(String indexName) {
+		DeleteIndexResponse response = client.admin().indices().prepareDelete(indexName).get();
+		
+		boolean indexDeleted = response.isAcknowledged();
+		
+		if (indexDeleted) {
+			LOG.info("Index with name '{}' successfully deleted", indexName);
+		} else {
+			LOG.error("Failed to deleted index with name '{}'", indexName);
+		}
+		return indexDeleted;
 	}
 	
 	/**

@@ -26,7 +26,8 @@ public class Exercise2Test {
 	@AfterClass
 	public static void tearDown() {
 		// delete all indices when we're done with tests
-		client.admin().indices().prepareDelete(PERSON_INDEX, TWITTER_INDEX).get();
+		Exercise2.deleteIndex(TWITTER_INDEX);
+		Exercise2.deleteIndex(PERSON_INDEX);
 	}
 	
 	/**
@@ -73,5 +74,22 @@ public class Exercise2Test {
 		
 		Assert.assertEquals(expectedPersonDocuments, docCount);
 	}
-	
+
+	/**
+	 * Test index deletion
+	 */
+	@Test
+	public void testDeleteIndex() {
+		Exercise2.createIndex(TWITTER_INDEX);
+		
+		boolean indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
+		Assert.assertTrue(indexExists);
+		
+		boolean indexDeleted = Exercise2.deleteIndex(TWITTER_INDEX);
+		Assert.assertTrue(indexDeleted);
+		
+		indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
+		
+		Assert.assertFalse(indexExists);
+	}
 }
