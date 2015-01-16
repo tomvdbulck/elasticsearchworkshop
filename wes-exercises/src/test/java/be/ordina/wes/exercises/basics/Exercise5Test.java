@@ -1,4 +1,4 @@
-package be.ordina.wes.exercises;
+package be.ordina.wes.exercises.basics;
 
 import java.util.List;
 
@@ -15,15 +15,14 @@ import org.junit.Test;
 import be.ordina.wes.common.util.MappingUtil;
 import be.ordina.wes.exercises.model.Person;
 
-public class Exercise4Test {
+public class Exercise5Test {
 
+	private static final String TWITTER_INDEX = "twitter";
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
 	private static final String PERSON_ID = "-QnBKlbHRPOO9pbebQMDjw";
-	
+
 	private static Client client;
-	
-	private final Integer expectedChildren = 4;
 	
 	@BeforeClass
 	public static void setUp() {
@@ -36,28 +35,47 @@ public class Exercise4Test {
 	}
 	
 	/**
-	 * Test updating documents
+	 * Test document deletion
 	 */
 	@Test
-	public void testUpdatePerson() throws Exception {
+	public void testDeletePerson() throws Exception {
 		Exercise2.indexMultipleDocuments();
-		Exercise4.updatePerson();
+		
+		boolean isDeleted = Exercise5.deletePerson(PERSON_ID);
+		
+		Assert.assertTrue(isDeleted);
+		
 		Exercise2.refreshIndex();
 		
 		QueryBuilder query = QueryBuilders.idsQuery(PERSON_TYPE).ids(PERSON_ID);
 		
-		SearchRequest searchRequest = client.prepareSearch()
+		SearchRequest request = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
 				.setQuery(query)
 				.request();
 		
-		SearchResponse searchResponse = client.search(searchRequest).get();
+		SearchResponse response = client.search(request).get();
 		
-		List<Person> list = MappingUtil.mapSearchResults(searchResponse, Person.class);
-		Assert.assertTrue(list.size() == 1);
+		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
-		Person updatedPerson = list.get(0);
-		Assert.assertEquals(expectedChildren, updatedPerson.getChildren());
+		Assert.assertTrue(list.isEmpty());
 	}
 	
+	/**
+	 * Test index deletion
+	 */
+	@Test
+	public void testDeleteIndex() {
+		Exercise2.createIndex();
+		
+		boolean indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
+		Assert.assertTrue(indexExists);
+		
+		boolean indexDeleted = Exercise5.deleteIndex(TWITTER_INDEX);
+		Assert.assertTrue(indexDeleted);
+		
+		indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
+		
+		Assert.assertFalse(indexExists);
+	}
 }

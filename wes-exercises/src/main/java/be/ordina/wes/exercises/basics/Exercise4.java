@@ -1,4 +1,4 @@
-package be.ordina.wes.exercises;
+package be.ordina.wes.exercises.basics;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;

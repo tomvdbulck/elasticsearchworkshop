@@ -1,4 +1,4 @@
-package be.ordina.wes.exercises;
+package be.ordina.wes.exercises.basics;
 
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;

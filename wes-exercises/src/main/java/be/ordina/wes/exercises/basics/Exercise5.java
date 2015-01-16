@@ -1,4 +1,4 @@
-package be.ordina.wes.exercises;
+package be.ordina.wes.exercises.basics;
 
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.delete.DeleteResponse;
