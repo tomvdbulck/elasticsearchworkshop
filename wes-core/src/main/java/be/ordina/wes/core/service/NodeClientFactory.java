@@ -55,14 +55,10 @@ public class NodeClientFactory implements ClientFactory {
 
 	@Override
 	public void destroyInstance() {
-        try {
-        	String nodeName = node.settings().get("name");
-            LOG.info("Closing ElasticSearch node [{}]", nodeName);
-            
-            node.close();
-	    } catch (final Exception e) {
-	    	LOG.error("Error closing Elasticsearch node", e);
-	    }
+    	String nodeName = node.settings().get("name");
+        LOG.info("Closing ElasticSearch node [{}]", nodeName);
+        
+        node.close();
 	}
 
 }

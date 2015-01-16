@@ -41,10 +41,10 @@ public class ElasticSearchService<T> implements SearchService<T> {
         try {
         	String indexName = esConfig.getIndexName();
 	        SearchRequestBuilder requestBuilder = buildSearchRequest(indexName, searchTerm, documentType);
-	        LOG.trace("Search request: \n{}", requestBuilder.toString());
+	        LOG.trace("Search request: \n{}", requestBuilder);
 	        
 	        SearchResponse response = client.search(requestBuilder.request()).get();
-			LOG.trace("Search response: \n{}", response.toString());
+			LOG.trace("Search response: \n{}", response);
         
 			resultList = MappingUtil.mapSearchResults(response, objectType);
 

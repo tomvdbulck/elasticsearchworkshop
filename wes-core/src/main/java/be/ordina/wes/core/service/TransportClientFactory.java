@@ -49,13 +49,9 @@ public class TransportClientFactory implements ClientFactory {
 
 	@Override
 	public void destroyInstance() {
-        try {
-            LOG.debug("Closing ElasticSearch transport client");
-            
-            client.close();
-	    } catch (final Exception e) {
-	    	LOG.error("Error closing Elasticsearch transport client", e);
-	    }
+        LOG.debug("Closing ElasticSearch transport client");
+        
+        client.close();
 	}
 
 }
