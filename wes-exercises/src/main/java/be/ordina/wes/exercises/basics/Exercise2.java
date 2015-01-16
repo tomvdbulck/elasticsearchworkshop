@@ -24,8 +24,8 @@ public class Exercise2 {
 	
 	private static Client client = Exercise1.getInstance();
 	
-	public static void createIndex() {
-		client.admin().indices().prepareCreate(TWITTER_INDEX).get();
+	public static void createIndex(String indexName) {
+		client.admin().indices().prepareCreate(indexName).get();
 		
 		LOG.info("Index with name '{}' successfully created", indexName);
 	}

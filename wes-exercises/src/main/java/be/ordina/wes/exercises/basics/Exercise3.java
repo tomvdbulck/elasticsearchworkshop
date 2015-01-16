@@ -3,6 +3,7 @@ package be.ordina.wes.exercises.basics;
 import java.util.List;
 
 import org.elasticsearch.action.search.SearchRequest;
+import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilder;
@@ -26,19 +27,17 @@ public class Exercise3 {
 
 	private static Client client = Exercise1.getInstance();
 	
-	public static List<Person> searchPersons() throws Exception {
-		Exercise2.indexMultipleDocuments();
+	public static List<Person> searchPerson(String field, String value) throws Exception {
+		QueryBuilder query = QueryBuilders.matchQuery(field, value);
 		
-		// refresh the index prior to performing search operations
-		Exercise2.refreshIndex();
-		
-		QueryBuilder query = QueryBuilders.matchQuery("name", "Scarlett");
-		
-		SearchRequest request = client.prepareSearch()
+		SearchRequestBuilder requestBuilder = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
 				.setSize(MAX_RESULTS)
-				.setQuery(query)
-				.request();
+				.setQuery(query);
+		
+		LOG.trace("Search request: \n{}", requestBuilder);
+		
+		SearchRequest request = requestBuilder.request();
 		
 		SearchResponse response = client.search(request).get();
 		

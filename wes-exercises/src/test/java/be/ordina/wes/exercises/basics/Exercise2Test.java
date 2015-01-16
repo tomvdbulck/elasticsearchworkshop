@@ -34,7 +34,7 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testCreateIndex() {
-		Exercise2.createIndex();
+		Exercise2.createIndex(TWITTER_INDEX);
 		
 		boolean indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
 		Assert.assertTrue(indexExists);

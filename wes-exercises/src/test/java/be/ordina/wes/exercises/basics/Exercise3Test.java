@@ -34,7 +34,14 @@ public class Exercise3Test {
 	 */
 	@Test
 	public void testSearchPerson() throws Exception {
-		List<Person> list = Exercise3.searchPersons();
+		Exercise2.indexMultipleDocuments();
+		
+		// refresh the index prior to performing search operations
+		Exercise2.refreshIndex();
+		
+		String field = "name";
+		String value = "Scarlett";
+		List<Person> list = Exercise3.searchPerson(field, value);
 		
 		Assert.assertEquals(expectedResultCount, list.size());
 	}

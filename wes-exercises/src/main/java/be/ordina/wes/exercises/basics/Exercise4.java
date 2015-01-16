@@ -19,22 +19,29 @@ public class Exercise4 {
 	
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
-	private static final String PERSON_ID = "-QnBKlbHRPOO9pbebQMDjw";
 	
 	private static Client client = Exercise1.getInstance();
 	
-	public static void updatePerson() throws IOException, InterruptedException, ExecutionException {
+	/**
+	 * Updates a person document
+	 * @param documentId ID of the document
+	 * @param field Field to update
+	 * @param value New value to store
+	 */
+	public static void updatePerson(String documentId, String field, Object value) throws IOException, InterruptedException, ExecutionException {
 		UpdateRequest updateRequest = new UpdateRequest();
 		updateRequest.index(PERSON_INDEX);
 		updateRequest.type(PERSON_TYPE);
-		updateRequest.id(PERSON_ID);
+		updateRequest.id(documentId);
 		
 		updateRequest.doc(XContentFactory.jsonBuilder()
 		        .startObject()
-	            	.field("children", 4)
+	            	.field(field, value)
 	            .endObject());
 		
 		client.update(updateRequest).get();
+		
+		LOG.debug("Updating document of type '{}' with ID '{}'", PERSON_TYPE, documentId);
 	}
 	
 }

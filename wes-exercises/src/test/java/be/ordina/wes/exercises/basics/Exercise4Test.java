@@ -45,7 +45,11 @@ public class Exercise4Test {
 	@Test
 	public void testUpdatePerson() throws Exception {
 		Exercise2.indexMultipleDocuments();
-		Exercise4.updatePerson();
+		
+		String field = "children";
+		int value = 4;
+		Exercise4.updatePerson(PERSON_ID, field, value);
+		
 		Exercise2.refreshIndex();
 		
 		QueryBuilder query = QueryBuilders.idsQuery(PERSON_TYPE).ids(PERSON_ID);
