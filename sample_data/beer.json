@@ -2432,3 +2432,5 @@
 {"id":1542,"brand":"Zwintje","category":"6","alcohol":6.0,"price":2.65}
 { "index" : { "_index" : "inventory", "_type" : "beer" } }
 {"id":1543,"brand":"Zwoele Berten (=Bornem dubbel)","category":"14","alcohol":0.0,"price":2.04}
+{ "index" : { "_index" : "inventory", "_type" : "beer" } }
+{"id":1545,"brand":"Scarlett Red Rye","category":"69","alcohol":5.5,"price":2.90}

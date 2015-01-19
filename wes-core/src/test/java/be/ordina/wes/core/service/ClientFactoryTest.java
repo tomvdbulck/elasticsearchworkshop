@@ -18,7 +18,7 @@ public class ClientFactoryTest {
 
 	private static final String IMPORTED_INDEX = "inventory";
 	
-	private final int expectedDocumentCount = 1217;
+	private final int expectedDocumentCount = 1218;
 	
 	@Autowired
 	private Client client;
