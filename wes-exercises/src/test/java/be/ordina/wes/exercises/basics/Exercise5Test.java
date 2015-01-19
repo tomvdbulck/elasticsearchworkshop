@@ -17,7 +17,6 @@ import be.ordina.wes.exercises.model.Person;
 
 public class Exercise5Test {
 
-	private static final String TWITTER_INDEX = "twitter";
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
 	private static final String PERSON_ID = "-QnBKlbHRPOO9pbebQMDjw";
