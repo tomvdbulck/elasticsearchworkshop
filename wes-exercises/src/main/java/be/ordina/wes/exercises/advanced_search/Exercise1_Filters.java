@@ -57,8 +57,8 @@ public class Exercise1_Filters {
 	public static SearchResponse searchPersonByCity(String gender, int children, String city) throws InterruptedException, ExecutionException {
 		BoolFilterBuilder boolFilter = FilterBuilders.boolFilter()
 				.must(FilterBuilders.termFilter(GENDER_FIELD, gender))
-				.must(FilterBuilders.termFilter(CITY_FIELD, city.toLowerCase()))
-				.must(FilterBuilders.termFilter(CHILDREN_FIELD, children));
+				.must(FilterBuilders.termFilter(CHILDREN_FIELD, children))
+				.must(FilterBuilders.termFilter(CITY_FIELD, city.toLowerCase()));
 		
 		return buildSearchQuery(boolFilter);
 	}

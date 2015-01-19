@@ -82,4 +82,13 @@ public class Exercise2 {
 	public static void refreshIndex() {
 		client.admin().indices().prepareRefresh().get();
 	}
+	
+	/**
+	 * Check if index exists
+	 * @param indexName The index name
+	 * @return true if index exists
+	 */
+	public static boolean indexExists(String indexName) {
+		return client.admin().indices().prepareExists(indexName).get().isExists();
+	}
 }

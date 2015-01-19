@@ -35,10 +35,11 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testCreateIndex() {
+		Assert.assertFalse(Exercise2.indexExists(TWITTER_INDEX));
+		
 		Exercise2.createIndex(TWITTER_INDEX);
 		
-		boolean indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
-		Assert.assertTrue(indexExists);
+		Assert.assertTrue(Exercise2.indexExists(TWITTER_INDEX));
 	}
 	
 	/**
@@ -64,8 +65,7 @@ public class Exercise2Test {
 	public void testIndexMultipleDocuments() throws Exception {
 		Exercise2.indexMultipleDocuments();
 		
-		boolean indexExists = client.admin().indices().prepareExists(PERSON_INDEX).get().isExists();
-		Assert.assertTrue(indexExists);
+		Assert.assertTrue(Exercise2.indexExists(PERSON_INDEX));
 		
 		// refresh the index prior to performing search operations
 		Exercise2.refreshIndex();
@@ -82,14 +82,11 @@ public class Exercise2Test {
 	public void testDeleteIndex() {
 		Exercise2.createIndex(TWITTER_INDEX);
 		
-		boolean indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
-		Assert.assertTrue(indexExists);
+		Assert.assertTrue(Exercise2.indexExists(TWITTER_INDEX));
 		
 		boolean indexDeleted = Exercise2.deleteIndex(TWITTER_INDEX);
 		Assert.assertTrue(indexDeleted);
 		
-		indexExists = client.admin().indices().prepareExists(TWITTER_INDEX).get().isExists();
-		
-		Assert.assertFalse(indexExists);
+		Assert.assertFalse(Exercise2.indexExists(TWITTER_INDEX));
 	}
 }

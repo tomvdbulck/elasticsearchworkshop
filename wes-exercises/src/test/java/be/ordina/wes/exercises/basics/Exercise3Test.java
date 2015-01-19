@@ -2,7 +2,6 @@ package be.ordina.wes.exercises.basics;
 
 import java.util.List;
 
-import org.elasticsearch.client.Client;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -14,14 +13,10 @@ public class Exercise3Test {
 
 	private static final String PERSON_INDEX = "person";
 
-	private static Client client;
-	
 	private final int expectedResultCount = 14;
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
-		client = Exercise1.getInstance();
-
 		Exercise2.indexMultipleDocuments();
 		// refresh the index prior to performing search operations
 		Exercise2.refreshIndex();
