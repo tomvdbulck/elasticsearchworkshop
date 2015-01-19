@@ -19,8 +19,12 @@ public class Exercise3Test {
 	private final int expectedResultCount = 14;
 	
 	@BeforeClass
-	public static void setUp() {
+	public static void setUp() throws Exception {
 		client = Exercise1.getInstance();
+
+		Exercise2.indexMultipleDocuments();
+		// refresh the index prior to performing search operations
+		Exercise2.refreshIndex();
 	}
 	
 	@AfterClass
@@ -34,11 +38,6 @@ public class Exercise3Test {
 	 */
 	@Test
 	public void testSearchPerson() throws Exception {
-		Exercise2.indexMultipleDocuments();
-		
-		// refresh the index prior to performing search operations
-		Exercise2.refreshIndex();
-		
 		String field = "name";
 		String value = "Scarlett";
 		List<Person> list = Exercise3.searchPerson(field, value);

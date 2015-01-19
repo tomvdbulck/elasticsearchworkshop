@@ -22,7 +22,7 @@ public class Exercise1_FiltersTest {
 	private static final String PERSON_INDEX = "person";
 	
 	private final int expectedResultsByDateOfBirth = 4;
-	private final int expectedResultsByGender = 494;
+	private final int expectedResultsByCity = 19;
 
 	@BeforeClass
 	public static void setUp() throws Exception {
@@ -55,16 +55,17 @@ public class Exercise1_FiltersTest {
 	 * Test search with boolean filters
 	 */
 	@Test
-	public void testSearchPersonByGenderAndChildren() throws InterruptedException, ExecutionException, JsonParseException, JsonMappingException, IOException {
+	public void testSearchPersonByCity() throws InterruptedException, ExecutionException, JsonParseException, JsonMappingException, IOException {
 		final String gender = "female";
 		final int children = 3;
+		final String city = "Berlin";
 		
 		SearchResponse response = Exercise1_Filters
-				.searchPersonByGenderAndChildren(gender, children);
+				.searchPersonByCity(gender, children, city);
 		
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
-		Assert.assertEquals(expectedResultsByGender, list.size());
+		Assert.assertEquals(expectedResultsByCity, list.size());
 	}
 	
 }

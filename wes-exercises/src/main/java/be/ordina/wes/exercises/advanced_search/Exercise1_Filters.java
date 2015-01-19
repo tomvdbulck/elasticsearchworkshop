@@ -18,7 +18,7 @@ import be.ordina.wes.exercises.basics.Exercise1;
 
 /**
  * In-depth search exercise #1:
- * Search with filters
+ * Search with filters (and inner objects)
  */
 public class Exercise1_Filters {
 
@@ -28,7 +28,8 @@ public class Exercise1_Filters {
 	private static final String DATE_OF_BIRTH_FIELD = "dateOfBirth";
 	private static final String GENDER_FIELD = "gender";
 	private static final String CHILDREN_FIELD = "children";
-	private static final int MAX_RESULTS = 500;
+	private static final String CITY_FIELD = "address.city"; // inner object
+	private static final int MAX_RESULTS = 30;
 
 	private static Client client = Exercise1.getInstance();
 	
@@ -47,14 +48,16 @@ public class Exercise1_Filters {
 	}
 	
 	/**
-	 * Search for person documents filtered by gender and children count
+	 * Search for person documents filtered by gender, children count and city
 	 * @param gender Gender
 	 * @param children Children count
+	 * @param city City
 	 * @return Search response with search results
 	 */
-	public static SearchResponse searchPersonByGenderAndChildren(String gender, int children) throws InterruptedException, ExecutionException {
+	public static SearchResponse searchPersonByCity(String gender, int children, String city) throws InterruptedException, ExecutionException {
 		BoolFilterBuilder boolFilter = FilterBuilders.boolFilter()
 				.must(FilterBuilders.termFilter(GENDER_FIELD, gender))
+				.must(FilterBuilders.termFilter(CITY_FIELD, city))
 				.must(FilterBuilders.termFilter(CHILDREN_FIELD, children));
 		
 		return buildSearchQuery(boolFilter);
