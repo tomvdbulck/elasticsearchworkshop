@@ -33,7 +33,7 @@ public class Exercise3Test {
 	 */
 	@Test
 	public void testSearchPerson() throws Exception {
-		String field = "_all";
+		String field = "_all"; // will search in all fields
 		String value = "Scarlett";
 		List<Person> list = Exercise3.searchPerson(field, value);
 		
