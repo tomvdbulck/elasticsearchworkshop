@@ -30,9 +30,17 @@ public class Exercise2_MultifieldSearch {
 		return buildSearchQuery(query);
 	}
 	
+	public static SearchResponse searchPersonByMultipleTerms(String fieldName, String...searchTerms) throws InterruptedException, ExecutionException {
+		// Note that term queries are not analyzed
+		QueryBuilder query = QueryBuilders.termsQuery(fieldName, searchTerms);
+		
+		return buildSearchQuery(query);
+	}
+	
 	private static SearchResponse buildSearchQuery(QueryBuilder query) throws InterruptedException, ExecutionException {
 		SearchRequestBuilder builder = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
+				.setSize(5000)
 				.setQuery(query);
 		
 		LOG.trace("Search request: \n{}", builder);

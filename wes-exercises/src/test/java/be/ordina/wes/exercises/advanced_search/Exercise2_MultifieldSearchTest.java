@@ -1,8 +1,6 @@
 package be.ordina.wes.exercises.advanced_search;
 
-import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 import org.elasticsearch.action.search.SearchResponse;
 import org.junit.AfterClass;
@@ -14,14 +12,12 @@ import be.ordina.wes.common.util.MappingUtil;
 import be.ordina.wes.exercises.basics.Exercise2;
 import be.ordina.wes.exercises.model.Person;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-
 public class Exercise2_MultifieldSearchTest {
 
 	private static final String PERSON_INDEX = "person";
 	
-	private final int expectedSearchResults = 5;
+	private final int expectedResultsByMultifield = 5;
+	private final int expectedResultsByTerms = 3;
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
@@ -38,13 +34,27 @@ public class Exercise2_MultifieldSearchTest {
 	 * Test multifield search
 	 */
 	@Test
-	public void testSearchPersonByMultipleFields() throws InterruptedException, ExecutionException, JsonParseException, JsonMappingException, IOException  {
+	public void testSearchPersonByMultipleFields() throws Exception  {
 		String searchQuery = "456";
 		String[] searchFields = { "marketing.cars", "marketing.toys", "marketing.music" };
 		
 		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleFields(searchQuery, searchFields);
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
-		Assert.assertEquals(expectedSearchResults, list.size());
+		Assert.assertEquals(expectedResultsByMultifield, list.size());
+	}
+	
+	/**
+	 * Test query with multiple search terms
+	 */
+	@Test
+	public void testSearchPersonByMultipleTerms() throws Exception {
+		String fieldName = "name";
+		String[] searchTerms = { "simon", "sophie" };
+		
+		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleTerms(fieldName, searchTerms);
+		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
+		
+//		Assert.assertEquals(expectedResultsByTerms, list.size());
 	}
 }
