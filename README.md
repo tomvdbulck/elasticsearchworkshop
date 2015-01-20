@@ -25,3 +25,6 @@ Basic Workshop ElasticSearch
 7. Run the tests of wes-core to verify everything has been setup correctly 
 
 You are ready to go.
+
+PS
+If you like a pretty shiny interface to deal with git, you can install sourcetree: http://www.sourcetreeapp.com/
