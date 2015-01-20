@@ -40,9 +40,10 @@ public class Exercise1_Filters {
 	 * @return Search response with search results
 	 */
 	public static SearchResponse searchPersonByDateOfBirth(String startDate, String endDate) throws InterruptedException, ExecutionException {
-		RangeFilterBuilder rangeFilter = FilterBuilders.rangeFilter(DATE_OF_BIRTH_FIELD)
-				.from(startDate)
-				.to(endDate);
+		RangeFilterBuilder rangeFilter = null;
+		// TODO-1: build a range filter, and set date range from startDate to endDate,
+		// filter on dateOfBirth field.
+		
 		
 		return buildSearchQuery(rangeFilter);
 	}
@@ -55,10 +56,11 @@ public class Exercise1_Filters {
 	 * @return Search response with search results
 	 */
 	public static SearchResponse searchPersonByCity(String gender, int children, String city) throws InterruptedException, ExecutionException {
-		BoolFilterBuilder boolFilter = FilterBuilders.boolFilter()
-				.must(FilterBuilders.termFilter(GENDER_FIELD, gender))
-				.must(FilterBuilders.termFilter(CHILDREN_FIELD, children))
-				.must(FilterBuilders.termFilter(CITY_FIELD, city.toLowerCase()));
+		BoolFilterBuilder boolFilter = null;
+		// TODO-2: build a boolean filter which consists of 3 sub-filters (term filters),
+		// filter on 'gender', 'children' and 'address.city' fields,
+		// all fields using "must" clause.
+		
 		
 		return buildSearchQuery(boolFilter);
 	}
