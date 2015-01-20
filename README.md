@@ -21,6 +21,7 @@ Basic Workshop ElasticSearch
 5. Open a command prompt and go to the elasicworkshop folder and type "vagrant up"
    This will start up the vagrant box, the first time will take a while as it has to download the OS, elasticsearch, ...
    Shutting down the vagrant box - can be done via "vagrant halt".
+   with "vagrant provision" you can restore it back to a clean, working state
 
 6. Import the maven projects into your IDE
 
