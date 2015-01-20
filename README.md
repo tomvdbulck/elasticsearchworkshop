@@ -3,19 +3,25 @@ Basic Workshop ElasticSearch
 
 
 # Requirements #
-1. Install Oracle VirtualBox
+
+1. make sure the following items have been installed on your machine:
+   - java 7 or 8
+   - git
+   - maven
+   
+2. Install Oracle VirtualBox
   https://www.virtualbox.org/wiki/Downloads
 
-2. Install Vagrant
+3. Install Vagrant
    https://www.vagrantup.com/downloads.html
   (on Mac and Windows the installer will make sure that vagrant command is known in the command prompt)
 
-3. Clone this repository in your workspace
+4. Clone this repository in your workspace
 
-4. Open a command prompt and go to the elasicworkshop folder and type "vragrant up"
+5. Open a command prompt and go to the elasicworkshop folder and type "vagrant up"
 
-5. Import the maven projects into your IDE
+6. Import the maven projects into your IDE
 
-6. Run the tests of wes-core to verify everything has been setup correctly 
+7. Run the tests of wes-core to verify everything has been setup correctly 
 
 You are ready to go.
