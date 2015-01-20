@@ -24,7 +24,9 @@ Basic Workshop ElasticSearch
 
 6. Import the maven projects into your IDE
 
-7. Run the tests of wes-core to verify everything has been setup correctly 
+7a. Run the tests of wes-core to verify everything has been setup correctly 
+7b. You can also access the elastic HQ console on http://localhost:9200/_plugin/HQ (open source and free)
+7c. Or the marvel plugin on http://localhost:9200/_plugin/marvel/kibana/index.html (official and only free for development)
 
 You are ready to go.
 
