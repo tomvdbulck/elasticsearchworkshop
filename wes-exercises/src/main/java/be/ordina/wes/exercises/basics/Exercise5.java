@@ -24,11 +24,11 @@ public class Exercise5 {
 	 * @return true if a doc was found to delete
 	 */
 	public static boolean deletePerson(String documentId) {
-		DeleteResponse response = client.prepareDelete()
-				.setIndex(PERSON_INDEX)
-				.setType(PERSON_TYPE)
-				.setId(documentId)
-				.get();
+		DeleteResponse response = null;
+		// TODO-1: prepare a delete operation, setting the index to 'person',
+		// document type to 'person', and setting the provided documentId as ID,
+		// and assign the operation to response.
+		
 		
 		boolean documentDeleted = response.isFound();
 		

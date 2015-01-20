@@ -29,10 +29,11 @@ public class Exercise4 {
 	 * @param value New value to store
 	 */
 	public static void updatePerson(String documentId, String field, Object value) throws IOException, InterruptedException, ExecutionException {
-		UpdateRequest updateRequest = new UpdateRequest();
-		updateRequest.index(PERSON_INDEX);
-		updateRequest.type(PERSON_TYPE);
-		updateRequest.id(documentId);
+		UpdateRequest updateRequest = null;
+		// TODO-1: construct a new UpdateRequest, setting the index to 'person',
+		// document type to 'person', and setting the provided documentId as ID,
+		// and assign the operation to updateRequest.
+		
 		
 		updateRequest.doc(XContentFactory.jsonBuilder()
 		        .startObject()

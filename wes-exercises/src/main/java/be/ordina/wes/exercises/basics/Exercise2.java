@@ -29,9 +29,9 @@ public class Exercise2 {
 		// read data from JSON file
 		String jsonDocument = new String(Files.readAllBytes(Paths.get(TWITTER_FILE)));
 		
-		client.prepareIndex(TWITTER_INDEX, TWEET_TYPE)
-				.setSource(jsonDocument)
-				.get();
+		// TODO-1: index the above JSON document into 'twitter' index 
+		// and specify document type as 'tweet'.
+		
 
 		LOG.info("indexing '{}' type document into '{}' index", TWEET_TYPE, TWITTER_INDEX);
 	}
@@ -40,6 +40,7 @@ public class Exercise2 {
 		// read data from JSON file
 		byte[] jsonData = Files.readAllBytes(Paths.get(PERSON_FILE));
 		
+		// TODO-2: COMING SOON
 		BulkRequestBuilder bulkRequest = client.prepareBulk();
 		bulkRequest.add(jsonData, 0, jsonData.length, true);
         
@@ -52,6 +53,7 @@ public class Exercise2 {
 	 * @param indexName Index to create
 	 */
 	public static void createIndex(String indexName) {
+		// TODO-3: COMING SOON
 		client.admin().indices().prepareCreate(indexName).get();
 		
 		LOG.info("Index with name '{}' successfully created", indexName);
@@ -63,7 +65,10 @@ public class Exercise2 {
 	 * @return true if the response is acknowledged
 	 */
 	public static boolean deleteIndex(String indexName) {
-		DeleteIndexResponse response = client.admin().indices().prepareDelete(indexName).get();
+		DeleteIndexResponse response = null;
+		// TODO-4: delete an index with the name indexName and assign the action 
+		// to the response variable.
+		
 		
 		boolean indexDeleted = response.isAcknowledged();
 		

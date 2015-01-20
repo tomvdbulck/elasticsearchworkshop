@@ -28,12 +28,16 @@ public class Exercise3 {
 	private static Client client = Exercise1.getInstance();
 	
 	public static List<Person> searchPerson(String field, String value) throws Exception {
-		QueryBuilder query = QueryBuilders.matchQuery(field, value);
+		QueryBuilder query = null;
+		// TODO-1: build a match query with field and value as arguments and assign it
+		// to the query variable.
 		
-		SearchRequestBuilder requestBuilder = client.prepareSearch()
-				.setIndices(PERSON_INDEX)
-				.setSize(MAX_RESULTS)
-				.setQuery(query);
+		
+		SearchRequestBuilder requestBuilder = null;
+		// TODO-2: prepare a search operation inside the index 'person', 
+		// set the max result count to 50 (using setSize),
+		// and set the above query as the search query (using setQuery)
+		
 		
 		LOG.trace("Search request: \n{}", requestBuilder);
 		

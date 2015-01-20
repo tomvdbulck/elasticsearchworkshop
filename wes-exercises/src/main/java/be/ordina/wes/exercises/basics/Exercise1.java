@@ -26,12 +26,12 @@ public class Exercise1 {
 	public static Client getInstance() {
 		if (client == null) {
 			final Settings settings = ImmutableSettings.settingsBuilder()
-					.put("cluster.name", CLUSTER_NAME)
-	                .put("node.name", NODE_NAME)
+					// TODO-1: set cluster.name and node.name properties here
 					.build();
 			
-			client = new TransportClient(settings)
-					.addTransportAddress(new InetSocketTransportAddress(SERVER_HOST, SERVER_PORT));
+			// TODO-2: construct a new TransportClient with above settings, server host and port
+			// and assign it to client variable.
+			
 			
 			LOG.debug("Starting up Elasticsearch transport client");
 		}
