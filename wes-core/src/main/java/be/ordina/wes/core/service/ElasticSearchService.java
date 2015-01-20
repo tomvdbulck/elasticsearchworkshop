@@ -55,6 +55,31 @@ public class ElasticSearchService<T> implements SearchService<T> {
         return resultList;
     }
 	
+	@Override
+	public List<T> find(String searchTerm, String documentType, Class<T> objectType, String indexName, boolean exactQuery, String fieldName) {
+		List<T> resultList = new ArrayList<>();
+		
+		try {
+			SearchRequestBuilder requestBuilder = null;
+			if (exactQuery) {
+				requestBuilder = buildExactSearchRequest(indexName, searchTerm, documentType, fieldName);
+			} else {
+				requestBuilder = buildSearchRequest(indexName, searchTerm, documentType);
+			}
+			LOG.trace("Search request: \n{}", requestBuilder);
+			
+			SearchResponse response = client.search(requestBuilder.request()).get();
+			LOG.trace("Search response: \n{}", response);
+			
+			resultList = MappingUtil.mapSearchResults(response, objectType);
+			
+		} catch (InterruptedException | ExecutionException | IOException e) {
+			LOG.error("Exception", e);
+		}
+		
+		return resultList;
+	}
+	
     private SearchRequestBuilder buildSearchRequest(String indexName, String searchTerm, String documentType) {
         QueryBuilder query = buildQuery(searchTerm);
         SearchRequestBuilder searchRequest = client.prepareSearch()
@@ -73,6 +98,30 @@ public class ElasticSearchService<T> implements SearchService<T> {
 		} else {
 			// _all indicates that search should be performed on all fields
             return QueryBuilders.matchQuery("_all", searchTerm);
+		}
+	}
+	private SearchRequestBuilder buildExactSearchRequest(String indexName, String searchTerm, String documentType, String fieldName) {
+		QueryBuilder query = buildExactQuery(searchTerm, fieldName);
+		SearchRequestBuilder searchRequest = client.prepareSearch()
+				.setIndices(indexName)
+				.setTypes(documentType)
+				.setQuery(query)
+				.setSize(MAX_RESULTS); // defaults to 10 search results
+		
+		return searchRequest;
+	}
+	
+	private QueryBuilder buildExactQuery(String searchTerm, String fieldName) {
+		if (searchTerm.isEmpty()) {
+			// return all results if search term is empty
+			return QueryBuilders.matchAllQuery();
+		} else {
+			// _all indicates that search should be performed on all fields
+			if (fieldName == null || fieldName.length() == 0) {
+				return QueryBuilders.matchQuery("_all", searchTerm);
+			} else {
+				return QueryBuilders.matchQuery(fieldName, searchTerm);
+			}
 		}
 	}
 	

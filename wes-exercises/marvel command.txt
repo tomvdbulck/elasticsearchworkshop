@@ -1,0 +1,51 @@
+
+
+Open Sense, uper right corner of the screen - dropdown, showing dashboard by default - choose sense
+
+
+
+
+
+GET beerlanguageindex/_search/
+{
+   "query": { "match_phrase": {
+        "description": "duvel belgisch blond speciaalbier"
+      }
+  }
+}
+
+GET beerlanguageindex/_search/
+{
+   "query": { "match_phrase": {
+        "description": "duvel is een belgisch blond speciaalbier"
+      }
+  }
+}
+
+GET beerlanguageindex/beer/_validate/query?explain
+{
+   "query": { "match_phrase": {
+        "description": "duvel is een belgisch blond speciaalbier"
+        
+      }
+  }
+}
+
+
+
+
+
+
+
+GET beerlanguageindex/_analyze?field=description&text=duvel+is+een+blond+bieren'
+
+
+GET beerlanguageindex/_analyze?field=beer.brand&text=duvel+is+een+blond+bieren'
+
+
+
+'localhost:9200/test/_analyze?field=obj1.field1' -d 'this is a test'
+
+GET beerlanguageindex/_analyze?field=description&text=duvel+is+a+blond+bieren'
+
+GET beerlanguageindex/_mapping
