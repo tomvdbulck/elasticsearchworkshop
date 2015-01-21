@@ -1,13 +1,13 @@
-# elasticsearchworkshop
+# Elasticsearch workshop
 Basic Workshop ElasticSearch
 
 
-# Requirements #
+# Installation & Setup #
 
-1. make sure the following items have been installed on your machine:
-   - java 7 or 8
-   - git
-   - maven
+1. Make sure the following items have been installed on your machine:
+   - Java 7 or 8
+   - Git
+   - Maven
    
 2. Install Oracle VirtualBox
   https://www.virtualbox.org/wiki/Downloads
@@ -39,4 +39,7 @@ For IntelliJ users: set the working directory in the running configurations to  
 You are ready to go.
 
 PS
-If you like a pretty shiny interface to deal with git, you can install sourcetree: http://www.sourcetreeapp.com/
+If you like a pretty shiny interface to deal with git, you can install SourceTree: http://www.sourcetreeapp.com/
+
+#### Note
+If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS.
