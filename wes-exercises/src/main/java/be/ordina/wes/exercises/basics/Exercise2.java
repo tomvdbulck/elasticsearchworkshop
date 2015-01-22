@@ -27,7 +27,7 @@ public class Exercise2 {
 	
 	public static void indexOneDocument() throws IOException {
 		// reads data from JSON file
-		String jsonDocument = new String(Files.readAllBytes(Paths.get(TWITTER_FILE)));
+		String jsonDocument = loadFile(TWITTER_FILE);
 		
 		// TODO-1: index the above JSON document into 'twitter' index 
 		// and specify document type as 'tweet'. Load the document using setSource.
@@ -98,5 +98,14 @@ public class Exercise2 {
 	 */
 	public static boolean indexExists(String indexName) {
 		return client.admin().indices().prepareExists(indexName).get().isExists();
+	}
+	
+	/**
+	 * Loads file from the specified path
+	 * @param filePath The file path
+	 * @return Contents of the file as string
+	 */
+	private static String loadFile(String filePath) throws IOException {
+		return new String(Files.readAllBytes(Paths.get(TWITTER_FILE)));
 	}
 }
