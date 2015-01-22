@@ -18,8 +18,8 @@ public class Exercise2 {
 
 	private static final Logger LOG = LoggerFactory.getLogger(Exercise2.class);
 	
-	private static final String PERSON_FILE = "../sample_data/person.json";
-	private static final String TWITTER_FILE = "../sample_data/tweet.json";
+	private static final String PERSON_FILE = "src/test/resources/person.json";
+	private static final String TWITTER_FILE = "src/test/resources/tweet.json";
 	private static final String TWITTER_INDEX = "twitter";
 	private static final String TWEET_TYPE = "tweet";
 	
