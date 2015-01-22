@@ -31,15 +31,17 @@ public class Exercise4 {
 	public static void updatePerson(String documentId, String field, Object value) throws IOException, InterruptedException, ExecutionException {
 		UpdateRequest updateRequest = null;
 		// TODO-1: construct a new UpdateRequest, setting the index to 'person',
-		// document type to 'person', and setting the provided documentId as ID,
+		// document type to 'person', and the provided documentId as ID,
 		// and assign the operation to updateRequest.
 		
 		
+		// builds a JSON document with the updated field/value
 		updateRequest.doc(XContentFactory.jsonBuilder()
 		        .startObject()
 	            	.field(field, value)
 	            .endObject());
 		
+		// executes the update operation
 		client.update(updateRequest).get();
 		
 		LOG.debug("Updating document of type '{}' with ID '{}'", PERSON_TYPE, documentId);

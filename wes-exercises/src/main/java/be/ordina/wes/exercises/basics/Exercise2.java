@@ -26,25 +26,25 @@ public class Exercise2 {
 	private static Client client = Exercise1.getInstance();
 	
 	public static void indexOneDocument() throws IOException {
-		// read data from JSON file
+		// reads data from JSON file
 		String jsonDocument = new String(Files.readAllBytes(Paths.get(TWITTER_FILE)));
 		
 		// TODO-1: index the above JSON document into 'twitter' index 
-		// and specify document type as 'tweet'.
+		// and specify document type as 'tweet'. Load the document using setSource.
 		
 
 		LOG.info("indexing '{}' type document into '{}' index", TWEET_TYPE, TWITTER_INDEX);
 	}
 	
 	public static void indexMultipleDocuments() throws Exception {
-		// read data from JSON file
+		// reads data from JSON file
 		byte[] jsonData = Files.readAllBytes(Paths.get(PERSON_FILE));
 		
-		// TODO-2: COMING SOON
+		// TODO-2: WORK IN PROGRESS
 		BulkRequestBuilder bulkRequest = client.prepareBulk();
 		bulkRequest.add(jsonData, 0, jsonData.length, true);
         
-		// perform the bulk operation
+		// executes the bulk operation
 		bulkRequest.get();
 	}
 
@@ -53,8 +53,10 @@ public class Exercise2 {
 	 * @param indexName Index to create
 	 */
 	public static void createIndex(String indexName) {
-		// TODO-3: COMING SOON
-		client.admin().indices().prepareCreate(indexName).get();
+		// TODO-3: do an index creation operation (prepareCreate) using indexName
+		// as index name.
+		// Make use of the admin client (i.e. client.admin())
+		
 		
 		LOG.info("Index with name '{}' successfully created", indexName);
 	}
@@ -68,6 +70,7 @@ public class Exercise2 {
 		DeleteIndexResponse response = null;
 		// TODO-4: delete an index with the name indexName and assign the action 
 		// to the response variable.
+		// Make use of the admin client for index creation/deletion operations.
 		
 		
 		boolean indexDeleted = response.isAcknowledged();
