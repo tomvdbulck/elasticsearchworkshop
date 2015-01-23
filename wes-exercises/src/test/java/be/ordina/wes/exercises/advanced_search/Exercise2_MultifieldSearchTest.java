@@ -17,7 +17,7 @@ public class Exercise2_MultifieldSearchTest {
 	private static final String PERSON_INDEX = "person";
 	
 	private final int expectedResultsByMultifield = 5;
-	private final int expectedResultsByTerms = 3;
+	private final int expectedResultsByTerms = 8;
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
@@ -50,11 +50,11 @@ public class Exercise2_MultifieldSearchTest {
 	@Test
 	public void testSearchPersonByMultipleTerms() throws Exception {
 		String fieldName = "name";
-		String[] searchTerms = { "simon", "sophie" };
+		String[] searchTerms = { "simon", "Sophie" };
 		
 		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleTerms(fieldName, searchTerms);
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
-//		Assert.assertEquals(expectedResultsByTerms, list.size());
+		Assert.assertEquals(expectedResultsByTerms, list.size());
 	}
 }
