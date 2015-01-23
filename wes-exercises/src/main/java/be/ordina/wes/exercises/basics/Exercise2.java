@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.client.Client;
 import org.slf4j.Logger;
@@ -29,7 +28,7 @@ public class Exercise2 {
 		// reads data from JSON file
 		String jsonDocument = loadFile(TWITTER_FILE);
 		
-		// TODO-1: index the above JSON document into 'twitter' index 
+		// TODO-1: index the above JSON document into 'twitter' index (prepareIndex),
 		// and specify document type as 'tweet'. Load the document using setSource.
 		
 
@@ -40,7 +39,6 @@ public class Exercise2 {
 		// reads data from JSON file
 		byte[] jsonData = Files.readAllBytes(Paths.get(PERSON_FILE));
 		
-		// TODO-2: WORK IN PROGRESS
 		BulkRequestBuilder bulkRequest = client.prepareBulk();
 		bulkRequest.add(jsonData, 0, jsonData.length, true);
         
@@ -53,32 +51,34 @@ public class Exercise2 {
 	 * @param indexName Index to create
 	 */
 	public static void createIndex(String indexName) {
-		// TODO-3: do an index creation operation (prepareCreate) using indexName
+		// TODO-2: do an index creation operation (prepareCreate) using indexName
 		// as index name.
 		// Make use of the admin client (i.e. client.admin())
 		
 		
-		LOG.info("Index with name '{}' successfully created", indexName);
+		LOG.info("Index with name '{}' created", indexName);
 	}
 	
 	/**
 	 * Delete an index
 	 * @param indexName Index to delete
-	 * @return true if the response is acknowledged
+	 * @return true if the index was deleted
 	 */
 	public static boolean deleteIndex(String indexName) {
-		DeleteIndexResponse response = null;
-		// TODO-4: delete an index with the name indexName and assign the action 
-		// to the response variable.
-		// Make use of the admin client for index creation/deletion operations.
+		boolean indexDeleted = false;
 		
-		
-		boolean indexDeleted = response.isAcknowledged();
+		if (indexExists(indexName)) {
+			// TODO-3: delete an index with the name indexName.
+			// Make use of the admin client for index creation/deletion operations.
+			
+			
+			indexDeleted = true;
+		}
 		
 		if (indexDeleted) {
-			LOG.info("Index with name '{}' successfully deleted", indexName);
+			LOG.info("Index with name '{}' deleted", indexName);
 		} else {
-			LOG.error("Failed to deleted index with name '{}'", indexName);
+			LOG.warn("Index with name '{}' was not found", indexName);
 		}
 		return indexDeleted;
 	}
