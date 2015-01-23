@@ -20,6 +20,9 @@ public class Exercise2Test {
 	
 	@BeforeClass
 	public static void setUp() {
+		Exercise2.deleteIndex(TWITTER_INDEX);
+		Exercise2.deleteIndex(PERSON_INDEX);
+		
 		client = Exercise1.getInstance();
 	}
 	

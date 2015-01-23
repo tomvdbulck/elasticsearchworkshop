@@ -26,6 +26,7 @@ public class Exercise1_FiltersTest {
 
 	@BeforeClass
 	public static void setUp() throws Exception {
+		Exercise2.deleteIndex(PERSON_INDEX);
 		Exercise2.indexMultipleDocuments();
 		Exercise2.refreshIndex();
 	}

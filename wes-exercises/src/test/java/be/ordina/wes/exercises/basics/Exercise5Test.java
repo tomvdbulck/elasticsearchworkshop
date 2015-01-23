@@ -25,6 +25,7 @@ public class Exercise5Test {
 	
 	@BeforeClass
 	public static void setUp() {
+		Exercise2.deleteIndex(PERSON_INDEX);
 		client = Exercise1.getInstance();
 	}
 	

@@ -17,6 +17,7 @@ public class Exercise3Test {
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
+		Exercise2.deleteIndex(PERSON_INDEX);
 		Exercise2.indexMultipleDocuments();
 		// refresh the index prior to performing search operations
 		Exercise2.refreshIndex();
