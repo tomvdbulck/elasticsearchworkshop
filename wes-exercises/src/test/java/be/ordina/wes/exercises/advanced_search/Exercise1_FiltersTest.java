@@ -58,7 +58,11 @@ public class Exercise1_FiltersTest {
 	public void testSearchPersonByCity() throws InterruptedException, ExecutionException, JsonParseException, JsonMappingException, IOException {
 		final String gender = "female";
 		final int children = 3;
-		final String city = "Berlin";
+		final String city = "berlin";
+		// Notice that city is in lowercase, otherwise we'd get no results, 
+		// because of the use of term filters.
+		// Same as term queries, term filters are not analyzed, meaning that your
+		// query should be exactly the same as the indexed term.
 		
 		SearchResponse response = Exercise1_Filters
 				.searchPersonByCity(gender, children, city);
