@@ -22,6 +22,8 @@ public class Exercise5Test {
 
 	private static Client client;
 	
+	private final int expectedDocumentCount = 735;
+	
 	@BeforeClass
 	public static void setUp() {
 		Exercise2.deleteIndex(PERSON_INDEX);
@@ -56,5 +58,19 @@ public class Exercise5Test {
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
 		Assert.assertTrue(list.isEmpty());
+	}
+	
+	/**
+	 * Test document deletion by query
+	 */
+	@Test
+	public void testDeletePeopleBornBefore() throws Exception {
+		Exercise2.indexMultipleDocuments();
+		
+		String date = "2000-01-01";
+		Exercise5.deletePeopleBornBefore(date);
+		
+		long docCount = client.prepareCount(PERSON_INDEX).get().getCount();
+		Assert.assertEquals(expectedDocumentCount, docCount);
 	}
 }

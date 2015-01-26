@@ -26,9 +26,9 @@ public class Exercise3 {
 
 	private static Client client = Exercise1.getInstance();
 	
-	public static List<Person> searchPerson(String field, String value) throws Exception {
+	public static List<Person> searchPerson(String field, String searchTerm) throws Exception {
 		QueryBuilder query = null;
-		// TODO-1: build a match query using field and value as arguments and assign it
+		// TODO-1: build a match query using field and searchTerm as arguments and assign it
 		// to the query variable.
 		// Make use of QueryBuilders class.
 		
