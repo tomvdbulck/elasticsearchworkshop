@@ -2,7 +2,6 @@ package be.ordina.wes.exercises.basics;
 
 import java.util.List;
 
-import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilder;
@@ -55,12 +54,10 @@ public class Exercise4Test {
 		
 		QueryBuilder query = QueryBuilders.idsQuery(PERSON_TYPE).ids(PERSON_ID);
 		
-		SearchRequest searchRequest = client.prepareSearch()
+		SearchResponse searchResponse = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
 				.setQuery(query)
-				.request();
-		
-		SearchResponse searchResponse = client.search(searchRequest).get();
+				.get();
 		
 		LOG.trace("Search response: \n{}", searchResponse);
 		

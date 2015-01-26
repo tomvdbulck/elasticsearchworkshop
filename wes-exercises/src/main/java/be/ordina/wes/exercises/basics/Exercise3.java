@@ -2,7 +2,6 @@ package be.ordina.wes.exercises.basics;
 
 import java.util.List;
 
-import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
@@ -42,10 +41,8 @@ public class Exercise3 {
 		
 		
 		LOG.trace("Search request: \n{}", requestBuilder);
-		
-		SearchRequest request = requestBuilder.request();
 		// executes the search operation using the previously built search request
-		SearchResponse response = client.search(request).get();
+		SearchResponse response = requestBuilder.get();
 		
 		LOG.trace("Search response: \n{}", response);
 		

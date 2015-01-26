@@ -21,6 +21,7 @@ public class Exercise2_MultifieldSearch {
 	private static final Logger LOG = LoggerFactory.getLogger(Exercise2_MultifieldSearch.class);
 	
 	private static final String PERSON_INDEX = "person";
+	private static final int MAX_RESULTS = 30;
 
 	private static Client client = Exercise1.getInstance();
 	
@@ -45,14 +46,14 @@ public class Exercise2_MultifieldSearch {
 	}
 	
 	private static SearchResponse buildSearchQuery(QueryBuilder query) throws InterruptedException, ExecutionException {
-		SearchRequestBuilder builder = client.prepareSearch()
+		SearchRequestBuilder request = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
-				.setSize(30)
+				.setSize(MAX_RESULTS)
 				.setQuery(query);
 		
-		LOG.trace("Search request: \n{}", builder);
+		LOG.trace("Search request: \n{}", request);
 		
-		SearchResponse response = client.search(builder.request()).get();
+		SearchResponse response = request.get();
 		
 		LOG.trace("Search response: \n{}", response);
 		

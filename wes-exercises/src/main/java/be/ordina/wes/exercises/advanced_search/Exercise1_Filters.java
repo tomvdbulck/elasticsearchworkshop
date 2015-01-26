@@ -78,7 +78,7 @@ public class Exercise1_Filters {
 		
 		LOG.trace("Search request: \n{}", requestBuilder);
 		
-		SearchResponse response = client.search(requestBuilder.request()).get();
+		SearchResponse response = requestBuilder.get();
 		
 		LOG.trace("Search response: \n{}", response);
 		

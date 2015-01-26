@@ -2,7 +2,6 @@ package be.ordina.wes.exercises.basics;
 
 import java.util.List;
 
-import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilder;
@@ -49,12 +48,10 @@ public class Exercise5Test {
 		
 		QueryBuilder query = QueryBuilders.idsQuery(PERSON_TYPE).ids(PERSON_ID);
 		
-		SearchRequest request = client.prepareSearch()
+		SearchResponse response = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
 				.setQuery(query)
-				.request();
-		
-		SearchResponse response = client.search(request).get();
+				.get();
 		
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
