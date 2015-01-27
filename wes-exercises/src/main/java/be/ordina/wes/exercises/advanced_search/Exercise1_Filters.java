@@ -68,12 +68,12 @@ public class Exercise1_Filters {
 	}
 	
 	private static SearchResponse buildSearchQuery(FilterBuilder filter) throws InterruptedException, ExecutionException {
-		QueryBuilder query = QueryBuilders.matchAllQuery();
+		QueryBuilder matchAllQuery = QueryBuilders.matchAllQuery();
+		QueryBuilder filteredQuery = QueryBuilders.filteredQuery(matchAllQuery, filter);
 
 		SearchRequestBuilder requestBuilder = client.prepareSearch()
 			.setIndices(PERSON_INDEX)
-			.setQuery(query)
-			.setPostFilter(filter)
+			.setQuery(filteredQuery)
 			.setSize(MAX_RESULTS);
 		
 		LOG.trace("Search request: \n{}", requestBuilder);
