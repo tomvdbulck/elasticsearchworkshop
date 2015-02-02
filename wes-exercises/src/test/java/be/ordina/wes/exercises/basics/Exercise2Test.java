@@ -2,7 +2,6 @@ package be.ordina.wes.exercises.basics;
 
 import java.io.IOException;
 
-import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -55,8 +54,7 @@ public class Exercise2Test {
 		// refresh the index prior to performing search operations
 		Exercise2.refreshIndex();
 		
-		SearchResponse response = client.prepareSearch(TWITTER_INDEX).get();
-		long resultCount = response.getHits().getTotalHits();
+		long resultCount = client.prepareCount(TWITTER_INDEX).get().getCount();
 		
 		Assert.assertEquals(1, resultCount);
 	}

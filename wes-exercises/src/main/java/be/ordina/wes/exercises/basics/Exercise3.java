@@ -27,16 +27,16 @@ public class Exercise3 {
 	private static Client client = Exercise1.getInstance();
 	
 	public static List<Person> searchPerson(String field, String searchTerm) throws Exception {
-		QueryBuilder query = null;
+		QueryBuilder matchQuery = null;
 		// TODO-1: build a match query using field and searchTerm as arguments and assign it
-		// to the query variable.
+		// to the matchQuery variable.
 		// Make use of QueryBuilders class.
 		
 		
 		SearchRequestBuilder requestBuilder = null;
 		// TODO-2: prepare a search operation on the 'person' index, 
 		// set the max result count to 50 (using setSize),
-		// and set the above query as the search query (using setQuery).
+		// and set the above matchQuery as the search query (using setQuery).
 		// Assign the operation to the requestBuilder.
 		
 		

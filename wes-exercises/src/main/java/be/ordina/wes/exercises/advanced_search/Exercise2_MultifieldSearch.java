@@ -26,23 +26,23 @@ public class Exercise2_MultifieldSearch {
 	private static Client client = Exercise1.getInstance();
 	
 	public static SearchResponse searchPersonByMultipleFields(String searchTerm, String...searchFields) throws InterruptedException, ExecutionException {
-		QueryBuilder query = null;
+		QueryBuilder multimatchQuery = null;
 		// TODO-1: build a multimatch query (using QueryBuilders), 
 		// using searchTerm and searchFields variables.
-		// Assign the operation to the query variable.
+		// Assign the operation to the multimatchQuery variable.
 		
 		
-		return buildSearchQuery(query);
+		return buildSearchQuery(multimatchQuery);
 	}
 	
 	public static SearchResponse searchPersonByMultipleTerms(String fieldName, String...searchTerms) throws InterruptedException, ExecutionException {
 		// Note that term queries are not analyzed
-		QueryBuilder query = null;
+		QueryBuilder termsQuery = null;
 		// TODO-2: build a terms query, using fieldName and searchTerms variables.
-		// Assign the operation to the query variable.
+		// Assign the operation to the termsQuery variable.
 		
 		
-		return buildSearchQuery(query);
+		return buildSearchQuery(termsQuery);
 	}
 	
 	private static SearchResponse buildSearchQuery(QueryBuilder query) throws InterruptedException, ExecutionException {

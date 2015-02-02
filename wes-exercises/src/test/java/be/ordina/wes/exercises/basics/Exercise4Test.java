@@ -29,8 +29,9 @@ public class Exercise4Test {
 	private final Integer expectedChildren = 4;
 	
 	@BeforeClass
-	public static void setUp() {
+	public static void setUp() throws Exception {
 		Exercise2.deleteIndex(PERSON_INDEX);
+		Exercise2.indexMultipleDocuments();
 		client = Exercise1.getInstance();
 	}
 	
@@ -44,8 +45,6 @@ public class Exercise4Test {
 	 */
 	@Test
 	public void testUpdatePerson() throws Exception {
-		Exercise2.indexMultipleDocuments();
-		
 		String field = "children";
 		int value = 4;
 		Exercise4.updatePerson(PERSON_ID, field, value);

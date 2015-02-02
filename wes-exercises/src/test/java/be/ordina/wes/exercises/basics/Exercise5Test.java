@@ -25,8 +25,9 @@ public class Exercise5Test {
 	private final int expectedDocumentCount = 735;
 	
 	@BeforeClass
-	public static void setUp() {
+	public static void setUp() throws Exception {
 		Exercise2.deleteIndex(PERSON_INDEX);
+		Exercise2.indexMultipleDocuments();
 		client = Exercise1.getInstance();
 	}
 	
@@ -40,8 +41,6 @@ public class Exercise5Test {
 	 */
 	@Test
 	public void testDeletePerson() throws Exception {
-		Exercise2.indexMultipleDocuments();
-		
 		boolean isDeleted = Exercise5.deletePerson(PERSON_ID);
 		
 		Assert.assertTrue(isDeleted);
@@ -64,9 +63,7 @@ public class Exercise5Test {
 	 * Test document deletion by query
 	 */
 	@Test
-	public void testDeletePeopleBornBefore() throws Exception {
-		Exercise2.indexMultipleDocuments();
-		
+	public void testDeletePeopleBornBefore() {
 		String date = "2000-01-01";
 		Exercise5.deletePeopleBornBefore(date);
 		
