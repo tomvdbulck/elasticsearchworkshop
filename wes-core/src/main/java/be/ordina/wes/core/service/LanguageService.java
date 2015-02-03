@@ -71,5 +71,7 @@ public interface LanguageService {
 	 * @param indexName
 	 */
 	void index(Object object, String documentType, String indexName);
+
+	void createIndexWithStopword(String indexName, List<String> stopword);
 	
 }

@@ -24,6 +24,7 @@ public class LanguageServiceTest {
 	
 	private String indexName;
 	private String indexWithoutAnalyzerName;
+	private String indexWithStopwords;
 	
 	@Autowired
 	private ElasticsearchConfig esConfig;
@@ -37,12 +38,16 @@ public class LanguageServiceTest {
     public void setUp() {
     	indexName = "beerlanguageindex";
     	indexWithoutAnalyzerName = "beerindex";
+    	indexWithStopwords = "stopwordbeerindex";
     	
     	if (languageService.indexExists(indexName)) {
     		languageService.deleteIndex(indexName);
     	}
     	if (languageService.indexExists(indexWithoutAnalyzerName)) {
     		languageService.deleteIndex(indexWithoutAnalyzerName);
+    	}
+    	if (languageService.indexExists(indexWithStopwords)) {
+    		languageService.deleteIndex(indexWithStopwords);
     	}
     }
     
@@ -132,6 +137,46 @@ public class LanguageServiceTest {
 		// check if empty string returns all results
 		searchResults = beerSearchService.find(StringUtils.EMPTY, BEER_TYPE, Beer.class, indexWithoutAnalyzerName, true, "description");
 		Assert.assertEquals(4, searchResults.size());
+	}
+	@Test
+	public void testFindBeersWithStopwords() {
+		
+		List<Beer> beers = new ArrayList<>();
+		beers.add(new Beer(1, "Grimbergen blond", "Alken", "Grimbergen is een Belgisch abdijbier, speciaalbier. Het wordt gebrouwen door Alken-Maes te Alken.", 6, 2.65));
+		beers.add(new Beer(2, "Duvel", "Amaï", "Duvel is een Belgisch blond speciaalbier van Brouwerij Duvel Moortgat uit Breendonk.", 8.5, 4.55));
+		beers.add(new Beer(3, "Duvel Van't Vat", "Amaï", "Duvel Belgisch blond speciaalbier van 't vat", 8.5, 4.55));
+		beers.add(new Beer(4, "Duvel Hop", "Amaï", "Duvel blond speciaalbier met extra hop toppings", 8.5, 4.55));
+		
+		List<String> stopword = new ArrayList<String>();
+		stopword.add("duvel");
+		stopword.add("speciaalbier");
+		
+		
+		languageService.createIndexWithStopword(indexWithStopwords, stopword);
+		Assert.assertTrue(languageService.indexExists(indexWithStopwords));
+		
+		languageService.indexBulk(beers, BEER_TYPE, indexWithStopwords);
+		
+		// refresh index before performing any searches, otherwise we'll get no results
+		languageService.refreshIndices();
+		
+		List<Beer> searchResults = beerSearchService.find("abdijbier"
+				, BEER_TYPE, Beer.class, indexWithStopwords, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("Grimbergen"
+				, BEER_TYPE, Beer.class, indexWithStopwords, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("Duvel"
+				, BEER_TYPE, Beer.class, indexWithStopwords, true, "description");
+		Assert.assertEquals(0, searchResults.size());
+		
+		searchResults = beerSearchService.find("speciaalbier"
+				, BEER_TYPE, Beer.class, indexWithStopwords, true, "description");
+		Assert.assertEquals(0, searchResults.size());
+		
+		
 	}
 
 }

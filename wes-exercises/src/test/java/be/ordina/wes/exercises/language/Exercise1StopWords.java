@@ -7,8 +7,6 @@ import org.junit.Test;
 public class Exercise1StopWords {
 	
 	
-	
-	
 	@Test
 	public void defineYourOwnStopword() throws Exception {
 		

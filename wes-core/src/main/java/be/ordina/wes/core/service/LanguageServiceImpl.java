@@ -4,12 +4,16 @@ import java.io.IOException;
 import java.util.List;
 
 import org.elasticsearch.ElasticsearchException;
+import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
+import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
+import org.elasticsearch.action.admin.indices.settings.get.GetSettingsResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.ImmutableSettings;
 import org.elasticsearch.common.settings.ImmutableSettings.Builder;
+import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.slf4j.Logger;
@@ -72,6 +76,50 @@ public class LanguageServiceImpl implements LanguageService {
 		
 		LOG.info("Creating index [{}]", indexName);
 	}
+    @Override
+    public void createIndexWithStopword(String indexName, List<String> stopword) {
+    	try {
+    		Settings settings = ImmutableSettings.settingsBuilder().loadFromSource(XContentFactory.jsonBuilder()
+            .startObject()
+                //Add analyzer settings
+                .startObject("analysis")
+                	.startObject("analyzer")
+                		.startObject("my_analyzer")
+                            .field("type", "standard")
+                            .field("stopwords",stopword)
+                        .endObject()
+                   .endObject()
+                .endObject()
+            .endObject().string()).build();
+    		
+    		
+    		XContentBuilder mapBuilder = XContentFactory.jsonBuilder()
+			.startObject()
+	            .startObject("beer")
+	                .startObject("properties")
+	                    .startObject("description")
+	                    	.field("type", "string")
+	                    	.field("analyzer", "my_analyzer")
+	                     .endObject()
+	                .endObject()
+		        .endObject()
+		    .endObject();
+ 
+    		CreateIndexRequestBuilder createIndexRequestBuilder = client.admin().indices()
+    				.prepareCreate(indexName)
+    				.setSettings(settings)
+    				.addMapping("beer", mapBuilder);
+    		createIndexRequestBuilder.execute().actionGet();
+    		
+    		
+    	} catch (IOException e) {
+    		e.printStackTrace();
+    		LOG.error(e.getMessage());
+    	}
+    	
+    	
+    	LOG.info("Creating index [{}]", indexName);
+    }
     
     @Override
     public void createIndexWithoutAnalyzer(String indexName) {
