@@ -23,6 +23,8 @@ public class Exercise1_FiltersTest {
 	
 	private final int expectedResultsByDateOfBirth = 4;
 	private final int expectedResultsByCity = 19;
+	private final String expectedSecondPerson = "Lia Rayane";
+	private final String expectedLastPerson = "Julia Diana";
 
 	@BeforeClass
 	public static void setUp() throws Exception {
@@ -71,6 +73,10 @@ public class Exercise1_FiltersTest {
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
 		Assert.assertEquals(expectedResultsByCity, list.size());
+		
+		// check that results are sorted by age
+		Assert.assertEquals(expectedSecondPerson, list.get(1).getName());
+		Assert.assertEquals(expectedLastPerson, list.get(18).getName());
 	}
 	
 }

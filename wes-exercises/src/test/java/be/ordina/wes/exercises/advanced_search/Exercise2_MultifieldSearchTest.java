@@ -60,9 +60,5 @@ public class Exercise2_MultifieldSearchTest {
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
 		Assert.assertEquals(expectedResultsByTerms, list.size());
-		
-		// make sure the list is sorted by age
-		Assert.assertEquals(expectedFirstPerson, list.get(0).getName());
-		Assert.assertEquals(expectedLastPerson, list.get(7).getName());
 	}
 }

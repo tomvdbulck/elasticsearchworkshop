@@ -11,6 +11,7 @@ import org.elasticsearch.index.query.FilterBuilders;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.index.query.RangeFilterBuilder;
+import org.elasticsearch.search.sort.SortOrder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -71,6 +72,7 @@ public class Exercise1_Filters {
 		QueryBuilder matchAllQuery = QueryBuilders.matchAllQuery();
 		QueryBuilder filteredQuery = QueryBuilders.filteredQuery(matchAllQuery, filter);
 
+		// TODO-3: sort results by date of birth in ascending order (using addSort)
 		SearchRequestBuilder requestBuilder = client.prepareSearch()
 			.setIndices(PERSON_INDEX)
 			.setQuery(filteredQuery)
