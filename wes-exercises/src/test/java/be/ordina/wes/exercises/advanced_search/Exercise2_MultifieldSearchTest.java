@@ -19,8 +19,7 @@ public class Exercise2_MultifieldSearchTest {
 	private final int expectedResultsByMultifield = 5;
 	private final int expectedResultsByTerms = 8;
 	
-	private final String expectedFirstPerson = "Julien Simon";
-	private final String expectedLastPerson = "Simon Rania";
+	private final Integer expectedCarsValue = 456;
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
@@ -39,13 +38,18 @@ public class Exercise2_MultifieldSearchTest {
 	 */
 	@Test
 	public void testSearchPersonByMultipleFields() throws Exception  {
-		String searchQuery = "456";
+		int marketingValue = 456;
+		// TODO-3 (cont): boost 'cars' field with value of 2 (using ^2)
 		String[] searchFields = { "marketing.cars", "marketing.toys", "marketing.music" };
 		
-		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleFields(searchQuery, searchFields);
+		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleFields(marketingValue, searchFields);
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
 		Assert.assertEquals(expectedResultsByMultifield, list.size());
+		
+		// check that 'cars' field is boosted (i.e. comes on top of search results)
+		Assert.assertEquals(expectedCarsValue, list.get(0).getMarketing().getCars());
+		Assert.assertEquals(expectedCarsValue, list.get(1).getMarketing().getCars());
 	}
 	
 	/**

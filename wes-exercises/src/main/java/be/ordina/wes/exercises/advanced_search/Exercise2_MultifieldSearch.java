@@ -26,7 +26,7 @@ public class Exercise2_MultifieldSearch {
 
 	private static Client client = Exercise1.getInstance();
 	
-	public static SearchResponse searchPersonByMultipleFields(String searchTerm, String...searchFields) throws InterruptedException, ExecutionException {
+	public static SearchResponse searchPersonByMultipleFields(int value, String...searchFields) throws InterruptedException, ExecutionException {
 		QueryBuilder multimatchQuery = null;
 		// TODO-1: build a multimatch query (using QueryBuilders), 
 		// using searchTerm and searchFields variables.
@@ -45,7 +45,7 @@ public class Exercise2_MultifieldSearch {
 		
 		return buildSearchQuery(termsQuery);
 	}
-	
+	// TODO-3: check Exercise2_MultifieldSearchTest
 	private static SearchResponse buildSearchQuery(QueryBuilder query) throws InterruptedException, ExecutionException {
 		SearchRequestBuilder request = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
