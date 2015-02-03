@@ -7,6 +7,7 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.sort.SortOrder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +22,7 @@ public class Exercise2_MultifieldSearch {
 	private static final Logger LOG = LoggerFactory.getLogger(Exercise2_MultifieldSearch.class);
 	
 	private static final String PERSON_INDEX = "person";
+	private static final String DATE_OF_BIRTH_FIELD = "dateOfBirth";
 	private static final int MAX_RESULTS = 30;
 
 	private static Client client = Exercise1.getInstance();
@@ -46,6 +48,7 @@ public class Exercise2_MultifieldSearch {
 	}
 	
 	private static SearchResponse buildSearchQuery(QueryBuilder query) throws InterruptedException, ExecutionException {
+		// TODO-3: sort results by date of birth in ascending order (using addSort)
 		SearchRequestBuilder request = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
 				.setSize(MAX_RESULTS)
