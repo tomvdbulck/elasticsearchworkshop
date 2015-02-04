@@ -39,7 +39,7 @@ public class Exercise2_MultifieldSearchTest {
 	@Test
 	public void testSearchPersonByMultipleFields() throws Exception  {
 		int marketingValue = 456;
-		// TODO-3 (cont): boost 'cars' field with value of 2 (using ^2)
+		// TODO-3 (cont): boost 'cars' field by a factor of 2 (using ^2)
 		String[] searchFields = { "marketing.cars", "marketing.toys", "marketing.music" };
 		
 		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleFields(marketingValue, searchFields);

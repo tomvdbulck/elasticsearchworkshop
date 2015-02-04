@@ -45,12 +45,12 @@ Basic ElasticSearch hands-on workshop
 
 7. Run the tests of _wes-core_ module to verify everything has been setup correctly by typing
 	```sh
-	cd wes-core/
+	cd wes-core
 	mvn clean install
 	```
 
 
-If the tests pass, you are ready to go.
+If the tests pass, you are ready to start with exercises.
 
 
 ## Exercises ##
@@ -66,7 +66,9 @@ or the Marvel plugin at http://localhost.:9200/_plugin/marvel (free only for dev
 
 
 ## Known issues ##
-- IntelliJ users: You might need to set the working directory in the running configurations to _$MODULE_DIR$_
+- IntelliJ users: In some rare cases you might need to set the working directory 
+	in the running configurations to _$MODULE_DIR$_
 
-- Windows users: If you're running a 64bit Vagrant box, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. 
-	Therefore for this workshop we'll be using a 32bit box.
+- Windows users: If you're running a 64bit Vagrant box, 
+	you may need to enable hardware virtualization (VT-x) in your BIOS. 
+	To avoid this issue, we'll be using a 32bit box for this workshop.
