@@ -17,6 +17,10 @@ local.properties
 target/
 .loadpath
 
+### Intellij ###
+*.iml
+.idea/
+
 ### Elasticsearch ###
 data/
 
