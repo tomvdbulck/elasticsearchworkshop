@@ -49,7 +49,14 @@ Basic ElasticSearch hands-on workshop
 	mvn clean install
 	```
 
+
 If the tests pass, you are ready to go.
+
+
+## Exercises ##
+
+Coming soon...
+
 
 ## Connecting to Elasticsearch ##
 
@@ -57,8 +64,9 @@ You can access the ElasticHQ plugin at http://localhost.:9200/_plugin/HQ (for ch
 
 or the Marvel plugin at http://localhost.:9200/_plugin/marvel (free only for development)
 
-## Known issues ##
-IntelliJ users: You might need to set the working directory in the running configurations to _$MODULE_DIR$_
 
-Windows users: If you're running a 64bit Vagrant box, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. 
+## Known issues ##
+- IntelliJ users: You might need to set the working directory in the running configurations to _$MODULE_DIR$_
+
+- Windows users: If you're running a 64bit Vagrant box, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. 
 	Therefore for this workshop we'll be using a 32bit box.
