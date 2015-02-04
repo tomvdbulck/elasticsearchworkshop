@@ -1,45 +1,64 @@
 # Elasticsearch workshop
-Basic Workshop ElasticSearch
+Basic ElasticSearch hands-on workshop
 
 
-# Installation & Setup #
+## Installation & Setup ##
 
 1. Make sure the following items have been installed on your machine:
    - Java 7 or 8
-   - Git
+   - Git _(if you like a pretty interface to deal with git, try [SourceTree](http://www.sourcetreeapp.com/))_
    - Maven
    
 2. Install Oracle VirtualBox
-  https://www.virtualbox.org/wiki/Downloads
+	https://www.virtualbox.org/wiki/Downloads
 
 3. Install Vagrant
-   https://www.vagrantup.com/downloads.html
-  (on Mac and Windows the installer will make sure that vagrant command is known in the command prompt)
+	https://www.vagrantup.com/downloads.html
+	_(on Mac and Windows the installer will make sure that vagrant command is known in the command prompt)_
 
-4. Clone this repository in your workspace
+4. Clone this repository into your workspace
 
-5. Open a command prompt and go to the elasicworkshop folder and type "vagrant up"
-   This will start up the vagrant box, the first time will take a while as it has to download the OS, elasticsearch, ...
-   Shutting down the vagrant box - can be done via "vagrant halt".
-   with "vagrant provision" you can restore it back to a clean, working state
+5. Open a command prompt, go to the elasticsearchworkshop folder and run
+	```sh
+	vagrant up
+	```
+	This will start up the vagrant box. The first time will take a while as it has to download the OS image, elasticsearch and other dependencies.
+   
+	Shutting down the vagrant box can be done by typing
+	```sh
+	vagrant halt
+	```
+	You can restore the environment back to a clean, working state (in case things go south) by typing 
+	```sh
+	vagrant provision
+	```
+	You can SSH into the virtual environment with
+	```sh
+	vagrant ssh
+	```
+	And when you're done playing around, you can remove all traces of it with
+	```sh
+	vagrant destroy
+	```
 
-6. Import the maven projects into your IDE
+6. Import the maven projects into IDE of your choice
 
-7a. Run the tests of wes-core to verify everything has been setup correctly 
+7. Run the tests of _wes-core_ module to verify everything has been setup correctly by typing
+	```sh
+	cd wes-core/
+	mvn clean install
+	```
 
-7b. You can also access the elastic HQ console on http://localhost:9200/_plugin/HQ (open source and free)
+If the tests pass, you are ready to go.
 
-7c. Or the marvel plugin on http://localhost:9200/_plugin/marvel/kibana/index.html (official and only free for development)
+## Connecting to Elasticsearch ##
 
+You can access the ElasticHQ plugin at http://localhost.:9200/_plugin/HQ (for checking server state etc.)
 
-For IntelliJ users: set the working directory in the running configurations to  $MODULE_DIR$
+or the Marvel plugin at http://localhost.:9200/_plugin/marvel (free only for development)
 
+## Known issues ##
+IntelliJ users: You might need to set the working directory in the running configurations to _$MODULE_DIR$_
 
-
-You are ready to go.
-
-PS
-If you like a pretty shiny interface to deal with git, you can install SourceTree: http://www.sourcetreeapp.com/
-
-#### Note
-If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS.
+Windows users: If you're running a 64bit Vagrant box, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. 
+	Therefore for this workshop we'll be using a 32bit box.
