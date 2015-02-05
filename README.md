@@ -50,7 +50,7 @@ Basic ElasticSearch hands-on workshop
 	```
 
 
-If the tests pass, you are ready to start with exercises.
+If the tests pass, you are ready to start with the exercises.
 
 
 ## Exercises ##
