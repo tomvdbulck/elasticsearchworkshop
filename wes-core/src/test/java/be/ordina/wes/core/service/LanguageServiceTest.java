@@ -25,6 +25,9 @@ public class LanguageServiceTest {
 	private String indexName;
 	private String indexWithoutAnalyzerName;
 	private String indexWithStopwords;
+	private String indexForNormalizing;
+	private String indexForFolding;
+	private String indexForSynonyms;
 	
 	@Autowired
 	private ElasticsearchConfig esConfig;
@@ -34,11 +37,15 @@ public class LanguageServiceTest {
     @Autowired
     private SearchService<Beer> beerSearchService;
 
+
     @Before
     public void setUp() {
     	indexName = "beerlanguageindex";
     	indexWithoutAnalyzerName = "beerindex";
     	indexWithStopwords = "stopwordbeerindex";
+    	indexForNormalizing = "normalizingbeerindex";
+    	indexForFolding = "foldingbeerindex";
+    	indexForSynonyms = "synonymbeerindex";
     	
     	if (languageService.indexExists(indexName)) {
     		languageService.deleteIndex(indexName);
@@ -48,6 +55,15 @@ public class LanguageServiceTest {
     	}
     	if (languageService.indexExists(indexWithStopwords)) {
     		languageService.deleteIndex(indexWithStopwords);
+    	}
+    	if (languageService.indexExists(indexForNormalizing)) {
+    		languageService.deleteIndex(indexForNormalizing);
+    	}
+    	if (languageService.indexExists(indexForFolding)) {
+    		languageService.deleteIndex(indexForFolding);
+    	}
+    	if (languageService.indexExists(indexForSynonyms)) {
+    		languageService.deleteIndex(indexForSynonyms);
     	}
     }
     
@@ -176,6 +192,141 @@ public class LanguageServiceTest {
 				, BEER_TYPE, Beer.class, indexWithStopwords, true, "description");
 		Assert.assertEquals(0, searchResults.size());
 		
+		
+	}
+	
+	@Test
+	public void testFindBeersWithLowerCaseSynonym() {
+		
+		List<Beer> beers = new ArrayList<>();
+		beers.add(new Beer(2, "Duvel", "Amaï", "Duvel is een Belgisch blond speciaalbier van Brouwerij Duvel Moortgat uit Breendonk.", 8.5, 4.55));
+		
+		languageService.createIndexWithOutNormalizing(indexForNormalizing);
+		Assert.assertTrue(languageService.indexExists(indexForNormalizing));
+		
+		languageService.indexBulk(beers, BEER_TYPE, indexForNormalizing);
+		
+		// refresh index before performing any searches, otherwise we'll get no results
+		languageService.refreshIndices();
+		
+		//1. search without use of synonyms
+		List<Beer> searchResults = beerSearchService.find("Duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		searchResults = beerSearchService.find("Duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "brand");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "description");
+		Assert.assertEquals(0, searchResults.size());
+		searchResults = beerSearchService.find("duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "brand");
+		Assert.assertEquals(0, searchResults.size());
+		
+		searchResults = beerSearchService.find("DUVEL"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "description");
+		Assert.assertEquals(0, searchResults.size());
+		searchResults = beerSearchService.find("duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "brand");
+		Assert.assertEquals(0, searchResults.size());
+		
+		//2: search with the use of lower case
+		languageService.deleteIndex(indexForNormalizing);
+		
+		languageService.createIndexWithNormalizingLowerCase(indexForNormalizing);
+		Assert.assertTrue(languageService.indexExists(indexForNormalizing));
+		
+		languageService.indexBulk(beers, BEER_TYPE, indexForNormalizing);
+		
+		// refresh index before performing any searches, otherwise we'll get no results
+		languageService.refreshIndices();
+		
+		
+		searchResults = beerSearchService.find("Duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		searchResults = beerSearchService.find("Duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "brand");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		searchResults = beerSearchService.find("duvel"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "brand");
+		Assert.assertEquals(0, searchResults.size());
+		
+		searchResults = beerSearchService.find("DUVEL"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		searchResults = beerSearchService.find("DUVEL"
+				, BEER_TYPE, Beer.class, indexForNormalizing, true, "brand");
+		Assert.assertEquals(0, searchResults.size());
+	}
+	
+	
+	
+	@Test
+	public void testFindBeersWithFoldingAnalyzer() {
+		
+		List<Beer> beers = new ArrayList<>();
+		beers.add(new Beer(2, "Duvel", "Amaï", "Duvel is een lekker bier", 8.5, 4.55));
+		beers.add(new Beer(4, "Duvel Hop", "Amaï", "Duiveltjesbier", 8.5, 4.55));
+		beers.add(new Beer(5, "Duvel Hop", "Amaï", "Duivels bier", 8.5, 4.55));
+		beers.add(new Beer(6, "Grimbergen Blond", "Amaï", "Grimbergen", 8.5, 4.55));
+		beers.add(new Beer(7, "Grimbergen Blond", "Amaï", "Hee abdijbier", 8.5, 4.55));
+		beers.add(new Beer(8, "Grimbergen Blond", "Amaï", "Wel ne nep-trappist", 8.5, 4.55));
+		beers.add(new Beer(9, "Grimbergen Blond", "Amaï", "fake-trappist", 8.5, 4.55));
+		
+		languageService.createIndexWithSynonyms(indexForSynonyms);
+		Assert.assertTrue(languageService.indexExists(indexForSynonyms));
+		
+		languageService.indexBulk(beers, BEER_TYPE, indexForSynonyms);
+		
+		// refresh index before performing any searches, otherwise we'll get no results
+		languageService.refreshIndices();
+		
+		//1. show effect without and without fold
+		List<Beer> searchResults = beerSearchService.find("Duvel"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description.synonymized");
+		Assert.assertEquals(3, searchResults.size());
+		
+		searchResults = beerSearchService.find("Duvel"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("duiveltjesbier"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description.synonymized");
+		Assert.assertEquals(3, searchResults.size());
+		
+		searchResults = beerSearchService.find("duiveltjesbier"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("duivels"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description.synonymized");
+		Assert.assertEquals(3, searchResults.size());
+		
+		searchResults = beerSearchService.find("duivels"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("fake"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description.synonymized");
+		Assert.assertEquals(3, searchResults.size());
+		
+		searchResults = beerSearchService.find("fake"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("abdijbier"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description.synonymized");
+		Assert.assertEquals(1, searchResults.size());
+		
+		searchResults = beerSearchService.find("abdijbier"
+				, BEER_TYPE, Beer.class, indexForSynonyms, true, "description");
+		Assert.assertEquals(1, searchResults.size());
 		
 	}
 

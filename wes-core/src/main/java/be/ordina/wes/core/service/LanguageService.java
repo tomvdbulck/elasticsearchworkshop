@@ -73,5 +73,14 @@ public interface LanguageService {
 	void index(Object object, String documentType, String indexName);
 
 	void createIndexWithStopword(String indexName, List<String> stopword);
+
+	void createIndexWithOutNormalizing(String indexName);
+
+	void createIndexWithNormalizingLowerCase(String indexName);
+
+	void createIndexWithFolding(String indexName);
+	
+	void createIndexWithSynonyms(String indexName);
+	
 	
 }
