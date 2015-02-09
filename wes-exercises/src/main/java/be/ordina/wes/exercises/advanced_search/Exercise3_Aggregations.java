@@ -5,6 +5,7 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.search.aggregations.AbstractAggregationBuilder;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.bucket.histogram.HistogramBuilder;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,9 +24,11 @@ public class Exercise3_Aggregations {
 	private static final String COUNTRY_FIELD = "address.country";
 	private static final String CITY_FIELD = "address.city";
 	private static final String GENDER_FIELD = "gender";
+	private static final String CHILDREN_FIELD = "children";
 	private static final String BY_COUNTRY = "by_country";
 	private static final String BY_CITY = "by_city";
 	private static final String BY_GENDER = "by_gender";
+	private static final String BY_CHILDREN = "by_children";
 	
 	private static Client client = Exercise1.getInstance();
 	
@@ -66,6 +69,18 @@ public class Exercise3_Aggregations {
 		
 		
 		return buildSearchQuery(countryAggregation);
+	}
+	
+	public static SearchResponse aggregatePersonByChildren() {
+		HistogramBuilder childrenAggregation = null;
+		// TODO-6: build a histogram aggregation based on the 'children' field,
+		// and name it 'by_children'.
+		// Set the histogram interval to 1, so that every person with the same children 
+		// count falls into the same bucket.
+		// Assign the operation to the childrenAggregation variable.
+		
+		
+		return buildSearchQuery(childrenAggregation);
 	}
 	
 	private static SearchResponse buildSearchQuery(AbstractAggregationBuilder aggregation) {

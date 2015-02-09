@@ -1,6 +1,7 @@
 package be.ordina.wes.exercises.advanced_search;
 
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.search.aggregations.bucket.histogram.Histogram;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -15,10 +16,12 @@ public class Exercise3_AggregationsTest {
 	private static final String BY_COUNTRY = "by_country";
 	private static final String BY_CITY = "by_city";
 	private static final String BY_GENDER = "by_gender";
+	private static final String BY_CHILDREN = "by_children";
 	
 	private final int expectedEnglandDocs = 1262;
 	private final int expectedLondonDocs = 339;
 	private final int expectedFemalesInLondon = 173;
+	private final int expectedPeopleWith3Children = 961;
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
@@ -33,7 +36,7 @@ public class Exercise3_AggregationsTest {
 	}
 	
 	/**
-	 * Test aggregations
+	 * Test term aggregations
 	 */
 	@Test
 	public void testAggregatePersonByCountry() {
@@ -61,6 +64,21 @@ public class Exercise3_AggregationsTest {
 		// finally make sure that "england / london / female" document count 
 		// matches the expected amount
 		Assert.assertEquals(expectedFemalesInLondon, femaleBucket.getDocCount());
+	}
+	
+	/**
+	 * Test histogram aggregations
+	 */
+	@Test
+	public void testAggregatePersonByChildren() {
+		SearchResponse response = Exercise3_Aggregations.aggregatePersonByChildren();
+		
+		// fetch 'by_children' aggregation
+		Histogram childrenAggregation = response.getAggregations().get(BY_CHILDREN);
+		// extract the bucket where children count is 3
+		Histogram.Bucket childrenBucket = childrenAggregation.getBucketByKey(3);
+		
+		Assert.assertEquals(expectedPeopleWith3Children, childrenBucket.getDocCount());
 	}
 	
 }
