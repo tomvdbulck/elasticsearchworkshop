@@ -12,6 +12,7 @@ public class Exercise2Test {
 	
 	private static final String PERSON_INDEX = "person";
 	private static final String TWITTER_INDEX = "twitter";
+	private static final String TEST_INDEX = "test_idx";
 
 	private static Client client;
 	
@@ -21,6 +22,7 @@ public class Exercise2Test {
 	public static void setUp() {
 		Exercise2.deleteIndex(TWITTER_INDEX);
 		Exercise2.deleteIndex(PERSON_INDEX);
+		Exercise2.deleteIndex(TEST_INDEX);
 		
 		client = Exercise1.getInstance();
 	}
@@ -30,6 +32,7 @@ public class Exercise2Test {
 		// delete all indices when we're done with tests
 		Exercise2.deleteIndex(TWITTER_INDEX);
 		Exercise2.deleteIndex(PERSON_INDEX);
+		Exercise2.deleteIndex(TEST_INDEX);
 	}
 	
 	/**
@@ -81,13 +84,13 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testDeleteIndex() {
-		Exercise2.createIndex(TWITTER_INDEX);
+		Exercise2.createIndex(TEST_INDEX);
 		
-		Assert.assertTrue(Exercise2.indexExists(TWITTER_INDEX));
+		Assert.assertTrue(Exercise2.indexExists(TEST_INDEX));
 		
-		boolean indexDeleted = Exercise2.deleteIndex(TWITTER_INDEX);
+		boolean indexDeleted = Exercise2.deleteIndex(TEST_INDEX);
 		Assert.assertTrue(indexDeleted);
 		
-		Assert.assertFalse(Exercise2.indexExists(TWITTER_INDEX));
+		Assert.assertFalse(Exercise2.indexExists(TEST_INDEX));
 	}
 }
