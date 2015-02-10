@@ -5,18 +5,26 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import org.elasticsearch.action.search.SearchResponse;
-import org.junit.AfterClass;
+import org.elasticsearch.client.Client;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import be.ordina.wes.common.util.MappingUtil;
-import be.ordina.wes.exercises.basics.Exercise2;
+import be.ordina.wes.core.service.IndexService;
+import be.ordina.wes.exercises.config.TestConfig;
 import be.ordina.wes.exercises.model.Person;
+import be.ordina.wes.exercises.util.PersonUtil;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = TestConfig.class)
 public class Exercise1_FiltersTest {
 
 	private static final String PERSON_INDEX = "person";
@@ -26,16 +34,20 @@ public class Exercise1_FiltersTest {
 	private final String expectedSecondPerson = "Lia Rayane";
 	private final String expectedLastPerson = "Julia Diana";
 
-	@BeforeClass
-	public static void setUp() throws Exception {
-		Exercise2.deleteIndex(PERSON_INDEX);
-		Exercise2.indexMultipleDocuments();
-		Exercise2.refreshIndex();
-	}
+	@Autowired
+	private Client client;
+	@Autowired
+	private IndexService indexService;
 	
-	@AfterClass
-	public static void tearDown() {
-		Exercise2.deleteIndex(PERSON_INDEX);
+	private Exercise1_Filters exercise1;
+	
+	@Before
+	public void setUp() throws Exception {
+		indexService.deleteIndex(PERSON_INDEX);
+		PersonUtil.indexPersonDocuments(client);
+		indexService.refreshIndices();
+		
+		exercise1 = new Exercise1_Filters(client);
 	}
 	
 	/**
@@ -46,8 +58,7 @@ public class Exercise1_FiltersTest {
 		final String startDate = "1946-04-06";
 		final String endDate = "1946-04-14";
 		
-		SearchResponse response = Exercise1_Filters
-				.searchPersonByDateOfBirth(startDate, endDate);
+		SearchResponse response = exercise1.searchPersonByDateOfBirth(startDate, endDate);
 		
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
@@ -67,8 +78,7 @@ public class Exercise1_FiltersTest {
 		// Same as term queries, term filters are not analyzed, meaning that your
 		// query should be exactly the same as the indexed term.
 		
-		SearchResponse response = Exercise1_Filters
-				.searchPersonByCity(gender, children, city);
+		SearchResponse response = exercise1.searchPersonByCity(gender, children, city);
 		
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		

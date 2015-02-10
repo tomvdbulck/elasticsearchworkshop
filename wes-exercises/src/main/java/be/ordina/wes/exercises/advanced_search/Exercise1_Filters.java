@@ -15,8 +15,6 @@ import org.elasticsearch.search.sort.SortOrder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import be.ordina.wes.exercises.basics.Exercise1;
-
 /**
  * In-depth search exercise #1:
  * Search with filters (and inner objects)
@@ -32,7 +30,11 @@ public class Exercise1_Filters {
 	private static final String CITY_FIELD = "address.city"; // inner object field
 	private static final int MAX_RESULTS = 30;
 
-	private static Client client = Exercise1.getInstance();
+	private Client client;
+	
+	public Exercise1_Filters(Client client) {
+		this.client = client;
+	}
 	
 	/**
 	 * Search for person documents filtered by date of birth
@@ -40,7 +42,7 @@ public class Exercise1_Filters {
 	 * @param endDate The end date
 	 * @return Search response with search results
 	 */
-	public static SearchResponse searchPersonByDateOfBirth(String startDate, String endDate) throws InterruptedException, ExecutionException {
+	public SearchResponse searchPersonByDateOfBirth(String startDate, String endDate) throws InterruptedException, ExecutionException {
 		RangeFilterBuilder rangeFilter = null;
 		// TODO-1: build a range filter (using FilterBuilders), 
 		// and set the date range from startDate to endDate.
@@ -57,7 +59,7 @@ public class Exercise1_Filters {
 	 * @param city City
 	 * @return Search response with search results
 	 */
-	public static SearchResponse searchPersonByCity(String gender, int children, String city) throws InterruptedException, ExecutionException {
+	public SearchResponse searchPersonByCity(String gender, int children, String city) throws InterruptedException, ExecutionException {
 		BoolFilterBuilder boolFilter = null;
 		// TODO-2: build a bool filter which consists of 3 sub-filters (term filters),
 		// filter on 'gender', 'children' and 'address.city' fields.
@@ -68,7 +70,7 @@ public class Exercise1_Filters {
 		return buildSearchQuery(boolFilter);
 	}
 	
-	private static SearchResponse buildSearchQuery(FilterBuilder filter) throws InterruptedException, ExecutionException {
+	private SearchResponse buildSearchQuery(FilterBuilder filter) throws InterruptedException, ExecutionException {
 		QueryBuilder matchAllQuery = QueryBuilders.matchAllQuery();
 		QueryBuilder filteredQuery = QueryBuilders.filteredQuery(matchAllQuery, filter);
 
