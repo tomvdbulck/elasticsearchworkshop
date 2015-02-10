@@ -3,37 +3,51 @@ package be.ordina.wes.exercises.basics;
 import java.io.IOException;
 
 import org.elasticsearch.client.Client;
-import org.junit.AfterClass;
+import org.junit.After;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import be.ordina.wes.core.service.IndexService;
+import be.ordina.wes.exercises.config.TestConfig;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = TestConfig.class)
 public class Exercise2Test {
 	
 	private static final String PERSON_INDEX = "person";
 	private static final String TWITTER_INDEX = "twitter";
 	private static final String TEST_INDEX = "test_idx";
 
-	private static Client client;
+	@Autowired
+	private Client client;
+    @Autowired
+    private IndexService indexService;
+    
+    private Exercise2 ex2;
 	
 	private final int expectedPersonDocuments = 5000;
 	
-	@BeforeClass
-	public static void setUp() {
+	@Before
+	public void setUp() {
 		// if a test fails, make sure to cleanup before running tests again
-		Exercise2.deleteIndex(TWITTER_INDEX);
-		Exercise2.deleteIndex(PERSON_INDEX);
-		Exercise2.deleteIndex(TEST_INDEX);
+		indexService.deleteIndex(TWITTER_INDEX);
+		indexService.deleteIndex(PERSON_INDEX);
+		indexService.deleteIndex(TEST_INDEX);
 		
-		client = Exercise1.getInstance();
+		ex2 = new Exercise2(client);
 	}
 	
-	@AfterClass
-	public static void tearDown() {
+	@After
+	public void tearDown() {
 		// delete all indices when we're done with tests
-		Exercise2.deleteIndex(TWITTER_INDEX);
-		Exercise2.deleteIndex(PERSON_INDEX);
-		Exercise2.deleteIndex(TEST_INDEX);
+		indexService.deleteIndex(TWITTER_INDEX);
+		indexService.deleteIndex(PERSON_INDEX);
+		indexService.deleteIndex(TEST_INDEX);
 	}
 	
 	/**
@@ -41,11 +55,11 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testCreateIndex() {
-		Assert.assertFalse(Exercise2.indexExists(TWITTER_INDEX));
+		Assert.assertFalse(ex2.indexExists(TWITTER_INDEX));
 		
-		Exercise2.createIndex(TWITTER_INDEX);
+		ex2.createIndex(TWITTER_INDEX);
 		
-		Assert.assertTrue(Exercise2.indexExists(TWITTER_INDEX));
+		Assert.assertTrue(ex2.indexExists(TWITTER_INDEX));
 	}
 	
 	/**
@@ -53,10 +67,10 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testIndexOneDocument() throws IOException {
-		Exercise2.indexOneDocument();
+		ex2.indexOneDocument();
 		
 		// refresh the index prior to performing search operations
-		Exercise2.refreshIndex();
+		ex2.refreshIndex();
 		
 		long resultCount = client.prepareCount(TWITTER_INDEX).get().getCount();
 		
@@ -68,12 +82,12 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testIndexMultipleDocuments() throws Exception {
-		Exercise2.indexMultipleDocuments();
+		ex2.indexMultipleDocuments();
 		
-		Assert.assertTrue(Exercise2.indexExists(PERSON_INDEX));
+		Assert.assertTrue(ex2.indexExists(PERSON_INDEX));
 		
 		// refresh the index prior to performing search operations
-		Exercise2.refreshIndex();
+		ex2.refreshIndex();
 		
 		long docCount = client.prepareCount(PERSON_INDEX).get().getCount();
 		
@@ -85,13 +99,13 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testDeleteIndex() {
-		Exercise2.createIndex(TEST_INDEX);
+		ex2.createIndex(TEST_INDEX);
 		
-		Assert.assertTrue(Exercise2.indexExists(TEST_INDEX));
+		Assert.assertTrue(ex2.indexExists(TEST_INDEX));
 		
-		boolean indexDeleted = Exercise2.deleteIndex(TEST_INDEX);
+		boolean indexDeleted = ex2.deleteIndex(TEST_INDEX);
 		Assert.assertTrue(indexDeleted);
 		
-		Assert.assertFalse(Exercise2.indexExists(TEST_INDEX));
+		Assert.assertFalse(ex2.indexExists(TEST_INDEX));
 	}
 }

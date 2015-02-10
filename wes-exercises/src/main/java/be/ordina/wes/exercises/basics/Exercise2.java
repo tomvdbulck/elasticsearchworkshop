@@ -22,9 +22,13 @@ public class Exercise2 {
 	private static final String TWITTER_INDEX = "twitter";
 	private static final String TWEET_TYPE = "tweet";
 	
-	private static Client client = Exercise1.getInstance();
+	private Client client;
 	
-	public static void indexOneDocument() throws IOException {
+	public Exercise2(Client client) {
+		this.client = client;
+	}
+	
+	public void indexOneDocument() throws IOException {
 		// reads data from JSON file
 		String jsonDocument = loadFile(TWITTER_FILE);
 		
@@ -35,7 +39,7 @@ public class Exercise2 {
 		LOG.info("indexing '{}' type document into '{}' index", TWEET_TYPE, TWITTER_INDEX);
 	}
 	
-	public static void indexMultipleDocuments() throws Exception {
+	public void indexMultipleDocuments() throws Exception {
 		// reads data from JSON file
 		byte[] jsonData = Files.readAllBytes(Paths.get(PERSON_FILE));
 		
@@ -50,7 +54,7 @@ public class Exercise2 {
 	 * Create an index
 	 * @param indexName Index to create
 	 */
-	public static void createIndex(String indexName) {
+	public void createIndex(String indexName) {
 		// TODO-2: do an index creation operation (prepareCreate) using indexName
 		// as index name.
 		// Make use of the admin client (i.e. client.admin())
@@ -64,7 +68,7 @@ public class Exercise2 {
 	 * @param indexName Index to delete
 	 * @return true if the index was deleted
 	 */
-	public static boolean deleteIndex(String indexName) {
+	public boolean deleteIndex(String indexName) {
 		boolean indexDeleted = false;
 		
 		if (indexExists(indexName)) {
@@ -90,7 +94,7 @@ public class Exercise2 {
 	 * Note: Typically this is not needed (default refresh interval is 1sec), 
 	 * but for unit tests we want the indexed data directly searchable.
 	 */
-	public static void refreshIndex() {
+	public void refreshIndex() {
 		client.admin().indices().prepareRefresh().get();
 	}
 	
@@ -99,7 +103,7 @@ public class Exercise2 {
 	 * @param indexName The index name
 	 * @return true if index exists
 	 */
-	public static boolean indexExists(String indexName) {
+	public boolean indexExists(String indexName) {
 		return client.admin().indices().prepareExists(indexName).get().isExists();
 	}
 	
@@ -108,7 +112,7 @@ public class Exercise2 {
 	 * @param filePath The file path
 	 * @return Contents of the file as a string
 	 */
-	private static String loadFile(String filePath) throws IOException {
+	private String loadFile(String filePath) throws IOException {
 		return new String(Files.readAllBytes(Paths.get(TWITTER_FILE)));
 	}
 }
