@@ -22,14 +22,14 @@ public class Exercise2Test {
 	private static final String TWITTER_INDEX = "twitter";
 	private static final String TEST_INDEX = "test_idx";
 
+	private final int expectedPersonDocuments = 5000;
+	
 	@Autowired
 	private Client client;
     @Autowired
     private IndexService indexService;
     
     private Exercise2 exercise2;
-	
-	private final int expectedPersonDocuments = 5000;
 	
 	@Before
 	public void setUp() {

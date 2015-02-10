@@ -24,9 +24,13 @@ public class Exercise3 {
 	private static final String PERSON_INDEX = "person";
 	private static final int MAX_RESULTS = 50;
 
-	private static Client client = Exercise1.getInstance();
+	private Client client;
 	
-	public static List<Person> searchPerson(String field, String searchTerm) throws Exception {
+	public Exercise3(Client client) {
+		this.client = client;
+	}
+	
+	public List<Person> searchPerson(String field, String searchTerm) throws Exception {
 		QueryBuilder matchQuery = null;
 		// TODO-1: build a match query using field and searchTerm as arguments and assign it
 		// to the matchQuery variable.
