@@ -3,7 +3,6 @@ package be.ordina.wes.exercises.basics;
 import java.io.IOException;
 
 import org.elasticsearch.client.Client;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,14 +22,14 @@ public class Exercise2Test {
 	private static final String TWITTER_INDEX = "twitter";
 	private static final String TEST_INDEX = "test_idx";
 
+	private final int expectedPersonDocuments = 5000;
+	
 	@Autowired
 	private Client client;
     @Autowired
     private IndexService indexService;
     
-    private Exercise2 ex2;
-	
-	private final int expectedPersonDocuments = 5000;
+    private Exercise2 exercise2;
 	
 	@Before
 	public void setUp() {
@@ -39,15 +38,7 @@ public class Exercise2Test {
 		indexService.deleteIndex(PERSON_INDEX);
 		indexService.deleteIndex(TEST_INDEX);
 		
-		ex2 = new Exercise2(client);
-	}
-	
-	@After
-	public void tearDown() {
-		// delete all indices when we're done with tests
-		indexService.deleteIndex(TWITTER_INDEX);
-		indexService.deleteIndex(PERSON_INDEX);
-		indexService.deleteIndex(TEST_INDEX);
+		exercise2 = new Exercise2(client);
 	}
 	
 	/**
@@ -55,11 +46,13 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testCreateIndex() {
-		Assert.assertFalse(ex2.indexExists(TWITTER_INDEX));
+		indexService.deleteIndex(TWITTER_INDEX);
+
+		Assert.assertFalse(exercise2.indexExists(TWITTER_INDEX));
 		
-		ex2.createIndex(TWITTER_INDEX);
+		exercise2.createIndex(TWITTER_INDEX);
 		
-		Assert.assertTrue(ex2.indexExists(TWITTER_INDEX));
+		Assert.assertTrue(exercise2.indexExists(TWITTER_INDEX));
 	}
 	
 	/**
@@ -67,10 +60,10 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testIndexOneDocument() throws IOException {
-		ex2.indexOneDocument();
+		exercise2.indexOneDocument();
 		
 		// refresh the index prior to performing search operations
-		ex2.refreshIndex();
+		exercise2.refreshIndex();
 		
 		long resultCount = client.prepareCount(TWITTER_INDEX).get().getCount();
 		
@@ -82,12 +75,12 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testIndexMultipleDocuments() throws Exception {
-		ex2.indexMultipleDocuments();
+		exercise2.indexMultipleDocuments();
 		
-		Assert.assertTrue(ex2.indexExists(PERSON_INDEX));
+		Assert.assertTrue(exercise2.indexExists(PERSON_INDEX));
 		
 		// refresh the index prior to performing search operations
-		ex2.refreshIndex();
+		exercise2.refreshIndex();
 		
 		long docCount = client.prepareCount(PERSON_INDEX).get().getCount();
 		
@@ -99,13 +92,13 @@ public class Exercise2Test {
 	 */
 	@Test
 	public void testDeleteIndex() {
-		ex2.createIndex(TEST_INDEX);
+		exercise2.createIndex(TEST_INDEX);
 		
-		Assert.assertTrue(ex2.indexExists(TEST_INDEX));
+		Assert.assertTrue(exercise2.indexExists(TEST_INDEX));
 		
-		boolean indexDeleted = ex2.deleteIndex(TEST_INDEX);
+		boolean indexDeleted = exercise2.deleteIndex(TEST_INDEX);
 		Assert.assertTrue(indexDeleted);
 		
-		Assert.assertFalse(ex2.indexExists(TEST_INDEX));
+		Assert.assertFalse(exercise2.indexExists(TEST_INDEX));
 	}
 }
