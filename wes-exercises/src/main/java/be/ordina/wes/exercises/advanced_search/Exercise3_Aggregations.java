@@ -10,8 +10,6 @@ import org.elasticsearch.search.aggregations.bucket.terms.TermsBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import be.ordina.wes.exercises.basics.Exercise1;
-
 /**
  * In-depth search exercise #3:
  * Aggregations
@@ -30,13 +28,17 @@ public class Exercise3_Aggregations {
 	private static final String BY_GENDER = "by_gender";
 	private static final String BY_CHILDREN = "by_children";
 	
-	private static Client client = Exercise1.getInstance();
+	private Client client;
+	
+	public Exercise3_Aggregations(Client client) {
+		this.client = client;
+	}
 	
 	/**
 	 * Aggregate all person documents by country, city and gender.
 	 * @return Search response with search results and aggregations
 	 */
-	public static SearchResponse aggregatePersonByCountry() {
+	public SearchResponse aggregatePersonByCountry() {
 		TermsBuilder countryAggregation = null;
 		// TODO-1: build a terms aggregation (using AggregationBuilders) 
 		// based on the 'country' field, and name it 'by_country', 
@@ -71,7 +73,7 @@ public class Exercise3_Aggregations {
 		return buildSearchQuery(countryAggregation);
 	}
 	
-	public static SearchResponse aggregatePersonByChildren() {
+	public SearchResponse aggregatePersonByChildren() {
 		HistogramBuilder childrenAggregation = null;
 		// TODO-6: build a histogram aggregation based on the 'children' field,
 		// and name it 'by_children'.
@@ -83,7 +85,7 @@ public class Exercise3_Aggregations {
 		return buildSearchQuery(childrenAggregation);
 	}
 	
-	private static SearchResponse buildSearchQuery(AbstractAggregationBuilder aggregation) {
+	private SearchResponse buildSearchQuery(AbstractAggregationBuilder aggregation) {
 		SearchRequestBuilder requestBuilder = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
 				.addAggregation(aggregation);

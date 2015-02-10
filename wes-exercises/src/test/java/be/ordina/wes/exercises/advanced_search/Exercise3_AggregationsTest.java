@@ -1,15 +1,23 @@
 package be.ordina.wes.exercises.advanced_search;
 
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.client.Client;
 import org.elasticsearch.search.aggregations.bucket.histogram.Histogram;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms;
-import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import be.ordina.wes.exercises.basics.Exercise2;
+import be.ordina.wes.core.service.IndexService;
+import be.ordina.wes.exercises.config.TestConfig;
+import be.ordina.wes.exercises.util.PersonUtil;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = TestConfig.class)
 public class Exercise3_AggregationsTest {
 
 	private static final String PERSON_INDEX = "person";
@@ -23,16 +31,20 @@ public class Exercise3_AggregationsTest {
 	private final int expectedFemalesInLondon = 173;
 	private final int expectedPeopleWith3Children = 961;
 	
-	@BeforeClass
-	public static void setUp() throws Exception {
-		Exercise2.deleteIndex(PERSON_INDEX);
-		Exercise2.indexMultipleDocuments();
-		Exercise2.refreshIndex();
-	}
+	@Autowired
+	private Client client;
+	@Autowired
+	private IndexService indexService;
 	
-	@AfterClass
-	public static void tearDown() {
-		Exercise2.deleteIndex(PERSON_INDEX);
+	private Exercise3_Aggregations exercise3;
+	
+	@Before
+	public void setUp() throws Exception {
+		indexService.deleteIndex(PERSON_INDEX);
+		PersonUtil.indexPersonDocuments(client);
+		indexService.refreshIndices();
+		
+		exercise3 = new Exercise3_Aggregations(client);
 	}
 	
 	/**
@@ -40,7 +52,7 @@ public class Exercise3_AggregationsTest {
 	 */
 	@Test
 	public void testAggregatePersonByCountry() {
-		SearchResponse response = Exercise3_Aggregations.aggregatePersonByCountry();
+		SearchResponse response = exercise3.aggregatePersonByCountry();
 		
 		// fetch 'by_country' aggregation
 		Terms countryAggregation = response.getAggregations().get(BY_COUNTRY);
@@ -71,7 +83,7 @@ public class Exercise3_AggregationsTest {
 	 */
 	@Test
 	public void testAggregatePersonByChildren() {
-		SearchResponse response = Exercise3_Aggregations.aggregatePersonByChildren();
+		SearchResponse response = exercise3.aggregatePersonByChildren();
 		
 		// fetch 'by_children' aggregation
 		Histogram childrenAggregation = response.getAggregations().get(BY_CHILDREN);
