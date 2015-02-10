@@ -10,8 +10,6 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import be.ordina.wes.exercises.basics.Exercise1;
-
 /**
  * In-depth search exercise #2:
  * Multifield search
@@ -21,12 +19,15 @@ public class Exercise2_MultifieldSearch {
 	private static final Logger LOG = LoggerFactory.getLogger(Exercise2_MultifieldSearch.class);
 	
 	private static final String PERSON_INDEX = "person";
-	private static final String DATE_OF_BIRTH_FIELD = "dateOfBirth";
 	private static final int MAX_RESULTS = 30;
 
-	private static Client client = Exercise1.getInstance();
+	private Client client;
 	
-	public static SearchResponse searchPersonByMultipleFields(int value, String...searchFields) throws InterruptedException, ExecutionException {
+	public Exercise2_MultifieldSearch(Client client) {
+		this.client = client;
+	}
+	
+	public SearchResponse searchPersonByMultipleFields(int value, String...searchFields) throws InterruptedException, ExecutionException {
 		QueryBuilder multimatchQuery = null;
 		// TODO-1: build a multimatch query (using QueryBuilders), 
 		// using searchTerm and searchFields variables.
@@ -36,7 +37,7 @@ public class Exercise2_MultifieldSearch {
 		return buildSearchQuery(multimatchQuery);
 	}
 	
-	public static SearchResponse searchPersonByMultipleTerms(String fieldName, String...searchTerms) throws InterruptedException, ExecutionException {
+	public SearchResponse searchPersonByMultipleTerms(String fieldName, String...searchTerms) throws InterruptedException, ExecutionException {
 		// Note that term queries are not analyzed
 		QueryBuilder termsQuery = null;
 		// TODO-2: build a terms query, using fieldName and searchTerms variables.
@@ -46,7 +47,7 @@ public class Exercise2_MultifieldSearch {
 		return buildSearchQuery(termsQuery);
 	}
 	// TODO-3: check Exercise2_MultifieldSearchTest
-	private static SearchResponse buildSearchQuery(QueryBuilder query) throws InterruptedException, ExecutionException {
+	private SearchResponse buildSearchQuery(QueryBuilder query) throws InterruptedException, ExecutionException {
 		SearchRequestBuilder request = client.prepareSearch()
 				.setIndices(PERSON_INDEX)
 				.setSize(MAX_RESULTS)

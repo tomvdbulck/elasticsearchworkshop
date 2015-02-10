@@ -3,15 +3,23 @@ package be.ordina.wes.exercises.advanced_search;
 import java.util.List;
 
 import org.elasticsearch.action.search.SearchResponse;
-import org.junit.AfterClass;
+import org.elasticsearch.client.Client;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import be.ordina.wes.common.util.MappingUtil;
-import be.ordina.wes.exercises.basics.Exercise2;
+import be.ordina.wes.core.service.IndexService;
+import be.ordina.wes.exercises.config.TestConfig;
 import be.ordina.wes.exercises.model.Person;
+import be.ordina.wes.exercises.util.PersonUtil;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = TestConfig.class)
 public class Exercise2_MultifieldSearchTest {
 
 	private static final String PERSON_INDEX = "person";
@@ -21,16 +29,20 @@ public class Exercise2_MultifieldSearchTest {
 	
 	private final Integer expectedCarsValue = 456;
 	
-	@BeforeClass
-	public static void setUp() throws Exception {
-		Exercise2.deleteIndex(PERSON_INDEX);
-		Exercise2.indexMultipleDocuments();
-		Exercise2.refreshIndex();
-	}
+	@Autowired
+	private Client client;
+	@Autowired
+	private IndexService indexService;
 	
-	@AfterClass
-	public static void tearDown() {
-		Exercise2.deleteIndex(PERSON_INDEX);
+	private Exercise2_MultifieldSearch exercise2;
+	
+	@Before
+	public void setUp() throws Exception {
+		indexService.deleteIndex(PERSON_INDEX);
+		PersonUtil.indexPersonDocuments(client);
+		indexService.refreshIndices();
+		
+		exercise2 = new Exercise2_MultifieldSearch(client);
 	}
 	
 	/**
@@ -42,7 +54,7 @@ public class Exercise2_MultifieldSearchTest {
 		// TODO-3 (cont): boost 'cars' field by a factor of 2 (using ^2)
 		String[] searchFields = { "marketing.cars", "marketing.toys", "marketing.music" };
 		
-		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleFields(marketingValue, searchFields);
+		SearchResponse response = exercise2.searchPersonByMultipleFields(marketingValue, searchFields);
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
 		Assert.assertEquals(expectedResultsByMultifield, list.size());
@@ -60,7 +72,7 @@ public class Exercise2_MultifieldSearchTest {
 		String fieldName = "name";
 		String[] searchTerms = { "simon", "Sophie" };
 		
-		SearchResponse response = Exercise2_MultifieldSearch.searchPersonByMultipleTerms(fieldName, searchTerms);
+		SearchResponse response = exercise2.searchPersonByMultipleTerms(fieldName, searchTerms);
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);
 		
 		Assert.assertEquals(expectedResultsByTerms, list.size());
