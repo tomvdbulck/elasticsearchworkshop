@@ -19,14 +19,18 @@ public class Exercise5 {
 	private static final String PERSON_TYPE = "person";
 	private static final String DATE_OF_BIRTH_FIELD = "dateOfBirth";
 	
-	private static Client client = Exercise1.getInstance();
+	private Client client;
+	
+	public Exercise5(Client client) {
+		this.client = client;
+	}
 	
 	/**
 	 * Delete person from the index
 	 * @param documentId ID of the document
 	 * @return true if a doc was found to delete
 	 */
-	public static boolean deletePerson(String documentId) {
+	public boolean deletePerson(String documentId) {
 		DeleteResponse response = null;
 		// TODO-1: prepare a delete operation, setting the index to 'person',
 		// document type to 'person', and the provided documentId as ID,
@@ -47,7 +51,7 @@ public class Exercise5 {
 	 * Delete all people born before specific date
 	 * @param date Date (exclusive)
 	 */
-	public static void deletePeopleBornBefore(String date) {
+	public void deletePeopleBornBefore(String date) {
 		QueryBuilder query = null;
 		// TODO-2: build a range query (using QueryBuilders), 
 		// where dateOfBirth is smaller than the provided date (dateOfBirth < date)

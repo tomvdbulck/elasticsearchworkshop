@@ -6,34 +6,43 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
-import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import be.ordina.wes.common.util.MappingUtil;
+import be.ordina.wes.core.service.IndexService;
+import be.ordina.wes.exercises.config.TestConfig;
 import be.ordina.wes.exercises.model.Person;
+import be.ordina.wes.exercises.util.PersonUtil;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = TestConfig.class)
 public class Exercise5Test {
 
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
 	private static final String PERSON_ID = "-QnBKlbHRPOO9pbebQMDjw";
 
-	private static Client client;
-	
 	private final int expectedDocumentCount = 735;
 	
-	@BeforeClass
-	public static void setUp() throws Exception {
-		Exercise2.deleteIndex(PERSON_INDEX);
-		Exercise2.indexMultipleDocuments();
-		client = Exercise1.getInstance();
-	}
+	@Autowired
+	private Client client;
+	@Autowired
+	private IndexService indexService;
 	
-	@AfterClass
-	public static void tearDown() {
-		Exercise2.deleteIndex(PERSON_INDEX);
+	private Exercise5 exercise5;
+	
+	@Before
+	public void setUp() throws Exception {
+		indexService.deleteIndex(PERSON_INDEX);
+		PersonUtil.indexPersonDocuments(client);
+		
+		exercise5 = new Exercise5(client);
 	}
 	
 	/**
@@ -41,11 +50,11 @@ public class Exercise5Test {
 	 */
 	@Test
 	public void testDeletePerson() throws Exception {
-		boolean isDeleted = Exercise5.deletePerson(PERSON_ID);
+		boolean isDeleted = exercise5.deletePerson(PERSON_ID);
 		
 		Assert.assertTrue(isDeleted);
 		
-		Exercise2.refreshIndex();
+		indexService.refreshIndices();
 		
 		QueryBuilder query = QueryBuilders.idsQuery(PERSON_TYPE).ids(PERSON_ID);
 		
@@ -65,7 +74,7 @@ public class Exercise5Test {
 	@Test
 	public void testDeletePeopleBornBefore() {
 		String date = "2000-01-01";
-		Exercise5.deletePeopleBornBefore(date);
+		exercise5.deletePeopleBornBefore(date);
 		
 		long docCount = client.prepareCount(PERSON_INDEX).get().getCount();
 		Assert.assertEquals(expectedDocumentCount, docCount);
