@@ -38,8 +38,9 @@ public interface IndexService {
 	/**
 	 * Delete an index
 	 * @param indexName Name of the index
+	 * @return true if the index was deleted
 	 */
-	void deleteIndex(String indexName);
+	boolean deleteIndex(String indexName);
 	
 	/**
 	 * Refresh all indices

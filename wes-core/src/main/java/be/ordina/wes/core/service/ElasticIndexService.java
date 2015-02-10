@@ -42,12 +42,23 @@ public class ElasticIndexService implements IndexService {
 	}
 
 	@Override
-	public void deleteIndex(String indexName) {
-		client.admin().indices().prepareDelete(indexName).get();
+	public boolean deleteIndex(String indexName) {
+		boolean indexDeleted = false;
 		
-		LOG.info("Deleting index [{}]", indexName);
+		if (indexExists(indexName)) {
+			client.admin().indices().prepareDelete(indexName).get();
+			
+			indexDeleted = true;
+		}
+		
+		if (indexDeleted) {
+			LOG.info("Index [{}] deleted", indexName);
+		} else {
+			LOG.warn("Index [{}] was not found", indexName);
+		}
+		return indexDeleted;
 	}
-
+	
 	@Override
 	public void refreshIndices() {
         client.admin().indices().prepareRefresh().get();
