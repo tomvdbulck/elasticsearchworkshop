@@ -1,22 +1,14 @@
 package be.ordina.wes.exercises.basics;
 
-import java.util.concurrent.ExecutionException;
-
 import org.elasticsearch.action.admin.cluster.health.ClusterHealthResponse;
 import org.elasticsearch.action.admin.cluster.health.ClusterHealthStatus;
 import org.elasticsearch.client.Client;
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class Exercise1Test {
 
-	private static Client client;
-	
-	@BeforeClass
-	public static void setUp() {
-		client = Exercise1.getInstance();
-	}
+	private Client client;
 	
 	/**
 	 * Test that we can connect to the cluster and that it's ready (i.e. cluster health = green).
@@ -26,7 +18,9 @@ public class Exercise1Test {
 	 * green - all shards are allocated.
 	 */
 	@Test
-	public void testClusterState() throws InterruptedException, ExecutionException {
+	public void testClusterState() {
+		client = Exercise1.getInstance();
+		
 		ClusterHealthResponse clusterHealth = client.admin().cluster().prepareHealth().get();
 		
 		Assert.assertEquals(ClusterHealthStatus.GREEN, clusterHealth.getStatus());
