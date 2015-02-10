@@ -101,6 +101,25 @@ public class ElasticIndexService implements IndexService {
 			LOG.error("Exception", e);
 		}
     }
+	
+	
+	@Override
+	public void indexBulk(List<?> objectList, String documentType, String indexName) {
+		try {
+			BulkRequestBuilder bulkRequest = client.prepareBulk();
+			for (Object object : objectList) {
+				IndexRequest indexRequest = new IndexRequest(indexName, documentType);
+				indexRequest.source(mapper.writeValueAsString(object));
+				bulkRequest.add(indexRequest);
+			}
+			
+			bulkRequest.get();
+			
+			LOG.debug("bulk indexing [{}] documents into [{}]", documentType, indexName);
+		} catch (JsonProcessingException e) {
+			LOG.error("Exception", e);
+		}
+	}
 
 	@Override
 	public boolean remove(String docType, String id) {

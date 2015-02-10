@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class Exercise1StopWords {
+public class Exercise4NormalizingTest {
 	
 	
 	@Test

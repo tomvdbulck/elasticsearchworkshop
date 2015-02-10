@@ -48,7 +48,7 @@ public class LanguageServiceImpl implements LanguageService {
 				.startObject()
 		            .startObject("beer")
 		                .startObject("properties")
-		                    .startObject("description")
+		                    .startObject("description_dutch")
 		                    	.field("type", "string")
 		                    	.field("analyzer", "dutch")
 		                     .endObject()

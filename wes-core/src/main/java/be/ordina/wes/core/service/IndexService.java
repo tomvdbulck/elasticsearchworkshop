@@ -53,5 +53,7 @@ public interface IndexService {
      * @return True if index exists, otherwise false
      */
 	boolean indexExists(String indexName);
+
+	void indexBulk(List<?> objectList, String documentType, String indexName);
 	
 }
