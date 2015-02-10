@@ -51,6 +51,7 @@ public class Exercise4Test {
 		
 		Exercise2.refreshIndex();
 		
+		// build an ids query to find the needed person by ID
 		QueryBuilder query = QueryBuilders.idsQuery(PERSON_TYPE).ids(PERSON_ID);
 		
 		SearchResponse searchResponse = client.prepareSearch()

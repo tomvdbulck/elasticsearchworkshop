@@ -20,6 +20,7 @@ public class Exercise2Test {
 	
 	@BeforeClass
 	public static void setUp() {
+		// if a test fails, make sure to cleanup before running tests again
 		Exercise2.deleteIndex(TWITTER_INDEX);
 		Exercise2.deleteIndex(PERSON_INDEX);
 		Exercise2.deleteIndex(TEST_INDEX);

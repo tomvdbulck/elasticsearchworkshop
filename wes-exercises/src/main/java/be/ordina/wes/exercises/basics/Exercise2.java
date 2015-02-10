@@ -28,7 +28,7 @@ public class Exercise2 {
 		// reads data from JSON file
 		String jsonDocument = loadFile(TWITTER_FILE);
 		
-		// TODO-1: index the above JSON document into 'twitter' index (prepareIndex),
+		// TODO-1: index the above JSON document into 'twitter' index (using prepareIndex),
 		// and specify document type as 'tweet'. Load the document using setSource.
 		
 
@@ -86,6 +86,9 @@ public class Exercise2 {
 	/**
 	 * Explicitly refresh all indices (making the content 
 	 * indexed since the last refresh searchable).
+	 * 
+	 * Note: Typically this is not needed (default refresh interval is 1sec), 
+	 * but for unit tests we want the indexed data directly searchable.
 	 */
 	public static void refreshIndex() {
 		client.admin().indices().prepareRefresh().get();
@@ -103,7 +106,7 @@ public class Exercise2 {
 	/**
 	 * Loads file from the specified path
 	 * @param filePath The file path
-	 * @return Contents of the file as string
+	 * @return Contents of the file as a string
 	 */
 	private static String loadFile(String filePath) throws IOException {
 		return new String(Files.readAllBytes(Paths.get(TWITTER_FILE)));

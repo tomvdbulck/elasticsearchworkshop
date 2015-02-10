@@ -42,6 +42,7 @@ public class Exercise3 {
 		
 		LOG.trace("Search request: \n{}", requestBuilder);
 		// executes the search operation using the previously built search request
+		// and returns a response with search results
 		SearchResponse response = requestBuilder.get();
 		
 		LOG.trace("Search response: \n{}", response);
