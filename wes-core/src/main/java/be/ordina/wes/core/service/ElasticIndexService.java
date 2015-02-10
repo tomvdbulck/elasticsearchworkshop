@@ -53,8 +53,6 @@ public class ElasticIndexService implements IndexService {
 		
 		if (indexDeleted) {
 			LOG.info("Index [{}] deleted", indexName);
-		} else {
-			LOG.warn("Index [{}] was not found", indexName);
 		}
 		return indexDeleted;
 	}
