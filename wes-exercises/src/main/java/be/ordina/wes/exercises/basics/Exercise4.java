@@ -1,8 +1,5 @@
 package be.ordina.wes.exercises.basics;
 
-import java.io.IOException;
-import java.util.concurrent.ExecutionException;
-
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.xcontent.XContentFactory;
@@ -20,7 +17,11 @@ public class Exercise4 {
 	private static final String PERSON_INDEX = "person";
 	private static final String PERSON_TYPE = "person";
 	
-	private static Client client = Exercise1.getInstance();
+	private Client client;
+	
+	public Exercise4(Client client) {
+		this.client = client;
+	}
 	
 	/**
 	 * Updates a person document
@@ -28,7 +29,7 @@ public class Exercise4 {
 	 * @param field Field to update
 	 * @param value New value to store
 	 */
-	public static void updatePerson(String documentId, String field, Object value) throws IOException, InterruptedException, ExecutionException {
+	public void updatePerson(String documentId, String field, Object value) throws Exception {
 		UpdateRequest updateRequest = null;
 		// TODO-1: construct a new UpdateRequest, setting the index to 'person',
 		// document type to 'person', and the provided documentId as ID,
