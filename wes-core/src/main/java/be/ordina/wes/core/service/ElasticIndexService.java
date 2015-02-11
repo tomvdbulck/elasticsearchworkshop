@@ -83,23 +83,8 @@ public class ElasticIndexService implements IndexService {
     
 	@Override
     public void indexBulk(List<?> objectList, String documentType) {
-        try {
-			BulkRequestBuilder bulkRequest = client.prepareBulk();
-			String indexName = esConfig.getIndexName();
-	        for (Object object : objectList) {
-				IndexRequest indexRequest = new IndexRequest(indexName, documentType);
-				indexRequest.source(mapper.writeValueAsString(object));
-				bulkRequest.add(indexRequest);
-			}
-	        
-			bulkRequest.get();
-			
-			LOG.debug("bulk indexing [{}] documents into [{}]", documentType, indexName);
-		} catch (JsonProcessingException e) {
-			LOG.error("Exception", e);
-		}
+        indexBulk(objectList, documentType, esConfig.getIndexName());
     }
-	
 	
 	@Override
 	public void indexBulk(List<?> objectList, String documentType, String indexName) {

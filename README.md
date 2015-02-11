@@ -55,7 +55,7 @@ If the tests pass, you are ready to start with the exercises.
 
 ## Exercises ##
 
-Coming soon...
+Coming with the pizza...
 
 
 ## Connecting to Elasticsearch ##

@@ -8,7 +8,6 @@ import java.util.concurrent.ExecutionException;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
-import org.elasticsearch.index.query.MultiMatchQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.slf4j.Logger;
@@ -101,11 +100,6 @@ public class ElasticSearchService<T> implements SearchService<T> {
             return QueryBuilders.matchQuery("_all", searchTerm);
 		}
 	}
-	
-	
-	
-	
-	
 	
 	private SearchRequestBuilder buildExactSearchRequest(String indexName, String searchTerm, String documentType, String fieldName) {
 		QueryBuilder query = buildExactQuery(searchTerm, fieldName);

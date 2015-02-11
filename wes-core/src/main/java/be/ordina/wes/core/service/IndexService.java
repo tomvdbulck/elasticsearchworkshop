@@ -23,11 +23,19 @@ public interface IndexService {
 	boolean remove(String documentType, String id);
 	
 	/**
-	 * Do a bulk index
+	 * Do a bulk index on the default index
 	 * @param objectList A list of objects
 	 * @param documentType Document type
 	 */
 	void indexBulk(List<?> objectList, String documentType);
+
+	/**
+	 * Do a bulk index
+	 * @param objectList A list of objects
+	 * @param documentType Document type
+	 * @param indexName Name of the index
+	 */
+	void indexBulk(List<?> objectList, String documentType, String indexName);
 	
     /**
      * Create an index
@@ -54,6 +62,4 @@ public interface IndexService {
      */
 	boolean indexExists(String indexName);
 
-	void indexBulk(List<?> objectList, String documentType, String indexName);
-	
 }
