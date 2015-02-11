@@ -74,6 +74,7 @@ public class Exercise4Test {
 		Assert.assertTrue(list.size() == 1);
 		
 		Person updatedPerson = list.get(0);
+		// make sure the field has been updated
 		Assert.assertEquals(expectedChildren, updatedPerson.getChildren());
 	}
 	

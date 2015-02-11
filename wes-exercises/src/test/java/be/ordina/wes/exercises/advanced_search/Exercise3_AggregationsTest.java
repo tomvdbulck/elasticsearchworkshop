@@ -63,6 +63,7 @@ public class Exercise3_AggregationsTest {
 		
 		// fetch 'by_city' aggregation from the "england" bucket
 		Terms cityAggregation = englandBucket.getAggregations().get(BY_CITY);
+		Assert.assertNotNull(cityAggregation);
 		// extract "london" bucket from the 'by_city' aggregation
 		Terms.Bucket londonBucket = cityAggregation.getBucketByKey("london");
 		
@@ -70,6 +71,7 @@ public class Exercise3_AggregationsTest {
 
 		// fetch 'by_gender' aggregation from the "london" bucket
 		Terms londonGenderAgg = londonBucket.getAggregations().get(BY_GENDER);
+		Assert.assertNotNull(londonGenderAgg);
 		// extract "female" bucket from the 'by_gender' aggregation
 		Terms.Bucket femaleBucket = londonGenderAgg.getBucketByKey("female");
 		

@@ -61,6 +61,8 @@ public class Exercise2Test {
 	@Test
 	public void testIndexOneDocument() throws IOException {
 		exercise2.indexOneDocument();
+
+		Assert.assertTrue(indexService.indexExists(TWITTER_INDEX));
 		
 		// refresh the index prior to performing search operations
 		exercise2.refreshIndex();

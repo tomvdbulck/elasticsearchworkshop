@@ -58,8 +58,8 @@ public class Exercise5 {
 		// Assign the operation to the query variable.
 		
 		
-		// TODO-3: prepare a deleteByQuery operation on 'person' index,
-		// and set the previously built query using setQuery.
+		// TODO-3: prepare a deleteByQuery operation (prepareDeleteByQuery) 
+		// on 'person' index, and set the previously built query using setQuery.
 		
 		
 		LOG.info("Deleting '{}' documents where '{}' is before '{}'", PERSON_TYPE, DATE_OF_BIRTH_FIELD, date);

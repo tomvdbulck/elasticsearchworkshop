@@ -61,7 +61,8 @@ public class Exercise2_MultifieldSearchTest {
 		
 		// check that 'cars' field is boosted (i.e. comes on top of search results)
 		Assert.assertEquals(expectedCarsValue, list.get(0).getMarketing().getCars());
-		Assert.assertEquals(expectedCarsValue, list.get(1).getMarketing().getCars());
+		Assert.assertEquals("looks like the 'cars' field is not boosted (TODO-3).", 
+				expectedCarsValue, list.get(1).getMarketing().getCars());
 	}
 	
 	/**

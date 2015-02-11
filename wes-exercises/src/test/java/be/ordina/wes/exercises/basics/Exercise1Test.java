@@ -20,6 +20,7 @@ public class Exercise1Test {
 	@Test
 	public void testClusterState() {
 		client = Exercise1.getInstance();
+		Assert.assertNotNull(client);
 		
 		ClusterHealthResponse clusterHealth = client.admin().cluster().prepareHealth().get();
 		

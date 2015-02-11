@@ -85,7 +85,8 @@ public class Exercise1_FiltersTest {
 		Assert.assertEquals(expectedResultsByCity, list.size());
 		
 		// check that results are sorted by age
-		Assert.assertEquals(expectedSecondPerson, list.get(1).getName());
+		Assert.assertEquals("Looks like the list is not sorted (TODO-3).", 
+				expectedSecondPerson, list.get(1).getName());
 		Assert.assertEquals(expectedLastPerson, list.get(18).getName());
 	}
 	
