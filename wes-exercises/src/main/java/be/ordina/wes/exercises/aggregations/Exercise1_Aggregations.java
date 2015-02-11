@@ -1,4 +1,4 @@
-package be.ordina.wes.exercises.advanced_search;
+package be.ordina.wes.exercises.aggregations;
 
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
@@ -14,9 +14,9 @@ import org.slf4j.LoggerFactory;
  * In-depth search exercise #3:
  * Aggregations
  */
-public class Exercise3_Aggregations {
+public class Exercise1_Aggregations {
 
-	private static final Logger LOG = LoggerFactory.getLogger(Exercise1_Filters.class);
+	private static final Logger LOG = LoggerFactory.getLogger(Exercise1_Aggregations.class);
 	
 	private static final String PERSON_INDEX = "person";
 	private static final String COUNTRY_FIELD = "address.country";
@@ -30,7 +30,7 @@ public class Exercise3_Aggregations {
 	
 	private Client client;
 	
-	public Exercise3_Aggregations(Client client) {
+	public Exercise1_Aggregations(Client client) {
 		this.client = client;
 	}
 	

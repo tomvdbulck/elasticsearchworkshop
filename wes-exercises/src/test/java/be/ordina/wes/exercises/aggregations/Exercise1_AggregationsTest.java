@@ -1,4 +1,4 @@
-package be.ordina.wes.exercises.advanced_search;
+package be.ordina.wes.exercises.aggregations;
 
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
@@ -18,7 +18,7 @@ import be.ordina.wes.exercises.util.PersonUtil;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = TestConfig.class)
-public class Exercise3_AggregationsTest {
+public class Exercise1_AggregationsTest {
 
 	private static final String PERSON_INDEX = "person";
 	private static final String BY_COUNTRY = "by_country";
@@ -36,7 +36,7 @@ public class Exercise3_AggregationsTest {
 	@Autowired
 	private IndexService indexService;
 	
-	private Exercise3_Aggregations exercise3;
+	private Exercise1_Aggregations exercise1;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -44,7 +44,7 @@ public class Exercise3_AggregationsTest {
 		PersonUtil.indexPersonDocuments(client);
 		indexService.refreshIndices();
 		
-		exercise3 = new Exercise3_Aggregations(client);
+		exercise1 = new Exercise1_Aggregations(client);
 	}
 	
 	/**
@@ -52,7 +52,7 @@ public class Exercise3_AggregationsTest {
 	 */
 	@Test
 	public void testAggregatePersonByCountry() {
-		SearchResponse response = exercise3.aggregatePersonByCountry();
+		SearchResponse response = exercise1.aggregatePersonByCountry();
 		
 		// fetch 'by_country' aggregation
 		Terms countryAggregation = response.getAggregations().get(BY_COUNTRY);
@@ -85,7 +85,7 @@ public class Exercise3_AggregationsTest {
 	 */
 	@Test
 	public void testAggregatePersonByChildren() {
-		SearchResponse response = exercise3.aggregatePersonByChildren();
+		SearchResponse response = exercise1.aggregatePersonByChildren();
 		
 		// fetch 'by_children' aggregation
 		Histogram childrenAggregation = response.getAggregations().get(BY_CHILDREN);
