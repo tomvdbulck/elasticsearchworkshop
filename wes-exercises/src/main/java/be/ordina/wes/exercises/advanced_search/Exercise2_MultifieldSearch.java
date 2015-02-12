@@ -30,7 +30,7 @@ public class Exercise2_MultifieldSearch {
 	public SearchResponse searchPersonByMultipleFields(int value, String...searchFields) throws InterruptedException, ExecutionException {
 		QueryBuilder multimatchQuery = null;
 		// TODO-1: build a multimatch query (using QueryBuilders), 
-		// using searchTerm and searchFields variables.
+		// using value and searchFields variables.
 		// Assign the operation to the multimatchQuery variable.
 		
 		
