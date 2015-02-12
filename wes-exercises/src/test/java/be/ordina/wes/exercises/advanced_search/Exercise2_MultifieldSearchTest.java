@@ -52,7 +52,7 @@ public class Exercise2_MultifieldSearchTest {
 	public void testSearchPersonByMultipleFields() throws Exception  {
 		int marketingValue = 456;
 		// TODO-3 (cont): boost 'cars' field by a factor of 2 (using ^2)
-		String[] searchFields = { "marketing.cars", "marketing.toys", "marketing.music" };
+		String[] searchFields = { "marketing.cars^2", "marketing.toys", "marketing.music" };
 		
 		SearchResponse response = exercise2.searchPersonByMultipleFields(marketingValue, searchFields);
 		List<Person> list = MappingUtil.mapSearchResults(response, Person.class);

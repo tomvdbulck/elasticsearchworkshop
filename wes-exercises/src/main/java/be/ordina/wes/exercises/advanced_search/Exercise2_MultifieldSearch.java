@@ -32,7 +32,7 @@ public class Exercise2_MultifieldSearch {
 		// TODO-1: build a multimatch query (using QueryBuilders), 
 		// using searchTerm and searchFields variables.
 		// Assign the operation to the multimatchQuery variable.
-		
+		multimatchQuery = QueryBuilders.multiMatchQuery(value, searchFields);
 		
 		return buildSearchQuery(multimatchQuery);
 	}
@@ -42,7 +42,7 @@ public class Exercise2_MultifieldSearch {
 		QueryBuilder termsQuery = null;
 		// TODO-2: build a terms query, using fieldName and searchTerms variables.
 		// Assign the operation to the termsQuery variable.
-		
+		termsQuery = QueryBuilders.termsQuery(fieldName, searchTerms);
 		
 		return buildSearchQuery(termsQuery);
 	}

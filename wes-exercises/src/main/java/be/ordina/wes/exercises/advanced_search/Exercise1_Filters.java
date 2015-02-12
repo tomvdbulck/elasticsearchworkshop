@@ -47,7 +47,9 @@ public class Exercise1_Filters {
 		// TODO-1: build a range filter (using FilterBuilders), 
 		// and set the date range from startDate to endDate.
 		// Filter on dateOfBirth field, and assign the operation to rangeFilter variable.
-		
+		rangeFilter = FilterBuilders.rangeFilter(DATE_OF_BIRTH_FIELD)
+				.from(startDate)
+				.to(endDate);
 		
 		return buildSearchQuery(rangeFilter);
 	}
@@ -65,7 +67,10 @@ public class Exercise1_Filters {
 		// filter on 'gender', 'children' and 'address.city' fields.
 		// All 3 filters should be inside a "must" clause.
 		// Assign the operation to the boolFilter variable.
-		
+		boolFilter = FilterBuilders.boolFilter()
+				.must(FilterBuilders.termFilter(GENDER_FIELD, gender))
+				.must(FilterBuilders.termFilter(CHILDREN_FIELD, children))
+				.must(FilterBuilders.termFilter(CITY_FIELD, city));
 		
 		return buildSearchQuery(boolFilter);
 	}
@@ -78,6 +83,7 @@ public class Exercise1_Filters {
 		SearchRequestBuilder requestBuilder = client.prepareSearch()
 			.setIndices(PERSON_INDEX)
 			.setQuery(filteredQuery)
+			.addSort(DATE_OF_BIRTH_FIELD, SortOrder.ASC)
 			.setSize(MAX_RESULTS);
 		
 		LOG.trace("Search request: \n{}", requestBuilder);
