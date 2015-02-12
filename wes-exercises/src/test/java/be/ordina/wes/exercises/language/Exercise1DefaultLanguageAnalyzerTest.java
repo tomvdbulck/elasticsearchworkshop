@@ -1,21 +1,15 @@
 package be.ordina.wes.exercises.language;
 
-import static org.junit.Assert.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 import org.elasticsearch.client.Client;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -23,15 +17,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import be.ordina.wes.core.model.Beer;
 import be.ordina.wes.core.service.IndexService;
 import be.ordina.wes.core.service.SearchService;
-import be.ordina.wes.exercises.basics.Exercise1;
-import be.ordina.wes.exercises.basics.Exercise2;
 import be.ordina.wes.exercises.config.TestConfig;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = TestConfig.class)
 public class Exercise1DefaultLanguageAnalyzerTest {
-	
-	private static final Logger LOG = LoggerFactory.getLogger(Exercise1DefaultLanguageAnalyzer.class);
 	
 	private static final String BEER_INDEX = "beerdefaultlanguage";
 

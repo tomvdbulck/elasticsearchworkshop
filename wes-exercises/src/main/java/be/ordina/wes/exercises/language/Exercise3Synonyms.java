@@ -60,7 +60,7 @@ public class Exercise3Synonyms {
 	    	
 	    		Settings settings = ImmutableSettings.settingsBuilder().loadFromSource(XContentFactory.jsonBuilder()
 	            .startObject()
-	                //Add analyzer settings
+	                //TODO Add analyzer settings
 //	                .startObject("analysis")
 //	                	.startObject("analyzer")
 //	                		.startObject("folding")
@@ -75,18 +75,19 @@ public class Exercise3Synonyms {
 //	                .endObject()
 	            .endObject().string()).build();
 	    		
+	    		//TODO complete the mapping
 	    		XContentBuilder mapBuilder = XContentFactory.jsonBuilder()
 				.startObject()
 		            .startObject(type)
 		                .startObject("properties")
-		                    .startObject("description")
-		                    	.field("type", "string")
-		                    	.field("analyzer", "folding")
-		                     .endObject()
-		                     .startObject("brand")
-			    				.field("type", "string")
-			    				.field("analyzer", "nofolding")
-		    				.endObject()
+//		                    .startObject("description")
+//		                    	.field("type", "string")
+//		                    	.field("analyzer", "folding")
+//		                     .endObject()
+//		                     .startObject("brand")
+//			    				.field("type", "string")
+//			    				.field("analyzer", "nofolding")
+//		    				.endObject()
 		                .endObject()
 			        .endObject()
 			    .endObject();
@@ -131,9 +132,10 @@ public class Exercise3Synonyms {
 	 */
 	public void createIndexWithSynonyms(String indexName, String type) {
 		try {
+			//TODO define the foldingoptions
     		List<String> foldingOptions = new ArrayList<String>();
-        	foldingOptions.add("my_synonym_filter");
-        	foldingOptions.add("lowercase");
+//        	foldingOptions.add("my_synonym_filter");
+//        	foldingOptions.add("lowercase");
         	
         	List<String> synonyms = new ArrayList<String>();
         	synonyms.add("Duvel,duiveltjesbier,duivels");
@@ -141,8 +143,8 @@ public class Exercise3Synonyms {
         	       	
     		Settings settings = ImmutableSettings.settingsBuilder().loadFromSource(XContentFactory.jsonBuilder()
     	            .startObject()
-    	                //Add analyzer settings
-//    	                .startObject("analysis")
+    	                //TODO Add analyzer settings
+    	                .startObject("analysis")
 //    	                	.startObject("filter")
 //    	                		.startObject("my_synonym_filter")
 //    	                			.field("type", "synonym")
@@ -155,23 +157,24 @@ public class Exercise3Synonyms {
 //			    					.field("filter",foldingOptions)
 //			    				.endObject()
 //    	                   .endObject()
-//    	                .endObject()
+    	                .endObject()
     	            .endObject().string()).build();
     		
+    		//TODO complete the mapping
     		XContentBuilder builder = XContentFactory.jsonBuilder()
     				.startObject()
     		            .startObject(type)
     		                .startObject("properties")
-    		                   .startObject("description")
-			                    	.field("type", "string")
-			                    	.field("analyzer", "standard")
+//    		                   .startObject("description")
+//			                    	.field("type", "string")
+//			                    	.field("analyzer", "standard")
 //			                    	.startObject("fields")
 //				                    	.startObject("synonym")
 //				                    		.field("type", "string")
 //				                    		.field("analyzer", "mysynonyms")
 //				                    	.endObject()
 //				                     .endObject()
-			                     .endObject()
+//			                     .endObject()
     		                .endObject()
     			        .endObject()
     			    .endObject();
