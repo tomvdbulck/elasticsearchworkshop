@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.elasticsearch.client.Client;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +19,7 @@ import be.ordina.wes.exercises.config.TestConfig;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = TestConfig.class)
-public class Exercise2StopWordsTest {
+public class Exercise2StopwordsTest {
 	
 	private static final String BEER_INDEX = "beerstopwords";
 
@@ -30,7 +29,6 @@ public class Exercise2StopWordsTest {
 	private Client client;
     @Autowired
     private IndexService indexService;
-    
     @Autowired
     private SearchService<Beer> beerSearchService;
     
@@ -39,16 +37,8 @@ public class Exercise2StopWordsTest {
 	@Before
 	public void setUp() {
 		indexService.deleteIndex(BEER_INDEX);
-		
 		exercise2 = new Exercise2Stopwords(client);
 	}
-	
-	@After
-	public void tearDown() {
-		// delete all indices when we're done with tests
-		//indexService.deleteIndex(BEER_INDEX);
-	}
-	
 	
 	@Test
 	public void testFindBeersWithStopwords() {
@@ -87,8 +77,6 @@ public class Exercise2StopWordsTest {
 		searchResults = beerSearchService.find("speciaalbier"
 				, BEER_TYPE, Beer.class, BEER_INDEX, true, "description");
 		Assert.assertEquals(0, searchResults.size());
-		
-		
 	}
 
 }
