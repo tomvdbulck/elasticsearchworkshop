@@ -49,7 +49,14 @@ public class Exercise2Stopwords {
 			Settings settings = ImmutableSettings.settingsBuilder().loadFromSource(XContentFactory.jsonBuilder()
 		            .startObject()
 		                //TODO Add analyzer settings
-		            	
+		            	.startObject("analysis")
+		            		.startObject("analyzer")
+		            			.startObject("my_analyzer")
+		            				.field("type", "standard")
+		            				.field("stopwords", stopwords)
+		            			.endObject()
+		            		.endObject()
+		            	.endObject()
 		            .endObject().string()).build();
 		    		
 		    		
@@ -60,7 +67,7 @@ public class Exercise2Stopwords {
 			                    .startObject("description")
 			                    	.field("type", "string")
 			                    	//TODO add the analyzer
-			                    	
+			                    	.field("analyzer", "my_analyzer")
 			                     .endObject()
 			                .endObject()
 				        .endObject()
@@ -69,7 +76,7 @@ public class Exercise2Stopwords {
 		    		//TODO complete the index creation by adding settings to it
 		    		client.admin().indices()
 		    				.prepareCreate(indexName)
-		    				
+		    				.setSettings(settings)
 		    				.addMapping(type, mapBuilder)
 		    				.get();
 			

@@ -56,7 +56,18 @@ public class Exercise3Synonyms {
 	    		Settings settings = ImmutableSettings.settingsBuilder().loadFromSource(XContentFactory.jsonBuilder()
 	            .startObject()
 	                //TODO Add analyzer settings
-	            	
+	            	.startObject("analysis")
+	            		.startObject("analyzer")
+	            			.startObject("folding")
+	            				.field("tokenizer", "standard")
+	            				.field("filter", foldingOption)
+	            			.endObject()
+	            			.startObject("nofolding")
+	            				.field("tokenizer", "standard")
+	            				.field("filter", "")
+	            			.endObject()
+	            		.endObject()
+	            	.endObject()
 	            .endObject().string()).build();
 	    		
 	    		//TODO complete the mapping
@@ -64,7 +75,14 @@ public class Exercise3Synonyms {
 				.startObject()
 		            .startObject(type)
 		                .startObject("properties")
-		                	
+		                	.startObject("description")
+		                		.field("type", "string")
+		                		.field("analyzer", "folding")
+		                	.endObject()
+		                	.startObject("brand")
+		                		.field("type", "string")
+		                		.field("analyzer", "nofolding")
+		                	.endObject()
 		                .endObject()
 			        .endObject()
 			    .endObject();
@@ -110,7 +128,8 @@ public class Exercise3Synonyms {
 		try {
 			//TODO define the foldingoptions
     		List<String> foldingOptions = new ArrayList<String>();
-    		
+    		foldingOptions.add("my_synonym_filter");
+    		foldingOptions.add("lowercase");
         	
         	List<String> synonyms = new ArrayList<String>();
         	synonyms.add("Duvel,duiveltjesbier,duivels");
@@ -120,7 +139,18 @@ public class Exercise3Synonyms {
     	            .startObject()
     	                //TODO Add analyzer settings
     	                .startObject("analysis")
-    	                	
+    	                	.startObject("filter")
+    	                		.startObject("my_synonym_filter")
+    	                			.field("type", "synonym")
+    	                			.field("synonyms", synonyms)
+    	                		.endObject()
+    	                	.endObject()
+    	                	.startObject("analyzer")
+    	                		.startObject("mysynonyms")
+    	                			.field("tokenizer", "standard")
+    	                			.field("filter", foldingOptions)
+    	                		.endObject()
+    	                	.endObject()
     	                .endObject()
     	            .endObject().string()).build();
     		
@@ -129,7 +159,16 @@ public class Exercise3Synonyms {
     				.startObject()
     		            .startObject(type)
     		                .startObject("properties")
-    		                	
+    		                	.startObject("description")
+    		                		.field("type", "string")
+    		                		.field("analyzer", "standard")
+    		                		.startObject("fields")
+    		                			.startObject("synonym")
+    		                				.field("type", "string")
+    		                				.field("analyzer", "mysynonyms")
+    		                			.endObject()
+    		                		.endObject()
+    		                	.endObject()
     		                .endObject()
     			        .endObject()
     			    .endObject();

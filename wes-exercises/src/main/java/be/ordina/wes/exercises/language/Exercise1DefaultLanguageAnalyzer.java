@@ -48,7 +48,12 @@ public class Exercise1DefaultLanguageAnalyzer {
 		                    	.field("type", "string")
 		                    	.field("analyzer", "standard")
 		                    	// TODO: add language analyzer here
-		                    	
+		                    	.startObject("fields")
+		                    		.startObject("dutch")
+		                    			.field("type", "string")
+		                    			.field("analyzer", "dutch")
+		                    		.endObject()
+		                    	.endObject()
 		                    .endObject()
 		                .endObject()
 			        .endObject()
