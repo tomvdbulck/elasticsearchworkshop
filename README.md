@@ -55,8 +55,26 @@ If the tests pass, you are ready to start with the exercises.
 
 ## Exercises ##
 
-Coming with the pizza...
+All the exercises are located in the **wes-exercises** module.
 
+1. Basic exercises are located in the following package:
+	```
+    be.ordina.wes.exercises.basics
+	```
+2. Advanced search exercises:
+	```
+    be.ordina.wes.exercises.advanced_search
+	```
+3. Language exercises:
+	```
+    be.ordina.wes.exercises.language
+	```
+4. Aggregations:
+	```
+    be.ordina.wes.exercises.aggregations
+	```
+
+_Solutions are located on the **solutions** branch_
 
 ## Connecting to Elasticsearch ##
 
