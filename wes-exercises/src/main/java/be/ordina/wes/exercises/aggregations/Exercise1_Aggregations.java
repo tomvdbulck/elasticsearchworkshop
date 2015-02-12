@@ -43,31 +43,31 @@ public class Exercise1_Aggregations {
 		// based on the 'country' field, and name it 'by_country', 
 		// so we can later find the aggregation by name.
 		// Assign the operation to the countryAggregation variable.
-		
+		countryAggregation = AggregationBuilders.terms(BY_COUNTRY).field(COUNTRY_FIELD);
 		
 		TermsBuilder cityAggregation = null;
 		// TODO-2: build a terms aggregation based on the 'city' field, 
 		// and name it 'by_city'.
 		// Assign the operation to the cityAggregation variable.
-		
+		cityAggregation = AggregationBuilders.terms(BY_CITY).field(CITY_FIELD);
 		
 		TermsBuilder genderAggregation = null;
 		// TODO-3: build a terms aggregation based on the 'gender' field, 
 		// and name it 'by_gender'.
 		// Assign the operation to the genderAggregation variable.
-		
+		genderAggregation = AggregationBuilders.terms(BY_GENDER).field(GENDER_FIELD);
 		
 		// TODO-4: add the city aggregation as a sub-aggregation
 		// to the country aggregation (using subAggregation method).
 		// This means that all found documents will be grouped by country,
 		// and all documents falling into a country bucket will be further grouped by city.
-		
+		countryAggregation.subAggregation(cityAggregation);
 		
 		// TODO-5: We need to go deeper! 
 		// Add the gender aggregation as a sub-aggregation 
 		// to the city aggregation. 
 		// Meaning that all documents falling into a city bucket will be grouped by gender.
-		
+		cityAggregation.subAggregation(genderAggregation);
 		
 		return buildSearchQuery(countryAggregation);
 	}
@@ -79,7 +79,9 @@ public class Exercise1_Aggregations {
 		// Set the histogram interval to 1, so that every person with the same children 
 		// count falls into the same bucket.
 		// Assign the operation to the childrenAggregation variable.
-		
+		childrenAggregation = AggregationBuilders.histogram(BY_CHILDREN)
+				.field(CHILDREN_FIELD)
+				.interval(1);
 		
 		return buildSearchQuery(childrenAggregation);
 	}
