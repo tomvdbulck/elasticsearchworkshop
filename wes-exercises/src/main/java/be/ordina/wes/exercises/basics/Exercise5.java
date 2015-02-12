@@ -35,7 +35,7 @@ public class Exercise5 {
 		// TODO-1: prepare a delete operation, setting the index to 'person',
 		// document type to 'person', and the provided documentId as ID,
 		// and assign the operation to response.
-		
+		response = client.prepareDelete(PERSON_INDEX, PERSON_TYPE, documentId).get();
 		
 		boolean documentDeleted = response.isFound();
 		
@@ -56,11 +56,15 @@ public class Exercise5 {
 		// TODO-2: build a range query (using QueryBuilders), 
 		// where dateOfBirth is smaller than the provided date (dateOfBirth < date)
 		// Assign the operation to the query variable.
-		
+		query = QueryBuilders.rangeQuery(DATE_OF_BIRTH_FIELD).lt(date);
+		// OR 
+		query = QueryBuilders.rangeQuery(DATE_OF_BIRTH_FIELD)
+				.to(date)
+				.includeUpper(false);
 		
 		// TODO-3: prepare a deleteByQuery operation (prepareDeleteByQuery) 
 		// on 'person' index, and set the previously built query using setQuery.
-		
+		client.prepareDeleteByQuery(PERSON_INDEX).setQuery(query).get();
 		
 		LOG.info("Deleting '{}' documents where '{}' is before '{}'", PERSON_TYPE, DATE_OF_BIRTH_FIELD, date);
 	}

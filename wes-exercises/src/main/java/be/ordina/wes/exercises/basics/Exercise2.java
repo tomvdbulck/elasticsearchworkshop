@@ -34,7 +34,7 @@ public class Exercise2 {
 		
 		// TODO-1: index the above JSON document into 'twitter' index (using prepareIndex),
 		// and specify document type as 'tweet'. Load the document using setSource.
-		
+		client.prepareIndex(TWITTER_INDEX, TWEET_TYPE).setSource(jsonDocument).get();
 
 		LOG.info("indexing '{}' type document into '{}' index", TWEET_TYPE, TWITTER_INDEX);
 	}
@@ -58,7 +58,7 @@ public class Exercise2 {
 		// TODO-2: do an index creation operation (prepareCreate) using indexName
 		// as index name.
 		// Make use of the admin client (i.e. client.admin())
-		
+		client.admin().indices().prepareCreate(indexName).get();
 		
 		LOG.info("Index with name '{}' created", indexName);
 	}
@@ -74,7 +74,7 @@ public class Exercise2 {
 		if (indexExists(indexName)) {
 			// TODO-3: delete an index with the name indexName.
 			// Make use of the admin client for index creation/deletion operations.
-			
+			client.admin().indices().prepareDelete(indexName).get();
 			
 			indexDeleted = true;
 		}

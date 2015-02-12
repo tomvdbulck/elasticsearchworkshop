@@ -35,14 +35,16 @@ public class Exercise3 {
 		// TODO-1: build a match query using field and searchTerm as arguments and assign it
 		// to the matchQuery variable.
 		// Make use of QueryBuilders class.
-		
+		matchQuery = QueryBuilders.matchQuery(field, searchTerm);
 		
 		SearchRequestBuilder requestBuilder = null;
 		// TODO-2: prepare a search operation on the 'person' index, 
 		// set the max result count to 50 (using setSize),
 		// and set the above matchQuery as the search query (using setQuery).
 		// Assign the operation to the requestBuilder.
-		
+		requestBuilder = client.prepareSearch(PERSON_INDEX)
+				.setSize(MAX_RESULTS)
+				.setQuery(matchQuery);
 		
 		LOG.trace("Search request: \n{}", requestBuilder);
 		// executes the search operation using the previously built search request

@@ -30,13 +30,15 @@ public class Exercise1 {
 					// Use the values provided above.
 					// Tip for all exercises: check that no variables/imports 
 					// are left unused (underlined yellow in Eclipse).
-					
+					.put("cluster.name", CLUSTER_NAME)
+					.put("node.name", NODE_NAME)
 					.build();
 			
 			// TODO-2: construct a new TransportClient with the created settings, 
 			// add a transport address with the provided server host and port to it (hint: use InetSocketTransportAddress).
 			// Assign the transport client to the client variable.
-			
+			client = new TransportClient(settings)
+				.addTransportAddress(new InetSocketTransportAddress(SERVER_HOST, SERVER_PORT));
 			
 			LOG.debug("Starting up Elasticsearch transport client");
 		}

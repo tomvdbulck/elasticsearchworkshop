@@ -34,7 +34,9 @@ public class Exercise4 {
 		// TODO-1: construct a new UpdateRequest, setting the index to 'person',
 		// document type to 'person', and the provided documentId as ID,
 		// and assign the operation to updateRequest.
-		
+		updateRequest = new UpdateRequest(PERSON_INDEX, PERSON_TYPE, documentId);
+		// OR 
+		updateRequest = new UpdateRequest().index(PERSON_INDEX).type(PERSON_TYPE).id(documentId);
 		
 		// builds a JSON document with the updated field/value
 		updateRequest.doc(XContentFactory.jsonBuilder()
