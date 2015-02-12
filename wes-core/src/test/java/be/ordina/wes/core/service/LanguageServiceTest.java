@@ -89,24 +89,30 @@ public class LanguageServiceTest {
         List<Beer> searchResults = beerSearchService.find("duvel is een blond speciaalbier"
         		, BEER_TYPE, Beer.class, indexName, true, "description");
 
-        searchResults = beerSearchService.find("grimberg", BEER_TYPE, Beer.class, indexName, true, "description");
+        searchResults = beerSearchService.find("grimberg", BEER_TYPE, Beer.class, indexName, true, "description.dutch");
         Assert.assertEquals(1, searchResults.size());
+        searchResults = beerSearchService.find("grimberg", BEER_TYPE, Beer.class, indexName, true, "description");
+        Assert.assertEquals(0, searchResults.size());
 
+        searchResults = beerSearchService.find("grimbergen", BEER_TYPE, Beer.class, indexName, true, "description.dutch");
+        Assert.assertEquals(1, searchResults.size());
         searchResults = beerSearchService.find("grimbergen", BEER_TYPE, Beer.class, indexName, true, "description");
         Assert.assertEquals(1, searchResults.size());
 
-        searchResults = beerSearchService.find("grimbergen duvel", BEER_TYPE, Beer.class, indexName, true, "description");
+        searchResults = beerSearchService.find("grimbergen duvel", BEER_TYPE, Beer.class, indexName, true, "description.dutch");
         Assert.assertEquals(4, searchResults.size());
         
-        searchResults = beerSearchService.find("duv is", BEER_TYPE, Beer.class, indexName, true, "description");
+        searchResults = beerSearchService.find("duv is", BEER_TYPE, Beer.class, indexName, true, "description.dutch");
         Assert.assertEquals(0, searchResults.size());
         
-        searchResults = beerSearchService.find("duvel is een de het bier", BEER_TYPE, Beer.class, indexName, true, "description");
+        searchResults = beerSearchService.find("duvel is een de het bier", BEER_TYPE, Beer.class, indexName, true, "description.dutch");
 		Assert.assertEquals(3, searchResults.size());
 		
 
         // check if empty string returns all results
         searchResults = beerSearchService.find(StringUtils.EMPTY, BEER_TYPE, Beer.class, indexName, true, "description");
+        Assert.assertEquals(4, searchResults.size());
+        searchResults = beerSearchService.find(StringUtils.EMPTY, BEER_TYPE, Beer.class, indexName, true, "description.dutch");
         Assert.assertEquals(4, searchResults.size());
 	}
 	@Test
