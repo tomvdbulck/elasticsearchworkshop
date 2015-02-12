@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 import org.elasticsearch.client.Client;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,32 +23,22 @@ import be.ordina.wes.exercises.config.TestConfig;
 public class Exercise1DefaultLanguageAnalyzerTest {
 	
 	private static final String BEER_INDEX = "beerdefaultlanguage";
-
 	private static final String BEER_TYPE = "beer";
 	
 	@Autowired
 	private Client client;
     @Autowired
     private IndexService indexService;
-    
     @Autowired
     private SearchService<Beer> beerSearchService;
     
-    private Exercise1DefaultLanguageAnalyzer exercise1DefaultLanguageAnalyzer;
+    private Exercise1DefaultLanguageAnalyzer exercise1;
 	
 	@Before
 	public void setUp() {
 		indexService.deleteIndex(BEER_INDEX);
-		
-		exercise1DefaultLanguageAnalyzer = new Exercise1DefaultLanguageAnalyzer(client);
+		exercise1 = new Exercise1DefaultLanguageAnalyzer(client);
 	}
-	
-	@After
-	public void tearDown() {
-		// delete all indices when we're done with tests
-		//indexService.deleteIndex(BEER_INDEX);
-	}
-	
 	
 	@Test
 	public void testDefaultLanguageAnalyzer() throws Exception {
@@ -61,7 +50,7 @@ public class Exercise1DefaultLanguageAnalyzerTest {
         beers.add(new Beer(4, "Duvel Hop", "Amaï", "Duvel blond speciaalbier met extra hop toppings", 8.5, 4.55));
         
         
-        exercise1DefaultLanguageAnalyzer.createIndex(BEER_INDEX, BEER_TYPE);
+        exercise1.createIndex(BEER_INDEX, BEER_TYPE);
         
         Assert.assertTrue(indexService.indexExists(BEER_INDEX));
         
@@ -85,22 +74,11 @@ public class Exercise1DefaultLanguageAnalyzerTest {
         searchResults = new ArrayList<>();
         searchResults = beerSearchService.find("duvel is een de het bier", BEER_TYPE, Beer.class, BEER_INDEX, true, "description.dutch");
 		Assert.assertEquals(3, searchResults.size());
-		
 
         // check if empty string returns all results
 		searchResults = new ArrayList<>();
         searchResults = beerSearchService.find(StringUtils.EMPTY, BEER_TYPE, Beer.class, BEER_INDEX, true, "description.dutch");
         Assert.assertEquals(4, searchResults.size());
-
-		
-		
-		
-		
-		
-		
 	}
-	
-	
-	
 
 }

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.elasticsearch.client.Client;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +16,6 @@ import be.ordina.wes.core.model.Beer;
 import be.ordina.wes.core.service.IndexService;
 import be.ordina.wes.core.service.SearchService;
 import be.ordina.wes.exercises.config.TestConfig;
-
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = TestConfig.class)
@@ -32,7 +30,6 @@ public class Exercise3SynonymsTest {
 	private Client client;
     @Autowired
     private IndexService indexService;
-    
     @Autowired
     private SearchService<Beer> beerSearchService;
     
@@ -46,19 +43,10 @@ public class Exercise3SynonymsTest {
 		exercise3 = new Exercise3Synonyms(client);
 	}
 	
-	@After
-	public void tearDown() {
-		// delete all indices when we're done with tests
-		//indexService.deleteIndex(BEER_INDEX);
-		//indexService.deleteIndex(BEER_INDEX_OWN);
-	}
-	
 	/**
 	 * Search on brand will remain case sensitive - important as you will have to create an analyzer with no filters active
 	 * 
 	 * Search on description will become case insensitive 
-	 * 
-	 * @throws Exception
 	 */
 	@Test
 	public void lowerCaseSynonyms() throws Exception {

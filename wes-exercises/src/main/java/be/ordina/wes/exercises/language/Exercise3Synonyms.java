@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.ImmutableSettings;
 import org.elasticsearch.common.settings.Settings;
@@ -14,12 +13,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Exercise #1: 
- * Connecting to Elasticsearch cluster
+ * Language exercise #3: 
+ * Synonyms
  */
 public class Exercise3Synonyms {
 
-	private static final Logger LOG = LoggerFactory.getLogger(Exercise1DefaultLanguageAnalyzerTest.class);
+	private static final Logger LOG = LoggerFactory.getLogger(Exercise3Synonyms.class);
 	
 	private Client client;
 	
@@ -27,14 +26,13 @@ public class Exercise3Synonyms {
 		this.client = client;
 	}
 	
-	
 	/**
 	 * Complete the index create function.
 	 * 
 	 * Create a folding analyzer which will filter on lowercase
 	 * Create a nofolding analyzer which will do no filtering - important as the default will do the lowercase stuff
 	 * 
-	 * - there does not exist an uppercase filter
+	 * - an uppercase filter does not exist
 	 * 
 	 * 
 	 * Next create an index on the field description using folding analyzer and another one using the nofolding analyzer.
@@ -48,10 +46,7 @@ public class Exercise3Synonyms {
 	 * To see the effect of the analyzers in Sense: 
 	 * GET beersynonyms/_analyze?field=description&text=Duvel'
 	 * GET beersynonyms/_analyze?field=brand&text=Duvel'
-	 * 
-	 * @param indexName
 	 */
-	
 	
 	public void createIndex(String indexName, String type) {
 		try {
@@ -61,18 +56,7 @@ public class Exercise3Synonyms {
 	    		Settings settings = ImmutableSettings.settingsBuilder().loadFromSource(XContentFactory.jsonBuilder()
 	            .startObject()
 	                //TODO Add analyzer settings
-//	                .startObject("analysis")
-//	                	.startObject("analyzer")
-//	                		.startObject("folding")
-//	                            .field("tokenizer", "standard")
-//	                            .field("filter",foldingOption)
-//	                        .endObject()
-//	                       .startObject("nofolding")
-//	                            .field("tokenizer", "standard")
-//	                            .field("filter","")
-//	                        .endObject()
-//	                   .endObject()
-//	                .endObject()
+	            	
 	            .endObject().string()).build();
 	    		
 	    		//TODO complete the mapping
@@ -80,30 +64,22 @@ public class Exercise3Synonyms {
 				.startObject()
 		            .startObject(type)
 		                .startObject("properties")
-//		                    .startObject("description")
-//		                    	.field("type", "string")
-//		                    	.field("analyzer", "folding")
-//		                     .endObject()
-//		                     .startObject("brand")
-//			    				.field("type", "string")
-//			    				.field("analyzer", "nofolding")
-//		    				.endObject()
+		                	
 		                .endObject()
 			        .endObject()
 			    .endObject();
 	 
-	    		CreateIndexRequestBuilder createIndexRequestBuilder = client.admin().indices()
+	    		
+	    		client.admin().indices()
 	    				.prepareCreate(indexName)
 	    				.setSettings(settings)
-	    				.addMapping("beer", mapBuilder);
-	    		createIndexRequestBuilder.execute().actionGet();
-			
+	    				.addMapping("beer", mapBuilder)
+	    				.get();
 			
 		} catch (IOException e) {
 			e.printStackTrace();
 			LOG.error(e.getMessage());
 		}
-		
 		
 		LOG.info("Creating index [{}]", indexName);
 	}
@@ -114,7 +90,7 @@ public class Exercise3Synonyms {
 	 * Create your own synonym filter
 	 * 
 	 * Create an analyzer which use the lowercase filter and you synonym filter
-	 * Pay attention to the order of these 2 !!!!
+	 * Note: Pay attention to the order of these 2 !!!!
 	 * 
 	 * 
 	 * Next create an index on the field description using folding analyzer and another one using the nofolding analyzer.
@@ -134,8 +110,7 @@ public class Exercise3Synonyms {
 		try {
 			//TODO define the foldingoptions
     		List<String> foldingOptions = new ArrayList<String>();
-//        	foldingOptions.add("my_synonym_filter");
-//        	foldingOptions.add("lowercase");
+    		
         	
         	List<String> synonyms = new ArrayList<String>();
         	synonyms.add("Duvel,duiveltjesbier,duivels");
@@ -145,18 +120,7 @@ public class Exercise3Synonyms {
     	            .startObject()
     	                //TODO Add analyzer settings
     	                .startObject("analysis")
-//    	                	.startObject("filter")
-//    	                		.startObject("my_synonym_filter")
-//    	                			.field("type", "synonym")
-//    	                			.field("synonyms", synonyms)
-//    	                		.endObject()
-//    	                	.endObject()
-//    	                	.startObject("analyzer")
-//    	                		.startObject("mysynonyms")
-//			    					.field("tokenizer", "standard")
-//			    					.field("filter",foldingOptions)
-//			    				.endObject()
-//    	                   .endObject()
+    	                	
     	                .endObject()
     	            .endObject().string()).build();
     		
@@ -165,37 +129,24 @@ public class Exercise3Synonyms {
     				.startObject()
     		            .startObject(type)
     		                .startObject("properties")
-//    		                   .startObject("description")
-//			                    	.field("type", "string")
-//			                    	.field("analyzer", "standard")
-//			                    	.startObject("fields")
-//				                    	.startObject("synonym")
-//				                    		.field("type", "string")
-//				                    		.field("analyzer", "mysynonyms")
-//				                    	.endObject()
-//				                     .endObject()
-//			                     .endObject()
+    		                	
     		                .endObject()
     			        .endObject()
     			    .endObject();
     		
-    		CreateIndexRequestBuilder createIndexRequestBuilder = client.admin().indices()
+    		
+    		client.admin().indices()
     				.prepareCreate(indexName)
     				.setSettings(settings)
-    				.addMapping(type, builder);
-    		
-    		createIndexRequestBuilder.execute().actionGet();
-    		
+    				.addMapping(type, builder)
+    				.get();
     		
     	} catch (IOException e) {
     		e.printStackTrace();
     		LOG.error(e.getMessage());
     	}
     	
-    	
     	LOG.info("Creating index [{}]", indexName);
-		
 	}
-
 
 }

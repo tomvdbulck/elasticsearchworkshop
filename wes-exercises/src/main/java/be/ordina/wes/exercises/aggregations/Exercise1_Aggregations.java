@@ -11,8 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * In-depth search exercise #3:
- * Aggregations
+ * Aggregations exercise #1
  */
 public class Exercise1_Aggregations {
 
